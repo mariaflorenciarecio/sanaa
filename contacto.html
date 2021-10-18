@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- COMIENZO HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>SANAA | Contacto</title>
+</head>
+<!-- FIN HEAD -->
+<!-- COMIENZO BODY -->
+<body>
+    <!-- COMIENZO HEADER -->
+    <header id="contacto">
+        <!-- COMIENZO NAV -->
+        <div class="nav">
+            <!-- logo -->
+            <a href="index.html"><img src="./img/logo-sanaa.png" alt="Logo del Estudio de Arquitectura SANAA"></a>
+            <!-- menu -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+            <!-- buscador -->
+            <form action="" class="search-form">
+                <input class="search" type="search" name="busqueda" placeholder="¿Qué estás buscando?">
+                <button class="action-icon"><i class="fa fa-search"></i></button>
+                <input class="submit" type="submit" value="Buscar">
+            </form>
+        </div>
+        <!-- FIN NAV -->
+    </header>
+    <!-- FIN HEADER -->
+    <!-- COMIENZO MAIN -->
+    <main class="margins">
+        <!-- titular -->
+        <div class="main-headline">
+            <h1>Contacto</h1>
+            <p>Completá el siguiente formulario y a la brevedad nos comunicaremos con vos para asesorarte.</p>
+        </div>
+        <!-- COMIENZO SECTION FORMULARIO DE CONTACTO -->
+        <section>
+            <!-- formulario -->
+            <form class="contact-form" action="">
+                <!-- nombre y apellido -->
+                <div class="contact-flex">
+                    <!-- nombre -->
+                    <div class="contact-name">
+                        <label class="input-name" for="name">Nombre</label>
+                        <input class="contact-form-select" type="text" name="name" placeholder="Ingresá tu nombre" required>
+                    </div>
+                    <!-- apellido -->
+                    <div class="contact-surname">
+                        <label class="input-name" for="apellido">Apellido</label>
+                        <input class="contact-form-select" type="text" name="apellido" placeholder="Ingresá tu apellido" required>
+                    </div>
+                </div>
+                <!-- e-mail y confirmacion-->
+                <div class="contact-flex">
+                    <!-- e-mail -->
+                    <div class="contact-e-mail">
+                        <label class="input-name" for="email">E-mail</label>
+                        <input class="contact-form-select" type="email" name="email" placeholder="Ingresá tu e-mail" required>
+                    </div>
+                    <!-- confirmacion -->
+                    <div class="contact-confirmation">
+                        <label class="input-name" for="email">Confirmar E-mail</label>
+                        <input class="contact-form-select" type="email" name="email" placeholder="Confirmá tu e-mail" required>
+                    </div>
+                </div>
+                <!-- telefono -->
+                <label class="input-name" for="telefono">Teléfono</label>
+                <input class="contact-form-select" type="tel" name="telefono" placeholder="Ingresá tu teléfono">
+                <!-- pais -->
+                <label class="input-name" for="pais">País</label>
+                <div class="contact-flex">
+                    <!-- japon -->
+                    <div class="contact-country">
+                        <div class="input-text">Japón</div>
+                        <input type="radio" name="pais" value="Japón" checked="checked">
+                    </div>
+                    <!-- argentina -->
+                    <div class="contact-country">
+                        <div class="input-text">Argentina</div>
+                        <input type="radio" name="pais" value="Argentina">
+                    </div>
+                    <!-- otro -->
+                    <div class="contact-country">
+                        <div class="input-text">Otro</div>
+                        <input type="radio" name="pais" value="Otro">
+                    </div>
+                </div>
+                <!-- asunto -->
+                <label class="input-name" for="asunto">Asunto</label>
+                <select class="contact-form-select" name="asunto" id="">
+                    <option value="">Seleccioná el asunto</option>
+                    <option value="diseño-arquitectonico">Diseño Arquitectónico</option>
+                    <option value="diseño-interior">Diseño Interior</option>
+                    <option value="diseño-equipamiento">Diseño de Equipamiento</option>
+                </select>
+                <!-- consulta -->
+                <label class="input-name" for="consulta">Consulta</label>
+                <textarea class="contact-form-select" name="consulta" id="" cols="30" rows="7" maxlength="1000" placeholder="Ingresá tu consulta"></textarea>
+                <!-- redes sociales -->
+                <div class="input-name">¿En qué redes nos seguís?</div>
+                <div class="contact-flex">
+                    <!-- facebook -->
+                    <div class="contact-social-networks">
+                        <div class="input-text">Facebook</div>
+                        <input type="checkbox" name="cbox1">
+                    </div>
+                    <!-- twitter -->
+                    <div class="contact-social-networks">
+                        <div class="input-text">Twitter</div>
+                        <input type="checkbox" name="cbox2">
+                    </div>
+                    <!-- linkedin -->
+                    <div class="contact-social-networks">
+                        <div class="input-text">LinkedIn</div>
+                        <input type="checkbox" name="cbox3">
+                    </div>
+                </div>
+                <!-- botones -->
+                <div class="form-button">
+                    <input class="light-button" type="submit" value="Enviar consulta">
+                    <input class="light-button" type="reset" value="Limpiar formulario">
+                </div>
+            </form>
+        </section>
+        <!-- FIN SECTION FORMULARIO DE CONTACTO -->
+        <!-- COMIENZO SECTION INFORMACION DE CONTACTO -->
+        <section>
+            <!-- informacion de contacto -->
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <i class="fas fa-mobile-alt icon"></i>
+                    <h3>Teléfono</h3>
+                    <p>+81 3 12345678</p>
+                </div>
+                <div class="contact-info-item">
+                    <i class="far fa-map icon"></i>
+                    <h3>Dirección</h3>
+                    <p>1 Chrome-5-26 Tatsumi, Koto, Tokio, Japón</p>
+                </div>
+                <div class="contact-info-item">
+                    <i class="far fa-calendar-alt icon"></i>
+                    <h3>Horarios</h3>
+                    <p>L M X J V 9:00-18:00</p>
+                </div>
+                <div class="contact-info-item">
+                    <i class="far fa-envelope icon"></i>
+                    <h3>E-mail</h3>
+                    <p>work@sanaa.co.jp</p>
+                </div>
+            </div>
+            <div class="map">
+                <img src="./img/mapa.png" alt="Mapa con la Localización del Estudio de Arquitectura SANAA">
+            </div>
+        </section>
+        <!-- FIN SECTION INFORMACION DE CONTACTO -->
+        <!-- flecha ver contacto -->
+        <a href="#contacto"><i class="fas fa-chevron-up arrow-from-bottom"></i></a>
+    </main>
+    <!-- FIN MAIN -->
+    <!-- COMIENZO FOOTER -->
+    <footer class="margins">
+        <!-- informacion -->
+        <div class="footer-info">
+            <a href="index.html" class="footer-logo"><img src="./img/logo-sanaa.png" alt="Logo del Estudio de Arquitectura SANAA"></a>
+            <!-- informacion principal -->
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- informacion secundaria -->
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                    <li><a href="#">Política de redes sociales</a></li>
+                </ul>
+            </div>
+            <!-- redes sociales -->
+            <div class="follow-us">
+                <p>Seguinos en las redes</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/SANAA-353365408145653/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/sanaa_jp"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/s-a-n-a-a/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <!-- newsletter -->
+            <div class="newsletter">
+                <p>Suscribite al newsletter para enterarte de todas nuestras novedades:</p>
+                <form action="" class="subscribe-form">
+                    <input class="subscribe" type="email" name="email" placeholder="Ingresá tu e-mail" required>
+                    <button class="action-icon"><i class="fas fa-arrow-right"></i></button>
+                    <input class="subscribe-button" type="submit" value="Suscribirse">
+                </form>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright">
+            <p>© 2021 SANAA. Todos los derechos reservados.<span>Desarrollado con <span class="heart">💜</span> por María Florencia Recio.</span></p>
+            <div class="footer-social">
+                <a href="https://www.behance.net/"><i class="fab fa-behance"></i></a>
+                <a href="https://github.com/"><i class="fab fa-github"></i></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
+</body>
+<!-- FIN BODY -->
+</html>
