@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- COMIENZO HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- css propio -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>SANAA</title>
+</head>
+<!-- FIN HEAD -->
+
+<!-- COMIENZO BODY -->
+<body>
+    <!-- COMIENZO HEADER -->
+    <header id="header">
+        <div class="header">
+            <!-- comienzo navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="index.html"><img src="./img/logo-sanaa.png" alt="Logo del Estudio de Arquitectura SANAA"></a>
+                    <!-- boton colapsar -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- comienzo contenido colapsado -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- menu -->
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                        <!-- buscador -->
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                            <button class="action-icon" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <!-- fin contenido colapsado -->
+                </div>
+            </nav>
+            <!-- fin navbar -->
+            <!-- comienzo contenido header -->
+            <div class="header-content">
+                <!-- titular -->
+                <div class="master-headline">
+                    <h1 class="cutout">Kazuyo Sejima + Ryue Nishizawa</h1>
+                    <p>SANAA es una firma de arquitectos fundada en 1995, por Kazuyo Sejima y Ryue Nishizawa, en Tokio. Ha sido galardonada con el Premio Pritzker de Arquitectura 2010.</p>
+                </div>
+                <!-- boton ver mas -->
+                <div class="button button-banner">
+                    <a href="nosotros.html" class="dark-button">Ver más</a>
+                </div>
+                <!-- flecha ver main -->
+                <a href="#main"><i class="fas fa-chevron-down arrow-from-top"></i></a>
+            </div>
+            <!-- fin contenido header -->
+        </div>
+    </header>
+    <!-- FIN HEADER -->
+
+    <div class="parallax-background">
+        <!-- COMIENZO MAIN -->
+        <main id="main">
+            <div class="margins">
+                <!-- COMIENZO SECTION SERVICIOS -->
+                <section class="container">
+                    <!-- titular principal -->
+                    <div class="main-headline">
+                        <h2>Servicios</h2>
+                        <p>Nos ocupamos del diseño de cada detalle del proyecto, cumpliendo con todas las espectativas del cliente.</p>
+                    </div>
+                    <!-- tarjetas servicios -->
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                        <!-- tarjeta diseño arquitectonico -->
+                        <div class="col col-md-12">
+                            <div class="card h-100">
+                                <img src="./img/diseño-arquitectonico.jpg" alt="Diseño Arquitectónico">
+                                <div class="card-body">
+                                    <h3>Diseño Arquitectónico</h3>
+                                    <p>El color blanco y la luz natural difusa caracterizan a nuestras obras.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tarjeta diseño interior -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/diseño-interior.png" alt="Diseño Interior">
+                                <div class="card-body">
+                                    <h3>Diseño Interior</h3>
+                                    <p>Evitamos las jerarquías para diseñar espacios abiertos bien iluminados.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tarjeta diseño de equipamiento -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/diseño-equipamiento.png" alt="Diseño de Equipamiento">
+                                <div class="card-body">
+                                    <h3>Diseño de Equipamiento</h3>
+                                    <p>Buscamos integrar y reunir a las personas mediante diseños innovadores.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- boton ver mas -->
+                    <div class="button">
+                        <a href="servicios.html" class="light-button">Ver más</a>
+                    </div>
+                </section>
+                <!-- FIN SECTION SECTION -->
+                <!-- COMIENZO SECTION PROYECTOS -->
+                <section class="container">
+                    <!-- titular principal -->
+                    <div class="main-headline">
+                        <h2>Proyectos</h2>
+                        <p>En nuestros proyectos predominan los espacios abiertos, donde el color blanco y la luz natural difusa son protagonistas.</p>
+                    </div>
+                    <!-- COMIENZO GRID -->
+                    <div class="row row-cols-1 row-cols-lg-2 g-5">
+                        <!-- item 1 -->
+                        <div class="col">
+                            <div class="projects-image h-100">
+                                <img src="./img/museo-de-arte-contemporaneo-del-siglo-xxi.jpg"
+                                    alt="Museo de Arte Contemporáneo del Sigle XXI">
+                                <div class="image-overlay secondary-headline">
+                                    <p>1999-2004 | Kanazawa, Ishikawa, Japón</p>
+                                    <h3>Museo de Arte Contemporáneo del Siglo XXI</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="col">
+                            <div class="projects-image h-100">
+                                <img src="./img/centro-de-estudios-rolex.jpeg" alt="Centro de Estudios Rolex">
+                                <div class="image-overlay secondary-headline">
+                                    <p>2005-2010 | Lausana, Suiza</p>
+                                    <h3>Centro de Estudios Rolex</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="col col-lg-12">
+                            <div class="projects-image h-100">
+                                <img src="./img/grace-farms.jpg" alt="Grace Farms">
+                                <div class="image-overlay secondary-headline">
+                                    <p>2015 | New Canaan, Connecticut, EE.UU.</p>
+                                    <h3>Grace Farms</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIN GRID -->
+                    <!-- boton ver mas -->
+                    <div class="button">
+                        <a href="proyectos.html" class="light-button">Ver más</a>
+                    </div>
+                </section>
+                <!-- FIN SECTION PROYECTOS -->
+                <!-- COMIENZO SECTION CONTACTO -->
+                <section class="container">
+                    <!-- titular principal -->
+                    <div class="main-headline">
+                        <h2>Contacto</h2>
+                        <p>Contactanos por cualquiera de los siguientes medios para comenzar a diseñar tu nuevo proyecto juntos.</p>
+                    </div>
+                    <!-- comienzo informacion de contacto -->
+                    <div class="row row-cols-2 row-cols-md-4 g-5 pb-5">
+                        <!-- telefono -->
+                        <div class="col">
+                            <div class="contact-info-item h-100">
+                                <i class="fas fa-mobile-alt icon"></i>
+                                <h3>Teléfono</h3>
+                                <p>+81 3 12345678</p>
+                            </div>
+                        </div>
+                        <!-- direccion -->
+                        <div class="col">
+                            <div class="contact-info-item h-100">
+                                <i class="far fa-map icon"></i>
+                                <h3>Dirección</h3>
+                                <p>1 Chrome-5-26 Tatsumi, Koto, Tokio, Japón</p>
+                            </div>
+                        </div>
+                        <!-- horarios -->
+                        <div class="col">
+                            <div class="contact-info-item h-100">
+                                <i class="far fa-calendar-alt icon"></i>
+                                <h3>Horarios</h3>
+                                <p>L M X J V 9:00-18:00</p>
+                            </div>
+                        </div>
+                        <!-- e-mail -->
+                        <div class="col">
+                            <div class="contact-info-item h-100">
+                                <i class="far fa-envelope icon"></i>
+                                <h3>E-mail</h3>
+                                <p>work@sanaa.co.jp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fin informacion de contacto -->
+                    <!-- mapa -->
+                    <div class="map">
+                        <img src="./img/mapa.png" alt="Mapa con la Localización del Estudio de Arquitectura SANAA">
+                    </div>
+                    <!-- boton contactar -->
+                    <div class="button button-main">
+                        <a href="contacto.html" class="light-button">Contactar</a>
+                    </div>
+                </section>
+                <!-- FIN SECTION CONTACTO -->
+            </div>
+        </main>
+        <!-- FIN MAIN -->
+        
+        <!-- COMIENZO FOOTER -->
+        <footer class="container" id="footer">
+            <!-- flecha ver header -->
+            <a href="#header"><i class="fas fa-chevron-up arrow-from-bottom"></i></a>
+            <div class="margins">
+                <!-- comienzo informacion -->
+                <div class="row row-cols-3 row-cols-md-4 row-cols-lg-5 gy-5 pb-5 justify-content-between">
+                    <!-- logo -->
+                    <div class="col-3 col-md-3 col-lg-2">
+                        <a class="footer-logo" href="index.html"><img src="./img/logo-sanaa.png" alt="Logo del Estudio de Arquitectura SANAA"></a>
+                    </div>
+                    <!-- informacion principal -->
+                    <div class="col-3 col-md-2 col-lg-auto">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="nosotros.html">Nosotros</a></li>
+                                <li><a href="servicios.html">Servicios</a></li>
+                                <li><a href="proyectos.html">Proyectos</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- informacion secundaria -->
+                    <div class="col-auto col-md-4 col-lg-auto">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Aviso legal</a></li>
+                                <li><a href="#">Términos y condiciones</a></li>
+                                <li><a href="#">Política de cookies</a></li>
+                                <li><a href="#">Política de redes sociales</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- redes sociales -->
+                    <div class="col-4 col-md-3 col-lg-auto">
+                        <div class="footer-social">
+                            <p>Seguinos en las redes</p>
+                            <a href="https://www.facebook.com/SANAA-353365408145653/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="px-3" href="https://twitter.com/sanaa_jp"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/s-a-n-a-a/"><i class="fab fa-linkedin-in"></i></a>
+                            <p>@sanaa_jp</p>
+                        </div>
+                    </div>
+                    <!-- newsletter -->
+                    <div class="col-8 col-md-12 col-lg-3">
+                        <div class="newsletter">
+                            <p>Suscribite al newsletter para enterarte de todas nuestras novedades:</p>
+                            <form action="" class="subscribe-form">
+                                <input class="subscribe" type="email" name="email" placeholder="Ingresá tu e-mail" required>
+                                <button class="action-icon"><i class="fas fa-arrow-right"></i></button>
+                                <input class="subscribe-button" type="submit" value="Suscribirse">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin informacion -->
+                <!-- copyright -->
+                <div class="copyright">
+                    <p>© 2021 SANAA. Todos los derechos reservados.<span>Desarrollado con <span class="heart">💜</span> por María Florencia Recio.</span></p>
+                    <div class="footer-social">
+                        <a href="https://www.behance.net/"><i class="fab fa-behance"></i></a>
+                        <a href="https://github.com/"><i class="fab fa-github px-3"></i></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- FIN FOOTER -->
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/aab291df05.js" crossorigin="anonymous"></script>
+</body>
+<!-- FIN BODY -->
+
+</html>
