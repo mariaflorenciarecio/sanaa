@@ -561,10 +561,10 @@ footer {
 
 /* tarjetas servicios */
 
-.services-container{
+/* .services-container{
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
-}
+} */
 
 .card {
     border: none;
@@ -586,10 +586,10 @@ footer {
 
 /* informacion de contacto */
 
-.contact-container{
+/* .contact-container{
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
-}
+} */
 
 .contact-info-item {
     text-align: center;
