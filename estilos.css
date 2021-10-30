@@ -214,7 +214,15 @@ section .main-headline p {
 /* titular secundario */
 
 .secondary-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 30px;
+}
+
+.services-carousel .secondary-headline p {
+    text-transform: none;
+    width: 75%;
 }
 
 .secondary-headline h2, .secondary-headline h3 {
@@ -696,6 +704,33 @@ footer {
 }
 
 /* ----------FIN PAGINA NOSOTROS---------- */
+
+
+
+/* ----------COMIENZO PAGINA SERVICIOS---------- */
+
+/* carousel */
+
+.carousel-indicators {
+	bottom: -10px;
+}
+
+.carousel-indicators [data-bs-target] {
+	border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	width: 7rem;
+    height: 7rem;
+}
+
+.carousel-caption h3 {
+    color: white;
+}
+
+/* ----------FIN PAGINA SERVICIOS---------- */
 
 
 

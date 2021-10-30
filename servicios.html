@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- sass -->
+    <link rel="stylesheet" href="style.css">
     <title>SANAA | Servicios</title>
 </head>
 <!-- FIN HEAD -->
@@ -63,50 +65,224 @@
             <p>Brindamos una amplia gama de servicios de excelente calidad, adaptandonos a cualquier presupuesto.</p>
         </div>
         <!-- COMIENZO SECTION DISEÑO ARQUITECTONICO -->
-        <section>
-            <!-- imagen -->
-            <div class="services-image">
-                <img src="./img/servicios/museo-de-arte-contemporaneo-del-siglo-xxi.jpg" alt="Diseño Arquitectónico en Museo de Arte Contemporáneo del Siglo XXI">
-                <div class="image-overlay services-image-overlay">
-                    <p>Somos mundialmente conocidos por nuestros edificios blancos y ligeros, muy arraigados con los orígenes culturales y la sensibilidad japonesa.<span>El uso persistente del color blanco es un método para evitar una jerarquía en nuestra arquitectura, trayendo la luz a todas partes en lugar de intensificar solo ciertos espacios.</span></p>
+        <section class="services-carousel">
+            <!-- carousel diseño arquitectonico -->
+            <div id="carousel-1" class="carousel slide" data-bs-ride="carousel">
+                <!-- indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 </div>
+                <div class="carousel-inner">
+                    <!-- imagen 1 -->
+                    <div class="carousel-item active">
+                        <img src="./img/servicios/arquitectura/casa-moriyama.png" class="d-block w-100" alt="Casa Moriyama">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Casa Moriyama</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 2 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/arquitectura/casa-y-jardin.png" class="d-block w-100" alt="Casa y Jardín">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Casa y Jardín</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 3 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/arquitectura/centro-de-arte-towada.png" class="d-block w-100" alt="Centro de Arte Towada">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Centro de Arte Towada</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 4 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/arquitectura/edificio-de-oficinas-en-shibaura.png" class="d-block w-100" alt="Edificio de Oficinas en Shibaura">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Edificio de Oficinas en Shibaura</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 5 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/arquitectura/edificio-para-la-facultad-de-ciencias-del-arte-en-osaka.png" class="d-block w-100" alt="Edificio para la Facultad de Ciencias del Arte en Osaka">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Edificio para la Facultad de Ciencias del Arte en Osaka</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 6 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/arquitectura/grace-farms.png" class="d-block w-100" alt="Grace Farms">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Grace Farms</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- botones -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
-            <!-- subtitulo -->
+            <!-- titular -->
             <div class="secondary-headline extra-padding">
-                <p>Museo de Arte Contemporáneo del Siglo XXI</p>
                 <h2>Diseño Arquitectónico</h2>
+                <p>Somos mundialmente conocidos por nuestros edificios blancos y ligeros, muy arraigados con los orígenes culturales y la sensibilidad japonesa. El uso persistente del color blanco es un método para evitar una jerarquía en nuestra arquitectura, trayendo la luz a todas partes en lugar de intensificar solo ciertos espacios.</p>
             </div>
         </section>
         <!-- FIN SECTION DISEÑO ARQUITECTONICO -->
         <!-- COMIENZO SECTION DISEÑO INTERIOR -->
-        <section>
-            <!-- imagen -->
-            <div class="services-image">
-                <img src="./img/servicios/centro-de-estudios-rolex.jpeg" alt="Diseño Interior en Centro de Estudios Rolex">
-                <div class="image-overlay services-image-overlay">
-                    <p>La difusión democrática de la luz y su circulación también reflejan nuestro objetivo de crear sentimientos sobre la continuidad y la comunidad en espacios públicos.<span>La translucidez y los límites poco claros entre los espacios -buscando establecer la aspiración a la ligereza trascendente- se pueden ver en muchas de nuestras obras.</span></p>
+        <section class="services-carousel">
+            <!-- carousel diseño interior -->
+            <div id="carousel-2" class="carousel slide" data-bs-ride="carousel">
+                <!-- indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 </div>
+                <div class="carousel-inner">
+                    <!-- imagen 1 -->
+                    <div class="carousel-item active">
+                        <img src="./img/servicios/interior/centro-de-estudios-rolex.png" class="d-block w-100" alt="Centro de Estudios Rolex">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Centro de Estudios Rolex</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 2 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/interior/edificio-para-la-facultad-de-ciencias-del-arte-en-osaka.png" class="d-block w-100" alt="Edificio para la Facultad de Ciencias del Arte en Osaka">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Edificio para la Facultad de Ciencias del Arte en Osaka</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 3 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/interior/jardin-y-casa.png" class="d-block w-100" alt="Casa y Jardín">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Casa y Jardín</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 4 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/interior/museo-de-arte-teshima.png" class="d-block w-100" alt="Museo de Arte Teshima">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Museo de Arte Teshima</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 5 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/interior/museo-hiroshi-senju-en-karuizawa.png" class="d-block w-100" alt="Museo Hiroshi Senju en Karuizawa">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Museo Hiroshi Senju en Karuizawa</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 6 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/interior/renovacion-del-depart-store-la-samaritaine.png" class="d-block w-100" alt="Renovación del Depart-Store La Samaritaine">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Renovación del Depart-Store La Samaritaine</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- botones -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
-            <!-- subtitulo -->
+            <!-- titular -->
             <div class="secondary-headline extra-padding">
-                <p>Centro de Estudios Rolex</p>
                 <h2>Diseño Interior</h2>
+                <p>La difusión democrática de la luz y su circulación también reflejan nuestro objetivo de crear sentimientos sobre la continuidad y la comunidad en espacios públicos. La translucidez y los límites poco claros entre los espacios -buscando establecer la aspiración a la ligereza trascendente- se pueden ver en muchas de nuestras obras.</p>
             </div>
         </section>
         <!-- FIN SECTION DISEÑO INTERIOR -->
         <!-- COMIENZO SECTION DISEÑO DE EQUIPAMIENTO -->
-        <section>
-            <!-- imagen -->
-            <div class="services-image">
-                <img src="./img/servicios/grace-farms.jpg" alt="Diseño de Equipamiento en Grace Farms">
-                <div class="image-overlay services-image-overlay">
-                    <p>Ofrecemos en nuestro trabajo de mobiliario, la síntesis de modernidad occidental y estética japonesa tradicional que aplicamos en nuestras obras arquitectónicas.<span>Nuestras piezas, siempre relacionadas con un proyecto arquitectónico concreto, también expresan un lenguaje formal minimalista, pero con un carácter simbólico ligeramente poético.</span></p>
+        <section class="services-carousel">
+            <!-- carousel diseño de equipamiento -->
+            <div id="carousel-3" class="carousel slide" data-bs-ride="carousel">
+                <!-- indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 </div>
+                <div class="carousel-inner">
+                    <!-- imagen 1 -->
+                    <div class="carousel-item active">
+                        <img src="./img/servicios/equipamiento/edificio-de-oficinas-en-shibaura.png" class="d-block w-100" alt="Edificio de Oficinas en Shibaura">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Edificio de Oficinas en Shibaura</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 2 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/equipamiento/grace-farms.jpg" class="d-block w-100" alt="Grace Farms">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Grace Farms</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 3 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/equipamiento/louvre-lens-exposition.png" class="d-block w-100" alt="Louvre Lens">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Louvre Lens</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 4 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/equipamiento/louvre-lens-room.png" class="d-block w-100" alt="Louvre Lens">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Louvre Lens</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 5 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/equipamiento/louvre-lens-visual.png" class="d-block w-100" alt="Louvre Lens">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Louvre Lens</h3>
+                        </div>
+                    </div>
+                    <!-- imagen 6 -->
+                    <div class="carousel-item">
+                        <img src="./img/servicios/equipamiento/museo-de-arte-contemporaneo-del-siglo-xxi.jpg" class="d-block w-100" alt="Museo de Arte Contemporáneo del Siglo XXI">
+                        <div class="carousel-caption d-none d-md-block secondary-headline">
+                            <h3>Museo de Arte Contemporáneo del Siglo XXI</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- botones -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
-            <!-- subtitulo -->
+            <!-- titular -->
             <div class="secondary-headline">
-                <p>Grace Farms</p>
                 <h2>Diseño de Equipamiento</h2>
+                <p>Ofrecemos en nuestro trabajo de mobiliario, la síntesis de modernidad occidental y estética japonesa tradicional que aplicamos en nuestras obras arquitectónicas. Nuestras piezas, siempre relacionadas con un proyecto arquitectónico concreto, también expresan un lenguaje formal minimalista, pero con un carácter simbólico ligeramente poético.</p>
             </div>
         </section>
         <!-- FIN SECTION DISEÑO DE EQUIPAMIENTO -->
