@@ -561,6 +561,11 @@ footer {
 
 /* tarjetas servicios */
 
+.services-container{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
 .card {
     border: none;
     border-radius: 6px;
@@ -580,6 +585,11 @@ footer {
 }
 
 /* informacion de contacto */
+
+.contact-container{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
 
 .contact-info-item {
     text-align: center;
@@ -618,6 +628,11 @@ footer {
 }
 
 /* tabla proyectos */
+
+.projects-container{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
 
 .table-projects {
     font-weight: 200;
@@ -839,3 +854,22 @@ footer {
 /* ----------fin formulario de contacto---------- */
 
 /* ----------FIN PAGINA CONTACTO---------- */
+
+
+@media (max-width: 768px) { 
+    .master-headline p{
+        width: 85%;
+        font-size: 1.7rem;
+    } 
+    .cutout{
+        font-size: 2rem;
+        width: 92%;
+    }
+    .button-banner{
+        margin-bottom: 60px;
+    }
+    .dark-button{
+        font-size: 1.4rem;
+        padding: 15px 45px;
+    }
+}
