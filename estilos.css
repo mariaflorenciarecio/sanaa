@@ -14,7 +14,7 @@
     font-size: 62.5%;
 }
 
-/* customizacion bootstrap */
+/* reseteo bootstrap */
 
 .container {
     padding: 0;
@@ -43,10 +43,6 @@ p {
 
 body {
     font-family: 'Bahnschrift', sans-serif;
-}
-
-.margins {
-    margin: 0 1rem;
 }
 
 /* titulos */
@@ -234,17 +230,17 @@ img {
 .main-headline {
     display: flex;
     flex-flow: column;
-    padding: 15rem 0 1.5rem 0;
+    padding: 15rem 1rem 1.5rem 1rem;
 }
 
-.main-headline p {
+.main-headline__paragraph {
     color: #5B6977;
     font-size: 1.8rem;
     font-weight: 400;
     place-self: center;
 }
 
-section .main-headline p {
+section .main-headline__paragraph {
     font-weight: 200;
 }
 
@@ -256,20 +252,20 @@ section .main-headline p {
     align-items: center;
 }
 
-.secondary-headline h2, .secondary-headline h3 {
+.secondary-headline__title {
     font-size: 2.2rem;
     text-transform: none;
 }
 
-.secondary-headline p {
+.architects .secondary-headline__title {
+    text-transform: uppercase;
+}
+
+.secondary-headline__paragraph {
     color: #5B6977;
     font-weight: 400;
     font-stretch: semi-condensed;
     font-size: 1.6rem;
-    text-transform: uppercase;
-}
-
-.architects .secondary-headline h2 {
     text-transform: uppercase;
 }
 
@@ -281,7 +277,7 @@ section .main-headline p {
     padding-top: 1.5rem;
 }
 
-.tertiary-headline h3 {
+.tertiary-headline__title {
     color: #88959E;
     font-family: 'Bahnschrift', sans-serif;
     font-weight: 200;
@@ -291,7 +287,7 @@ section .main-headline p {
     line-height: 1.5;
 }
 
-.tertiary-headline p {
+.tertiary-headline__paragraph {
     color: #4A4F54;
     font-weight: 600;
     font-size: 1.8rem;
@@ -430,6 +426,7 @@ ol, ul {
 
 .newsletter p {
     text-align: left;
+    padding-bottom: 1rem;
 }
 
 .subscribe-form {
@@ -446,6 +443,7 @@ ol, ul {
     font-size: 1.4rem;
     border: none;
     flex-grow: 2;
+    width: 50%;
 }
 
 .subscribe, .subscribe::placeholder {
@@ -475,7 +473,11 @@ ol, ul {
 .copyright {
     border-top: 0.1rem solid #88959E;
     padding-top: 3rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+}
+
+.copyright p {
+    font-size: 1.4rem;
 }
 
 .copyright span {
@@ -704,7 +706,7 @@ ol, ul {
     justify-content: space-around;
 }
 
-.mision-info-item {
+.mision-info__item {
     text-align: center;
 }
 
@@ -754,26 +756,23 @@ ol, ul {
 
 /* logros */
 
-.achievements-info {
+.achievements {
     display: flex;
     justify-content: space-around;
 }
 
-.achievements-info-item {
+.achievements-item {
     text-align: center;
     width: 19%;
 }
 
-.achievements-info-item img{
-    width: 73%;
-    border-radius: 0;
-}
-
-.achievements-info-logo{
+.achievements-info__logo{
     height: 12rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 73%;
+    border-radius: 0;
 }
 
 /* ----------FIN PAGINA NOSOTROS---------- */
@@ -783,6 +782,10 @@ ol, ul {
 /* ----------COMIENZO PAGINA SERVICIOS---------- */
 
 /* carousel */
+
+.services-carousel {
+    margin: 0 1rem;
+}
 
 .carousel-indicators {
 	bottom: -1rem;
@@ -795,23 +798,28 @@ ol, ul {
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
-	width: 7rem;
-    height: 7rem;
+	width: 4rem;
+    height: 4rem;
 }
 
 .carousel-caption h3 {
     color: white;
 }
 
-.services-carousel .secondary-headline p {
-    text-transform: none;
-    width: 75%;
+main .services-carousel .secondary-headline{
+    padding-top: 3rem;
+    padding-bottom: 15rem;
 }
 
-/* texto */
+main .services-carousel:nth-child(4) .secondary-headline{
+    padding-bottom: 0;
+}
 
-.extra-padding {
-    padding-bottom: 15rem;
+.services-carousel .secondary-headline__paragraph {
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-align: center;
+    text-transform: none;
 }
 
 /* ----------FIN PAGINA SERVICIOS---------- */
@@ -822,7 +830,7 @@ ol, ul {
 
 /* grid proyectos */
 
-.grid-projects-container {
+.grid-projects {
     display: grid;
     grid-template-areas: 
     "item1 item2"
@@ -835,43 +843,43 @@ ol, ul {
     grid-row-gap: 3rem;
 }
 
-.grid-projects-container img {
+.grid-projects img {
     height: 100%;
 }
 
-.grid-projects-item1 {
+.grid-projects__item--1 {
     grid-area: item1;
 }
 
-.grid-projects-item2 {
+.grid-projects__item--2 {
     grid-area: item2;
 }
 
-.grid-projects-item3 {
+.grid-projects__item--3 {
     grid-area: item3;
 }
 
-.grid-projects-item4 {
+.grid-projects__item--4 {
     grid-area: item4;
 }
 
-.grid-projects-item5 {
+.grid-projects__item--5 {
     grid-area: item5;
 }
 
-.grid-projects-item6 {
+.grid-projects__item--6 {
     grid-area: item6;
 }
 
-.grid-projects-item7 {
+.grid-projects__item--7 {
     grid-area: item7;
 }
 
-.grid-projects-item8 {
+.grid-projects__item--8 {
     grid-area: item8;
 }
 
-.grid-projects-item9 {
+.grid-projects__item--9 {
     grid-area: item9;
     background-color: #F4F4F3;
 }
@@ -982,7 +990,7 @@ ol, ul {
 
     /* titular principal */
 
-    .main-headline p {
+    .main-headline__paragraph {
         font-size: 2.2rem;
         width: 90%;
     }
@@ -1059,32 +1067,47 @@ ol, ul {
         width: 100%;
         padding: 1rem;
     }
+
+    /* carousel */
+
+    /* .services-carousel {
+        margin: 0 3rem;
+    } */
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .services-carousel .secondary-headline__paragraph {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    /* copyright */
+
+    .copyright p {
+        font-size: 1.6rem;
+    }
 }
 
 /* ----------------------------------------DESKTOP---------------------------------------- */
 
 @media (min-width: 992px) {
 
-    /* cuerpo */
-
-    .margins {
-        max-width: 114rem;
-        margin: auto;  
-    }
-
     /* titular principal */
 
-    .main-headline p {
+    .main-headline__paragraph {
         width: 65%;
     }
 
     /* titular secundario */
 
-    .secondary-headline h2, .secondary-headline h3 {
+    .secondary-headline__title {
         font-size: 3.2rem;
     }
     
-    .secondary-headline p {
+    .secondary-headline__paragraph {
         font-size: 1.8rem;
     }
 
@@ -1100,15 +1123,28 @@ ol, ul {
         max-width: 70%;
     }
 
+    /* carousel */
+
+    .services-carousel .secondary-headline__paragraph {
+        width: 65%;
+    }
+
 }
 
 
 
 @media (min-width: 1200px) {
 
+    /* cuerpo */
+
+    .container {
+        max-width: 114rem;
+        margin: auto;  
+    }
+
     /* titular principal */
 
-    .main-headline p {
+    .main-headline__paragraph {
         width: 55%;
     }
 
@@ -1125,6 +1161,8 @@ ol, ul {
     }
 
 }
+
+
 
 @media (min-width: 1400px) {
 
