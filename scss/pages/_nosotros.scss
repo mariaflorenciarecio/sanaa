@@ -1,0 +1,122 @@
+/* ----------COMIENZO PAGINA NOSOTROS---------- */
+
+/* orden */
+
+.architects {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* mision */
+
+.mision-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mision-info__item {
+
+    text-align: center;
+}
+
+.item-content {
+    width: 18rem;
+    padding: 1rem;
+}
+
+/* logros */
+
+.achievements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+
+.achievements-item {
+    text-align: center;
+    width: 19%;
+}
+
+.achievements-info__logo{
+    display: flex;
+    align-items: center;
+    height: 12rem;
+    width: 73%;
+    margin: auto;
+}
+
+.achievements-info__logo img {
+    border-radius: 0;
+}
+
+/* video */
+
+.video {
+    padding: 6rem 1rem 0 1rem;
+}
+
+.youtube-video {
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.youtube-video::after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.sanaa-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* tabla proyectos */
+
+.table-projects {
+    font-weight: 200;
+    width: 114rem;
+}
+
+.table-projects th, td {
+    font-size: 1.4rem;
+    text-align: left;
+    vertical-align: unset;
+    padding: 1.5rem;
+    border-bottom: 0.1rem solid #88959E;
+}
+
+.table-projects li, .table-projects span {
+    font-size: 1.4rem;
+}
+
+.table-projects th {
+    color: #4A4F54;
+    text-transform: uppercase;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.table-projects td {
+    color: #88959E;
+    line-height: 1.5;
+}
+
+.table-projects ol {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+}
+
+.table-projects ul {
+    list-style-type: circle;
+    list-style-position: initial;
+}
+
+/* ----------FIN PAGINA NOSOTROS---------- */

@@ -23,4 +23,12 @@ $desktop-xxl: 1400px;
 
 // -------------------- IMPORT
 
-@import "general";
+@import "./components/general";
+@import "./components/nav";
+@import "./components/footer";
+
+@import "./pages/index";
+@import "./pages/nosotros";
+@import "./pages/servicios";
+@import "./pages/proyectos";
+@import "./pages/contacto";

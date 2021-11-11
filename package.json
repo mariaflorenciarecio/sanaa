@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -15,8 +17,13 @@
     "url": "https://github.com/mariaflorenciarecio/sanaa/issues"
   },
   "homepage": "https://github.com/mariaflorenciarecio/sanaa#readme",
-  "description": "",
   "dependencies": {
     "bootstrap": "^5.1.3"
-  }
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "keywords": [],
+  "description": ""
 }

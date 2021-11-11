@@ -1,0 +1,166 @@
+/* ----------COMIENZO PAGINA INDEX---------- */
+
+/* efecto parallax */
+
+.parallax-background {
+    background-color: #ffffff;
+    position: relative;
+}
+
+#header {
+    height: 100vh;
+}
+
+.header {
+    background-color: #F4F4F3;
+    background-image: url("/img/index/museo-maritimo-shenzen.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* contenido del header */
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: auto
+}
+
+.p-s-mobile, .p-m-mobile {
+    color: #4A4F54;
+    font-weight: 800;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.p-s-mobile {
+    font-size: 1.6rem;
+    width: 87%;
+}
+
+.p-m-mobile {
+    display: none;
+}
+
+/* titulo con gradiente */
+
+.cutout {
+    background-image: linear-gradient(120deg, #4A4F54 0%, #5B6977 100%);
+    color: white;
+    mix-blend-mode: multiply;
+    border-radius: 0.6rem;
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 90%;
+}
+
+@media (min-width: 375px) {
+
+    /* contenido header */
+
+    .p-s-mobile {
+        display: none;
+    }
+
+    .p-m-mobile {
+        display: flex;
+        font-size: 1.8rem;
+        width: 85%;
+    }
+
+    /* titulo con gradiente */
+
+    .cutout {
+        font-size: 2rem;
+    }
+
+}
+
+/* boton ver mas */
+
+.button-banner {
+    margin-bottom: 5rem;
+    padding: 0;
+}
+
+/* flecha ver main con animacion */
+
+.arrow-from-top {
+    color: #4A4F54;
+    font-size: 3rem;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-3rem);
+    }
+    60% {
+        transform: translateY(-1.5rem);
+    }
+}
+
+.arrow-from-top:hover {
+    color: #88959E;
+    animation: none;
+}
+
+/* tarjetas servicios */
+
+.card-container {
+    padding: 1rem;
+}
+
+.card {
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(4, 8, 16, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 0.8rem 1.6rem 0 rgba(4, 8, 16, 0.2);
+}
+
+.card-body {
+    padding: 3rem;
+}
+
+.card img {
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+/* informacion de contacto */
+
+.contact-info-item {
+    text-align: center;
+}
+
+.map-mobile {
+    width: 100%;
+    padding: 1rem;
+}
+
+.map {
+    display: none;
+}
+
+/* ----------FIN PAGINA INDEX---------- */

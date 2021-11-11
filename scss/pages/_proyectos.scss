@@ -1,0 +1,60 @@
+/* ----------COMIENZO PAGINA PROYECTOS---------- */
+
+/* grid proyectos */
+
+.grid-projects {
+    display: grid;
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item3"
+    "item4 item5"
+    "item6 item5"
+    "item7 item7"
+    "item8 item9";
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    padding: 0 1rem;
+}
+
+.grid-projects img {
+    height: 100%;
+}
+
+.grid-projects__item--1 {
+    grid-area: item1;
+}
+
+.grid-projects__item--2 {
+    grid-area: item2;
+}
+
+.grid-projects__item--3 {
+    grid-area: item3;
+}
+
+.grid-projects__item--4 {
+    grid-area: item4;
+}
+
+.grid-projects__item--5 {
+    grid-area: item5;
+}
+
+.grid-projects__item--6 {
+    grid-area: item6;
+}
+
+.grid-projects__item--7 {
+    grid-area: item7;
+}
+
+.grid-projects__item--8 {
+    grid-area: item8;
+}
+
+.grid-projects__item--9 {
+    grid-area: item9;
+    background-color: #F4F4F3;
+}
+
+/* ----------FIN PAGINA PROYECTOS---------- */

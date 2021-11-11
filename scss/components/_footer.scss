@@ -1,0 +1,136 @@
+/* ----------comienzo customizacion footer bootstrap---------- */
+
+/* orden */
+
+#footer {
+    padding: 15rem 0 3rem 0;
+}
+
+/* logo */
+
+.footer-logo {
+    display: none;
+}
+
+/* enlaces */
+
+ol, ul {
+    padding-left: 0;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+}
+
+.footer-social, .footer-social p {
+    text-align: left;
+}
+
+.footer-social i {
+    color: #88959E;
+    font-size: 1.6rem;
+    padding: 0.7rem 0 1.5rem 0;
+}
+
+.footer-menu a:hover, .footer-social i:hover {
+    color: #4A4F54;
+}
+
+/* newsletter */
+
+.newsletter p {
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: row;
+    border: 0.1rem solid #88959E;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.6rem;
+}
+
+.subscribe {
+    font-family: 'Bahnschrift', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    border: none;
+    flex-grow: 2;
+    width: 50%;
+}
+
+.subscribe, .subscribe::placeholder {
+    color: #88959E;
+    opacity: 1;
+}
+
+.subscribe:focus {
+    outline: 0;
+}
+
+.subscribe:focus::placeholder {
+    color: transparent;
+}
+
+.subscribe-button{
+    display: none;
+}
+
+.subscribe-form .action-icon i{
+    color: #88959E;
+    font-size: 1.6rem;
+}
+
+/* copyright */
+
+.copyright {
+    border-top: 0.1rem solid #88959E;
+    padding-top: 3rem;
+    margin-top: 1.5rem;
+}
+
+.copyright p {
+    font-size: 1.4rem;
+}
+
+.copyright span {
+    font-size: 1.4rem;
+    padding-top: 0.5rem;
+}
+
+.copyright .footer-social {
+    text-align: center;
+}
+
+/* emoji con animacion */
+
+.heart {
+    display: inline-flex;
+    animation-name: beat;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(0.9);
+    }
+    5% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    15% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+/* ---------fin footer---------- */

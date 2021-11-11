@@ -1,0 +1,44 @@
+/* ----------COMIENZO PAGINA SERVICIOS---------- */
+
+/* carousel */
+
+.services-carousel {
+    padding: 0 1rem;
+}
+
+.carousel-indicators {
+	bottom: -1rem;
+}
+
+.carousel-indicators [data-bs-target] {
+	border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	width: 4rem;
+    height: 4rem;
+}
+
+.carousel-caption h3 {
+    color: white;
+}
+
+main .services-carousel .secondary-headline{
+    padding-top: 3rem;
+    padding-bottom: 15rem;
+}
+
+main .services-carousel:nth-child(4) .secondary-headline{
+    padding-bottom: 0;
+}
+
+.services-carousel .secondary-headline__paragraph {
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-align: center;
+    text-transform: none;
+}
+
+/* ----------FIN PAGINA SERVICIOS---------- */
