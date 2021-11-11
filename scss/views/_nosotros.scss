@@ -1,0 +1,54 @@
+/* ----------COMIENZO PAGINA NOSOTROS---------- */
+
+/* orden */
+
+.architects {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* mision */
+
+.mision-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mision-info__item {
+
+    text-align: center;
+}
+
+.item-content {
+    width: 18rem;
+    padding: 1rem;
+}
+
+/* logros */
+
+.achievements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+
+.achievements-item {
+    text-align: center;
+    width: 19%;
+}
+
+.achievements-info__logo{
+    display: flex;
+    align-items: center;
+    height: 12rem;
+    width: 73%;
+    margin: auto;
+}
+
+.achievements-info__logo img {
+    border-radius: 0;
+}
+
+/* ----------FIN PAGINA NOSOTROS---------- */

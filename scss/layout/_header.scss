@@ -1,5 +1,3 @@
-/* ----------COMIENZO PAGINA INDEX---------- */
-
 /* efecto parallax */
 
 .parallax-background {
@@ -123,44 +121,3 @@
     color: #88959E;
     animation: none;
 }
-
-/* tarjetas servicios */
-
-.card-container {
-    padding: 1rem;
-}
-
-.card {
-    border: none;
-    border-radius: 0.6rem;
-    box-shadow: 0 0.4rem 0.8rem 0 rgba(4, 8, 16, 0.1);
-}
-
-.card:hover {
-    box-shadow: 0 0.8rem 1.6rem 0 rgba(4, 8, 16, 0.2);
-}
-
-.card-body {
-    padding: 3rem;
-}
-
-.card img {
-    border-radius: 0.6rem 0.6rem 0 0;
-}
-
-/* informacion de contacto */
-
-.contact-info-item {
-    text-align: center;
-}
-
-.map-mobile {
-    width: 100%;
-    padding: 1rem;
-}
-
-.map {
-    display: none;
-}
-
-/* ----------FIN PAGINA INDEX---------- */

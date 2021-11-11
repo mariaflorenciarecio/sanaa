@@ -1,0 +1,56 @@
+/* botones */
+
+.button {
+    text-align: center;
+    padding: 5rem 0 1rem 0;
+}
+
+.light-button, .transparent-button, .minimal-button {
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2rem 4rem;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.light-button {
+    color: #4A4F54;
+    background-color: #F4F4F3;
+}
+
+.transparent-button {
+    color: #88959E;
+    background-color: white;
+    border: 0.2rem solid #F4F4F3;
+}
+
+.light-button:hover, .transparent-button:hover {
+    color: #ffffff;
+    background-color: #4A4F54;
+    transition: all 0.25s ease-out;
+}
+
+.minimal-button {
+    color: #5B6977;
+    width: 800;
+    padding: 0;
+}
+
+.minimal-button:hover {
+    color: #4A4F54;
+    transition: all 0.25s ease-out;
+}
+
+.button .fas {
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.button-m-mobile {
+    display: none;
+}

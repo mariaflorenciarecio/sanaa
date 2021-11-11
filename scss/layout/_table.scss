@@ -1,0 +1,39 @@
+/* tabla proyectos */
+
+.table-projects {
+    font-weight: 200;
+    width: 114rem;
+}
+
+.table-projects th, td {
+    font-size: 1.4rem;
+    text-align: left;
+    vertical-align: unset;
+    padding: 1.5rem;
+    border-bottom: 0.1rem solid #88959E;
+}
+
+.table-projects li, .table-projects span {
+    font-size: 1.4rem;
+}
+
+.table-projects th {
+    color: #4A4F54;
+    text-transform: uppercase;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.table-projects td {
+    color: #88959E;
+    line-height: 1.5;
+}
+
+.table-projects ol {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+}
+
+.table-projects ul {
+    list-style-type: circle;
+    list-style-position: initial;
+}
