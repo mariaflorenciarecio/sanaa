@@ -1,7 +1,6 @@
 {
   "name": "sanaa",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,9 @@
   "bugs": {
     "url": "https://github.com/mariaflorenciarecio/sanaa/issues"
   },
-  "homepage": "https://github.com/mariaflorenciarecio/sanaa#readme"
+  "homepage": "https://github.com/mariaflorenciarecio/sanaa#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }

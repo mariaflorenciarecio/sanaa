@@ -8,7 +8,7 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- css propio -->
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- sass -->
-    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>SANAA | Nosotros</title>
 </head>
 <!-- FIN HEAD -->
@@ -30,7 +30,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <!-- logo -->
-                <a class="navbar-brand" href="index.html"><img src="./img/logo-sanaa.png" alt="Logo del Estudio de Arquitectura SANAA"></a>
+                <a class="navbar-brand" href="index.html"><img src="./img/index/logo-sanaa.png" alt="Logo del Estudio de Arquitectura SANAA"></a>
                 <!-- boton colapsar -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -106,34 +106,46 @@
             <div class="mision-info">
                 <!-- mision 1 -->
                 <div class="mision-info__item">
-                    <i class="fas fa-fill-drip icon"></i>
-                    <p>Usar el color blanco para realzar la iluminación.</p>
+                    <div class="item-content">
+                        <i class="fas fa-fill-drip icon"></i>
+                        <p>Usar el color blanco para realzar la iluminación.</p>
+                    </div>
                 </div>
                 <!-- mision 2 -->
                 <div class="mision-info__item">
-                    <i class="far fa-sun icon"></i>
-                    <p>Distribuir homogéneamente la luz natural del día.</p>
+                    <div class="item-content">
+                        <i class="far fa-sun icon"></i>
+                        <p>Distribuir homogéneamente la luz natural del día.</p>
+                    </div>
                 </div>
                 <!-- mision 3 -->
                 <div class="mision-info__item">
-                    <i class="fas fa-walking icon"></i>
-                    <p>Evitar jerarquías para permitir la libre circulación.</p>
+                    <div class="item-content">
+                        <i class="fas fa-walking icon"></i>
+                        <p>Evitar jerarquías para permitir la libre circulación.</p>
+                    </div>
                 </div>
                 <!-- mision 4 -->
                 <div class="mision-info__item">
-                    <i class="fab fa-uncharted icon"></i>
-                    <p>Abrir el espacio para crear continuidad interior-exterior.</p>
+                    <div class="item-content">
+                        <i class="fab fa-uncharted icon"></i>
+                        <p>Abrir el espacio para crear continuidad interior-exterior.</p>
+                    </div>
                 </div>
                 <!-- mision 5 -->
                 <div class="mision-info__item">
-                    <i class="fas fa-users icon"></i>
-                    <p>Reunir creando un sentimiento de comunidad.</p>
+                    <div class="item-content">
+                        <i class="fas fa-users icon"></i>
+                        <p>Reunir creando un sentimiento de comunidad.</p>
+                    </div>
                 </div>
             </div>
             <!-- fin misiones -->
             <!-- video -->
-            <div class="youtube-video">
-                <iframe width="1140" height="641" src="https://www.youtube.com/embed/TDTRrMegKyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video">
+                <div class="youtube-video">
+                    <iframe class="sanaa-video" src="https://www.youtube.com/embed/TDTRrMegKyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
         <!-- FIN SECTION MISION -->
@@ -393,13 +405,13 @@
         <div>
             <!-- logo mobile -->
             <div class="row col-5 footer-mobile-logo">
-                <a href="index.html"><img src="./img/logo-sanaa.png" alt="Logo del Estudio de Arquitectura SANAA"></a>
+                <a href="index.html"><img src="./img/index/logo-sanaa.png" alt="Logo del Estudio de Arquitectura SANAA"></a>
             </div>
             <!-- comienzo informacion -->
             <div class="row row-cols-12 row-cols-md-4 row-cols-lg-5 justify-content-between">
                 <!-- logo tablet, desktop -->
                 <div class="col-md-3 col-lg-2 footer-logo">
-                    <a href="index.html"><img src="./img/logo-sanaa.png" alt="Logo del Estudio de Arquitectura SANAA"></a>
+                    <a href="index.html"><img src="./img/index/logo-sanaa.png" alt="Logo del Estudio de Arquitectura SANAA"></a>
                 </div>
                 <!-- informacion principal -->
                 <div class="col-4 col-md-2 col-lg-auto">
