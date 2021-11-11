@@ -463,7 +463,7 @@ ol, ul {
 
 .header {
     background-color: #F4F4F3;
-    background-image: url(/img/index/museo-maritimo-shenzen.jpeg);
+    background-image: url("/img/index/museo-maritimo-shenzen.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
