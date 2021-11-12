@@ -1,90 +1,95 @@
-/* ----------comienzo customizacion navbar bootstrap---------- */
+// CHECKEAR TEMA BOOTSTRAP
 
-/* logo */
-
-.navbar img {
-    border-radius: none;
-    max-height: 5.2rem;
-}
-
-/* menu con gradiente */
-
-.container-fluid {
-    padding: 0.5rem 1.5rem;
-}
+/* ----------apertura navbar---------- */
 
 .navbar {
-    color: #4A4F54;
+    color: $dark-grey;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
     padding: 0;
+
+    .container-fluid {
+        padding: 0.5rem 1.5rem;
+
+        // navbar-brand en vez de img
+
+        img {
+            border-radius: none;
+            max-height: 5.2rem;
+        }
+    
+        .navbar-toggler {
+            border: none;
+        
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    
+        a {
+            color: $dark-grey;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+    
+            &:hover {
+                color: $dark-grey;
+                font-weight: 700;
+            }
+        }
+    
+        .active {
+            color: $dark-grey;
+            font-weight: 700;
+        }
+    
+        .form-control {
+            font-family: 'Bahnschrift', sans-serif;
+            font-size: 1.4rem;
+            border: none;
+            background-color: transparent;
+            border-radius: 0;
+            border-bottom: 0.1rem solid $dark-grey;
+    
+            // mismas propiedades
+
+            color: $dark-grey;
+            opacity: 1;
+    
+            &::placeholder {
+                color: $dark-grey;
+                opacity: 1;
+            }
+    
+            &:focus {
+                background-color: transparent;
+                outline: none;
+                box-shadow: none;
+                border: none;
+                border-radius: 0;
+                border-bottom: 0.1rem solid $dark-grey;
+            }
+    
+            &:focus::placeholder {
+                color: transparent;
+            }
+        }
+    }
 }
 
-.navbar a {
-    color: #4A4F54;
-    font-size: 1.8rem;
-    text-transform: uppercase;
+.navbar-light {
+    .navbar-nav {
+        .nav-link.active {
+            color: $dark-grey;
+        }
+    }
 }
 
-.navbar a:hover, .active {
-    color: #4A4F54;
-    font-weight: 700;
+.navbar-expand-lg {
+    .navbar-nav {
+        .nav-link {
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+        }
+    }
 }
 
-.navbar-light .navbar-nav .nav-link.active {
-    color: #4A4F54;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-/* buscador */
-
-.form-control {
-    font-family: 'Bahnschrift', sans-serif;
-    font-size: 1.4rem;
-    border: none;
-    background-color: transparent;
-    border-radius: 0;
-    border-bottom: 0.1rem solid #4A4F54;
-}
-
-.form-control, .form-control::placeholder {
-    color: #4A4F54;
-    opacity: 1;
-}
-
-.form-control:focus {
-    background-color: transparent;
-    outline: none;
-    box-shadow: none;
-    border: none;
-    border-radius: 0;
-    border-bottom: 0.1rem solid #4A4F54;
-}
-
-.form-control:focus::placeholder {
-    color: transparent;
-}
-
-.action-icon {
-    color: #4A4F54;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.action-icon i {
-    font-size: 2rem;
-}
-
-/* ----------fin customizacion navbar bootstrap---------- */
+/* ----------cierre navbar---------- */

@@ -1,20 +1,46 @@
-/* iconos */
+/* -------iconos------- */
 
 .icon {
-    color: #4A4F54;
+    color: $dark-grey;
     font-size: 6.5rem;
     padding-bottom: 1.5rem;
     text-align: center;
 }
 
 .arrow-from-bottom {
-    color: #88959E;
+    color: $medium-grey;
     font-size: 3rem;
     position: fixed;
     bottom: 1.5rem;
     right: 1.5rem;
+
+    &:hover {
+        color: $dark-grey;
+    }
 }
 
-.arrow-from-bottom:hover {
-    color: #4A4F54;
+// botones de accion de nav y footer (pasarlos a su scss)
+
+// nav
+
+.action-icon {
+    color: $dark-grey;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    i {
+        font-size: 2rem;
+    }
+}
+
+// footer
+
+.subscribe-form {
+    .action-icon {
+        i {
+            color: $medium-grey;
+            font-size: 1.6rem;
+        }
+    }
 }

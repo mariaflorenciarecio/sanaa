@@ -2,34 +2,34 @@
 
 @import "general";
 
-@import "abstracts/variables";
-@import "abstracts/functions";
-@import "abstracts/mixins";
+@import "./abstracts/variables";
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
 
 
-@import "base/reset";
-@import "base/typo";
+@import "./base/reset";
+@import "./base/typo";
 
-@import "components/buttons";
-@import "components/cards";
-@import "components/carousel";
-@import "components/icons";
-@import "components/images";
-@import "components/videos";
+@import "./components/buttons";
+@import "./components/cards";
+@import "./components/carousel";
+@import "./components/icons";
+@import "./components/images";
+@import "./components/videos";
 
-@import "layout/header";
-@import "layout/nav";
-@import "layout/footer";
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/footer";
 
-@import "layout/grid";
-@import "layout/table";
-@import "layout/forms";
-@import "layout/contact";
+@import "./layout/grid";
+@import "./layout/table";
+@import "./layout/forms";
+@import "./layout/contact";
 
-@import "views/index";
-@import "views/nosotros";
-@import "views/servicios";
-@import "views/proyectos";
-@import "views/contacto";
+@import "./views/index";
+@import "./views/nosotros";
+@import "./views/servicios";
+@import "./views/proyectos";
+@import "./views/contacto";
 
-@import "vendors/bootstrap";
+@import "./vendors/bootstrap";

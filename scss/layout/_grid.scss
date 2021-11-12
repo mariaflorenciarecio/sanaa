@@ -1,4 +1,6 @@
-/* grid proyectos */
+// CHECKEAR RESPONSIVE
+
+/* ----------apertura grid---------- */
 
 .grid-projects {
     display: grid;
@@ -12,45 +14,46 @@
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
     padding: 0 1rem;
+
+    img {
+        height: 100%;
+    }
+
+    &__item--1 {
+        grid-area: item1;
+    }
+
+    &__item--2 {
+        grid-area: item2;
+    }
+
+    &__item--3 {
+        grid-area: item3;
+    }
+
+    &__item--4 {
+        grid-area: item4;
+    }
+
+    &__item--5 {
+        grid-area: item5;
+    }
+
+    &__item--6 {
+        grid-area: item6;
+    }
+
+    &__item--7 {
+        grid-area: item7;
+    }
+
+    &__item--8 {
+        grid-area: item8;
+    }
+
+    &__item--9 {
+        grid-area: item9;
+    }
 }
 
-.grid-projects img {
-    height: 100%;
-}
-
-.grid-projects__item--1 {
-    grid-area: item1;
-}
-
-.grid-projects__item--2 {
-    grid-area: item2;
-}
-
-.grid-projects__item--3 {
-    grid-area: item3;
-}
-
-.grid-projects__item--4 {
-    grid-area: item4;
-}
-
-.grid-projects__item--5 {
-    grid-area: item5;
-}
-
-.grid-projects__item--6 {
-    grid-area: item6;
-}
-
-.grid-projects__item--7 {
-    grid-area: item7;
-}
-
-.grid-projects__item--8 {
-    grid-area: item8;
-}
-
-.grid-projects__item--9 {
-    grid-area: item9;
-    background-color: #F4F4F3;
-}
+/* ----------cierre grid---------- */

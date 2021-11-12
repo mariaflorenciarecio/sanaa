@@ -1,18 +1,18 @@
-/* google fonts */
+/* -------google fonts------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
-/* cuerpo */
+/* -------cuerpo------- */
 
 body {
     font-family: 'Bahnschrift', sans-serif;
 }
 
-/* titulos */
+/* -------titulos------- */
 
 h1, h2, h3 {
     font-family: 'Roboto Condensed', sans-serif;
-    color: #4A4F54;
+    color: $dark-grey;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -30,10 +30,10 @@ h3 {
     font-size: 1.8rem;
 }
 
-/* textos */
+/* -------textos------- */
 
 p, .input-text {
-    color: #88959E;
+    color: $medium-grey;
     font-weight: 200;
     font-size: 1.6rem;
     text-align: center;
@@ -45,10 +45,10 @@ span {
     font-size: 1.6rem;
 }
 
-/* enlaces */
+/* -------enlaces------- */
 
 a {
-    color: #88959E;
+    color: $medium-grey;
     font-family: 'Bahnschrift', sans-serif;
     font-weight: 200;
     font-size: 1.6rem;
@@ -56,17 +56,7 @@ a {
     line-height: 1.5;
 }
 
-// ------------------------------ TITULARES
-
-// mixin
-
-@mixin display ($display, $flex-direction, $align-items) {
-    display: $display;
-    flex-direction: $flex-direction;
-    align-items: $align-items;
-}
-
-/* titular principal */
+/* -------titular principal------- */
 
 .main-headline {
     @include display(flex, column, center);
@@ -94,7 +84,7 @@ a {
         }
 }
 
-/* titular secundario */
+/* -------titular secundario------- */
 
 .secondary-headline {
     @extend .main-headline;
@@ -107,7 +97,7 @@ a {
             }
         }
         .secondary-headline__paragraph {
-            color: #5B6977;
+            color: $bluish-grey;
             font: {
                 size: 1.6rem;
                 weight: 400;
@@ -150,7 +140,7 @@ a {
     }
 }
 
-/* titular terciario */
+/* -------titular terciario------- */
 
 .tertiary-headline {
     @extend .secondary-headline;

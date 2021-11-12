@@ -1,4 +1,6 @@
-/* botones */
+// MIXINS - INCLUDE - EXTEND 
+
+/* -------botones------- */
 
 .button {
     text-align: center;
@@ -19,32 +21,34 @@
 }
 
 .light-button {
-    color: #4A4F54;
-    background-color: #F4F4F3;
+    color: $dark-grey;
+    background-color: $light-grey;
 }
 
 .transparent-button {
-    color: #88959E;
+    color: $medium-grey;
     background-color: white;
-    border: 0.2rem solid #F4F4F3;
+    border: 0.2rem solid $light-grey;
 }
 
 .light-button:hover, .transparent-button:hover {
-    color: #ffffff;
-    background-color: #4A4F54;
+    color: $white;
+    background-color: $dark-grey;
     transition: all 0.25s ease-out;
 }
 
 .minimal-button {
-    color: #5B6977;
+    color: $bluish-grey;
     width: 800;
     padding: 0;
 }
 
 .minimal-button:hover {
-    color: #4A4F54;
+    color: $dark-grey;
     transition: all 0.25s ease-out;
 }
+
+// UBICAR
 
 .button .fas {
     font-size: 1.5rem;
