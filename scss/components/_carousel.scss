@@ -20,7 +20,7 @@
     }
 
     .carousel-caption h3 {
-        color: white;
+        color: $white;
     }
 
     .secondary-headline {
@@ -28,8 +28,8 @@
         padding-bottom: 15rem;
     
         .secondary-headline__paragraph {
-            font-size: 1.8rem;
-            font-weight: 200;
+            font-size: $medium-text;
+            font-weight: $thin;
             text-align: center;
             text-transform: none;
         }

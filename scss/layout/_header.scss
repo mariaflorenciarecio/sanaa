@@ -32,10 +32,10 @@
             .master-headline {
                 .cutout {
                     background-image: linear-gradient(120deg, $dark-grey 0%, $bluish-grey 100%);
-                    color: white;
+                    color: $white;
                     mix-blend-mode: multiply;
                     border-radius: 0.6rem;
-                    font-size: 1.8rem;
+                    font-size: $medium-text;
                     padding: 1rem;
                     margin: 1rem auto;
                     width: 90%;
@@ -49,7 +49,7 @@
                 }
                 
                 .p-s-mobile {
-                    font-size: 1.6rem;
+                    font-size: $normal-text;
                     width: 87%;
                 }
                 
@@ -101,7 +101,7 @@
 
     .p-m-mobile {
         display: flex;
-        font-size: 1.8rem;
+        font-size: $medium-text;
         width: 85%;
     }
 

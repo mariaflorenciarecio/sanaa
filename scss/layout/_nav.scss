@@ -27,23 +27,23 @@
     
         a {
             color: $dark-grey;
-            font-size: 1.8rem;
+            font-size: $medium-text;
             text-transform: uppercase;
     
             &:hover {
                 color: $dark-grey;
-                font-weight: 700;
+                font-weight: $bold;
             }
         }
     
         .active {
             color: $dark-grey;
-            font-weight: 700;
+            font-weight: $bold;
         }
     
         .form-control {
-            font-family: 'Bahnschrift', sans-serif;
-            font-size: 1.4rem;
+            font-family: $default-font;
+            font-size: $small-text;
             border: none;
             background-color: transparent;
             border-radius: 0;

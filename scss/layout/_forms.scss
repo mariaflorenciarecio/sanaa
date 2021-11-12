@@ -37,8 +37,8 @@
 
     .input-name {
         color: $medium-grey;
-        font-size: 1.6rem;
-        font-weight: 600;
+        font-size: $normal-text;
+        font-weight: $medium;
         text-align: left;
         text-transform: uppercase;
         padding-left: 2.4rem;
@@ -48,11 +48,11 @@
         color: $medium-grey;
         background-color: $white;
         opacity: 1;
-        font-family: 'Bahnschrift', sans-serif;
-        font-weight: 200;
-        font-size: 1.6rem;
+        font-family: $default-font;
+        font-weight: $thin;
+        font-size: $normal-text;
         margin: 1.5rem 0 3rem 0;
-        padding: 2.2rem;
+        padding: $big-text;
         border: 0.2rem solid $light-grey;
         border-radius: 0.6rem;
         width: 100%;
@@ -73,11 +73,11 @@
         color: $medium-grey;
         background-color: $white;
         opacity: 1;
-        font-family: 'Bahnschrift', sans-serif;
-        font-weight: 200;
-        font-size: 1.6rem;
+        font-family: $default-font;
+        font-weight: $thin;
+        font-size: $normal-text;
         margin: 1.5rem 0 3rem 0;
-        padding: 2.2rem;
+        padding: $big-text;
         border: 0.2rem solid $light-grey;
         border-radius: 0.6rem;
         width: 100%;

@@ -8,9 +8,9 @@
 }
 
 .light-button, .transparent-button, .minimal-button {
-    font-family: 'Bahnschrift', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
+    font-family: $default-font;
+    font-size: $normal-text;
+    font-weight: $regular;
     text-transform: uppercase;
     text-decoration: none;
     padding: 2rem 4rem;
@@ -27,7 +27,7 @@
 
 .transparent-button {
     color: $medium-grey;
-    background-color: white;
+    background-color: $white;
     border: 0.2rem solid $light-grey;
 }
 

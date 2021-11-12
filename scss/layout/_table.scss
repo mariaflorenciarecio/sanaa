@@ -3,11 +3,11 @@
 /* ----------apertura table---------- */
 
 .table-projects {
-    font-weight: 200;
+    font-weight: $thin;
     width: 114rem;
 
     th, td {
-        font-size: 1.4rem;
+        font-size: $small-text;
         text-align: left;
         vertical-align: unset;
         padding: 1.5rem;
@@ -40,7 +40,7 @@
     }
 
     li, span {
-        font-size: 1.4rem;
+        font-size: $small-text;
     }
 }
 

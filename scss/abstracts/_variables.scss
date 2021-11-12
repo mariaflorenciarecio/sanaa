@@ -12,16 +12,33 @@ $white: #ffffff;
 // dimensions
 
 
-// fonts
+
+// font family
 
 $default-font: 'Bahnschrift', sans-serif;
 $custom-font: 'Roboto Condensed', sans-serif;
-$weight: 200;
-
-// shadows
 
 
-// breakpoints
+// font size
+
+$big-title: 5.2rem;
+$normal-title: 4.2rem;
+$small-title: 3.2rem;
+
+$big-text: 2.2rem;
+$medium-text: 1.8rem;
+$normal-text: 1.6rem;
+$small-text: 1.4rem;
+
+
+// font weight
+
+$thin: 200;
+$regular: 400;
+$medium: 600;
+$bold: 800;
+
+// breakpoints (mobile first)
 
 $tablet: 768px;
 $desktop-l: 992px;

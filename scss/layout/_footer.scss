@@ -27,7 +27,7 @@
 
         i {
             color: $medium-grey;
-            font-size: 1.6rem;
+            font-size: $normal-text;
             padding: 0.7rem 0 1.5rem 0;
 
             &:hover {
@@ -50,9 +50,9 @@
             border-radius: 0.6rem;
     
             .subscribe {
-                font-family: 'Bahnschrift', sans-serif;
-                font-weight: 400;
-                font-size: 1.4rem;
+                font-family: $default-font;
+                font-weight: $regular;
+                font-size: $small-text;
                 border: none;
                 flex-grow: 2;
                 width: 50%;
@@ -88,11 +88,11 @@
         margin-top: 1.5rem;
     
         p {
-            font-size: 1.4rem;
+            font-size: $small-text;
         }
     
         span {
-            font-size: 1.4rem;
+            font-size: $small-text;
             padding-top: 0.5rem;
 
             .heart {

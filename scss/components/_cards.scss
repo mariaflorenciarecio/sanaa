@@ -11,7 +11,7 @@
         box-shadow: 0 0.4rem 0.8rem 0 rgba(4, 8, 16, 0.1);
 
         &:hover {
-            box-shadow: 0 0.8rem 1.6rem 0 rgba(4, 8, 16, 0.2);
+            box-shadow: 0 0.8rem $normal-text 0 rgba(4, 8, 16, 0.2);
         }
 
         img {
