@@ -1,13 +1,12 @@
-// CHECKEAR RESPONSIVE MAPA
-
-/* ----------apertura contacto---------- */
+/* ----------apertura informacion de contacto---------- */
 
 .contact-info-item {
-        text-align: center;
-    }
+    text-align: center;
+    padding: 1.5rem;
+}
 
 .map-mobile {
-    width: 100%;
+    display: block;
     padding: 1rem;
 }
 
@@ -15,4 +14,14 @@
     display: none;
 }
 
-/* ----------cierre contacto---------- */
+@media (min-width: $tablet) {
+    .map-mobile {
+        display: none;
+    }
+
+    .map {
+        display: block;
+    }
+}
+
+/* ----------cierre informacion de contacto---------- */

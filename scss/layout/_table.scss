@@ -1,35 +1,33 @@
-// CHECKEAR RESPONSIVE
-
-/* ----------apertura table---------- */
+/* ----------apertura tabla---------- */
 
 .table-projects {
-    font-weight: $thin;
-    width: 114rem;
+    margin: auto;
+
+    .desktop-table {
+        display: none;
+
+        @media (min-width: $tablet) {
+            display: revert;
+        }
+    }
 
     th, td {
-        font-size: $small-text;
-        text-align: left;
         vertical-align: unset;
         padding: 1.5rem;
-        border-bottom: 0.1rem solid $light-grey;
+        border-bottom: 0.1rem solid $medium-grey;
     }
 
     th {
-        color: $dark-grey;
-        text-transform: uppercase;
-        padding: 0 1.5rem 1.5rem 1.5rem;
+        @include text($dark-grey, $small-text, $bold, left, uppercase, normal);
+        padding: 1.5rem;
     }
 
-    td {
-        color: $medium-grey;
-        line-height: 1.5;
+    td, li {
+        @include text($medium-grey, $small-text, $thin, left, none, normal);
     }
 
     ol {
-        list: {
-            style-type: decimal-leading-zero;
-            style-position: inside;
-        }
+        list-style-type: decimal-leading-zero;
     }
 
     ul {
@@ -39,9 +37,14 @@
         }
     }
 
-    li, span {
+    span {
         font-size: $small-text;
+        text-align: left;
+    }
+
+    @media (min-width: $tablet) {
+        font-size: $small-title;
     }
 }
 
-/* ----------cierre table---------- */
+/* ----------cierre tabla---------- */

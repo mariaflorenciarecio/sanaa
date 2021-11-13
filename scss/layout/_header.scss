@@ -1,35 +1,33 @@
-// CHECKEAR RESPONSIVE
-
 /* ----------apertura header---------- */
 
 #header {
     height: 100vh;
 
     .header {
-        background-color: $light-grey;
-        background-image: url("/img/index/museo-maritimo-shenzen.jpeg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: {
+            color: #F4F4F3;
+            image: url("/img/index/museo-maritimo-shenzen.jpeg");
+            size: cover;
+            repeat: no-repeat;
+            attachment: fixed;
+            position: center;
+        }
         z-index: 0;
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
 
         .header-content {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items: center;
+            @include flex(column, nowrap, center);
             margin-top: auto;
 
             .master-headline {
+                @include flex(column, nowrap, center);
                 .cutout {
                     background-image: linear-gradient(120deg, $dark-grey 0%, $bluish-grey 100%);
                     color: $white;
@@ -39,30 +37,104 @@
                     padding: 1rem;
                     margin: 1rem auto;
                     width: 90%;
+                    @media (min-width: 375px) {
+                        font-size: 2rem;
+                    }
+                    @media (min-width: $tablet) {
+                        font-size: 4.2rem;
+                        margin: 2rem auto;
+                    }
+                    @media (min-width: $desktop-l) {
+                        max-width: 70%;
+                    }
+                    @media (min-width: $desktop-xl) {
+                        max-width: 50%;
+                    }
                 }
+                .short-text, .long-text {
+                    p {
+                        color: #4A4F54;
+                        font-weight: 800;
+                        margin: auto;
+                        padding-bottom: 3rem;
 
-                .p-s-mobile, .p-m-mobile {
-                    color: $dark-grey;
-                    font-weight: 800;
-                    margin: auto;
-                    padding-bottom: 3rem;
+                        @media (min-width: $tablet) {
+                            font-size: 2.5rem;
+                            padding-bottom: 4rem;
+                        }
+                        @media (min-width: $desktop-l) {
+                                width: 65%;
+                        }
+                        @media (min-width: $desktop-xxl) {
+                                width: 42%;
+                        }
+                    }
                 }
                 
-                .p-s-mobile {
+                .short-text {
                     font-size: $normal-text;
                     width: 87%;
+
+                    @media (min-width: 375px) {
+                        display: none;
+                    }
                 }
-                
-                .p-m-mobile {
+                .long-text {
                     display: none;
+                    
+                    @media (min-width: 375px) {
+                        display: flex;
+                        width: 85%;
+                    }
                 }
             }
-
             .button-banner {
                 margin-bottom: 5rem;
                 padding: 0;
-            }
 
+                @media (min-width: $tablet) {
+                    margin-bottom: 10rem;
+                }
+
+                &--s {
+                    @media (min-width: $tablet) {
+                        display: none;
+                    }
+                }
+
+                &--m {
+                    @media (min-width: $tablet) {
+                        display: flex;
+                    }
+                }
+
+                .dark-button {
+                    display: none;
+
+                    @media (min-width: $tablet) {
+                        display: flex;
+                        color: #F4F4F3;
+                        background-color: #4A4F54;
+                        font-family: 'Bahnschrift', sans-serif;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        padding: 2rem 4rem;
+                        border: none;
+                        border-radius: 0.6rem;
+                        cursor: pointer;
+                        transition: all 0.5s ease-out; 
+
+                        &:hover {
+                            color: #4A4F54;
+                            font-weight: 700;
+                            background-color: #ffffff;
+                            transition: all 0.25s ease-out;
+                        }
+                    }
+                }
+            }
             .arrow-from-top {
                 color: $dark-grey;
                 font-size: 3rem;
@@ -90,27 +162,3 @@
         }
     }
 }
-
-@media (min-width: 375px) {
-
-    /* contenido header */
-
-    .p-s-mobile {
-        display: none;
-    }
-
-    .p-m-mobile {
-        display: flex;
-        font-size: $medium-text;
-        width: 85%;
-    }
-
-    /* titulo con gradiente */
-
-    .cutout {
-        font-size: 2rem;
-    }
-
-}
-
-/* ----------cierre header---------- */

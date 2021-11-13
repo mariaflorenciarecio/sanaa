@@ -1,58 +1,56 @@
-// CHECKEAR RESPONSIVE
-
 /* ----------apertura formulario---------- */
 
 .contact-form {
     max-width: 80rem;
     margin: auto;
-    padding: 3rem 0 15rem 0;
+    padding: 1.5rem 1.5rem 15rem 1.5rem;
 
     input:focus, select:focus, textarea:focus {
         outline: 0;
     }
 
     .contact-flex {
-        display: flex;
-
-        .contact-name, .contact-e-mail {
-            width: 50%;
-            padding-right: 1rem;
-        }
-    
-        .contact-surname, .contact-confirmation {
-            width: 50%;
-            padding-left: 1rem;
-        }
+        width: 100%;
         
+        &--check {
+            @include flex(row, wrap, left);
+        }
+
         .contact-country, .contact-social-networks {
-            display: flex;
-            align-items: center;
-            padding: 1.5rem 5rem 3rem 2.4rem;
+            @include flex(row, wrap, center);
+            padding: 1.5rem;
     
             input {
                 margin-left: 1rem;
             }
         }
+
+        @media (min-width: $tablet) {
+            &--id {
+                @include flex(row, wrap, space-between);
+
+                .contact-name, .contact-e-mail, .contact-surname, .contact-confirmation {
+                    width: 48%;
+                }
+            }
+        }
     }
 
     .input-name {
-        color: $medium-grey;
-        font-size: $normal-text;
-        font-weight: $medium;
-        text-align: left;
-        text-transform: uppercase;
+        @include text($medium-grey, $normal-text, $medium, left, uppercase, normal);
         padding-left: 2.4rem;
     }
 
+    .input-text {
+        @extend p;
+    }
+
     .contact-form-select {
-        color: $medium-grey;
+        @include text($medium-grey, $normal-text, $thin, left, none, normal);
         background-color: $white;
         opacity: 1;
-        font-family: $default-font;
-        font-weight: $thin;
-        font-size: $normal-text;
         margin: 1.5rem 0 3rem 0;
-        padding: $big-text;
+        padding: 2.2rem;
         border: 0.2rem solid $light-grey;
         border-radius: 0.6rem;
         width: 100%;
@@ -67,41 +65,18 @@
         }
     }
 
-    // mismo estilo que contact-form-select
-
     textarea {
-        color: $medium-grey;
-        background-color: $white;
-        opacity: 1;
-        font-family: $default-font;
-        font-weight: $thin;
-        font-size: $normal-text;
-        margin: 1.5rem 0 3rem 0;
-        padding: $big-text;
-        border: 0.2rem solid $light-grey;
-        border-radius: 0.6rem;
-        width: 100%;
-
-        // mismo estilo que .contact-form-select::placeholder
-
-        &::placeholder {
-            color: $medium-grey;
-            opacity: 1;
-        }
+        @extend .contact-form-select;
     }
 
     .form-button {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        max-width: 114rem;
-    
+        @include flex(row, wrap, space-evenly);
+
         input {
-            width: 38.5rem;
+            width: 30rem;
+            margin: 3rem 1rem 0 1rem;
         }
     }
 }
-
 
 /* ----------cierre formulario---------- */

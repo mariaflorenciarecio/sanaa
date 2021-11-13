@@ -18,29 +18,3 @@
         color: $dark-grey;
     }
 }
-
-// botones de accion de nav y footer (pasarlos a su scss)
-
-// nav
-
-.action-icon {
-    color: $dark-grey;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
-    i {
-        font-size: 2rem;
-    }
-}
-
-// footer
-
-.subscribe-form {
-    .action-icon {
-        i {
-            color: $medium-grey;
-            font-size: $normal-text;
-        }
-    }
-}

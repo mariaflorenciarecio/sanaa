@@ -1,5 +1,3 @@
-// CHECKEAR TEMA BOOTSTRAP
-
 /* ----------apertura navbar---------- */
 
 .navbar {
@@ -9,8 +7,6 @@
 
     .container-fluid {
         padding: 0.5rem 1.5rem;
-
-        // navbar-brand en vez de img
 
         img {
             border-radius: none;
@@ -26,31 +22,20 @@
         }
     
         a {
-            color: $dark-grey;
-            font-size: $medium-text;
-            text-transform: uppercase;
+            @include text($dark-grey, $medium-text, $thin, center, uppercase, normal);
     
             &:hover {
-                color: $dark-grey;
                 font-weight: $bold;
             }
         }
     
         .active {
-            color: $dark-grey;
-            font-weight: $bold;
+            @include text($dark-grey, $medium-text, $bold, center, uppercase, normal);
         }
     
         .form-control {
-            font-family: $default-font;
-            font-size: $small-text;
-            border: none;
-            background-color: transparent;
-            border-radius: 0;
-            border-bottom: 0.1rem solid $dark-grey;
-    
-            // mismas propiedades
-
+            @include text($dark-grey, $small-text, $medium, left, none, normal);
+            @include nav-form;
             color: $dark-grey;
             opacity: 1;
     
@@ -60,12 +45,9 @@
             }
     
             &:focus {
-                background-color: transparent;
+                @include nav-form;
                 outline: none;
                 box-shadow: none;
-                border: none;
-                border-radius: 0;
-                border-bottom: 0.1rem solid $dark-grey;
             }
     
             &:focus::placeholder {
@@ -86,6 +68,7 @@
 .navbar-expand-lg {
     .navbar-nav {
         .nav-link {
+            text-align-last: left;
             padding-right: 1.5rem;
             padding-left: 1.5rem;
         }

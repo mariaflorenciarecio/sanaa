@@ -3,10 +3,26 @@
 /* ----------apertura footer---------- */
 
 #footer {
-    padding: 15rem 0 3rem 0;
+    padding: 15rem 1.5rem 3rem 1.5rem;
+
+    .footer-mobile-logo {
+        display: inline-block;
+        border-radius: none;
+    }
 
     .footer-logo {
         display: none;
+    }
+
+    @media (min-width: $desktop-l) {
+        .footer-mobile-logo {
+            display: none;
+        }
+
+        .footer-logo {
+            display: flex;
+            border-radius: none;
+        }
     }
 
     .footer-menu {
@@ -43,23 +59,16 @@
         }
     
         .subscribe-form {
-            display: flex;
-            flex-direction: row;
+            @include flex(row, wrap, center);
             border: 0.1rem solid $medium-grey;
             padding: 0.4rem 0.8rem;
             border-radius: 0.6rem;
     
             .subscribe {
-                font-family: $default-font;
-                font-weight: $regular;
-                font-size: $small-text;
+                @include text($medium-grey, $small-text, $regular, left, none, normal);
                 border: none;
                 flex-grow: 2;
                 width: 50%;
-    
-                // mismo estilo que .subscribe::placeholder
-    
-                color: $medium-grey;
                 opacity: 1;
     
                 &::placeholder {
@@ -89,6 +98,10 @@
     
         p {
             font-size: $small-text;
+
+            @media (min-width: $tablet) {
+                font-size: $normal-text;
+            }
         }
     
         span {

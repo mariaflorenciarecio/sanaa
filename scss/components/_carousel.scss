@@ -1,5 +1,3 @@
-// CHECKEAR BOOTSTRAP Y RESPONSIVE (FLECHITAS)
-
 /* -------carousel------- */
 
 .services-carousel {
@@ -11,8 +9,6 @@
 
     & [data-bs-target] {
         border-radius: 50%;
-        width: 1rem;
-        height: 1rem;
     }
 
     &:nth-child(4) .secondary-headline {
@@ -24,19 +20,39 @@
     }
 
     .secondary-headline {
-        padding-top: 3rem;
-        padding-bottom: 15rem;
+        padding: {
+            top: 3rem;
+            bottom: 15rem;
+        }
     
         .secondary-headline__paragraph {
-            font-size: $medium-text;
-            font-weight: $thin;
-            text-align: center;
-            text-transform: none;
+            font: {
+                size: $medium-text;
+                weight: $thin;
+            }
+            text: {
+                align: center;
+                transform: none;
+            }
+
+            @media (min-width: $tablet) {
+                font-size: 2rem;
+                width: 90%;
+            }
+
+            @media (min-width: $desktop-l) {
+                width: 65%;
+            }
         }
     }
 
     .carousel-control-next-icon, .carousel-control-prev-icon {
         width: 4rem;
         height: 4rem;
+
+        @media (min-width: $tablet) {
+            width: 7rem;
+            height: 7rem;
+        }
     }
 }

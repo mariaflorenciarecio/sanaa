@@ -1,54 +1,83 @@
-/* ----------COMIENZO PAGINA NOSOTROS---------- */
+/* ----------APERTURA NOSOTROS---------- */
 
-/* orden */
+/* nosotros */
 
 .architects {
-    display: flex;
-    justify-content: space-between;
+    @include flex(column, nowrap, center);
+    width: 95%;
+    padding: 1.5rem;
+    margin: auto;
+
+    @media (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-image {
+        img {
+            width: 95%;
+            margin: auto;
+        }
+
+        .image-overlay {
+            display: none;
+        }
+
+        @media (min-width: $tablet) {
+            @include image-overlay($white);
+        }
+
+        .image-overlay__text {
+            text-align: justify;
+
+            span {
+                @extend .image-overlay__text;
+            }
+        }
+    }
 }
 
 /* mision */
 
 .mision-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+    @include flex(row, wrap, space-evenly);
 
-.mision-info__item {
-
-    text-align: center;
-}
-
-.item-content {
-    width: 18rem;
-    padding: 1rem;
+    .mision-info__item {
+        text-align: center;
+    }
+    
+    .item-content {
+        padding: 1rem;
+        width: 18rem;
+    }
 }
 
 /* logros */
 
 .achievements {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0 1rem;
+    flex: {
+        direction: row;
+        wrap: wrap;
+    }
+    justify-content: space-evenly;
+
+    .achievements-item {
+        text-align: center;
+        width: 18rem;
+        padding: 1rem;
+    
+        .achievements-info__logo{
+            @include flex(column, nowrap, center);
+            height: 12rem;
+            width: 73%;
+            margin: auto;
+
+            .prize {
+                @include image(0);
+            }
+        }
+    }
 }
 
-.achievements-item {
-    text-align: center;
-    width: 19%;
-}
-
-.achievements-info__logo{
-    display: flex;
-    align-items: center;
-    height: 12rem;
-    width: 73%;
-    margin: auto;
-}
-
-.achievements-info__logo img {
-    border-radius: 0;
-}
-
-/* ----------FIN PAGINA NOSOTROS---------- */
+/* ----------CIERRE NOSOTROS---------- */

@@ -1,10 +1,17 @@
 // @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-/* reset bootstrap */
+// Hacer: importar scss de bootstrap y editar algunas variables que utilice!
+
+/* ----------reset clases bootstrap---------- */
 
 .row {
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
+}
+
+.row > * {
+    padding: 0 1rem;
+    margin: 1rem 0;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -14,4 +21,12 @@
 
 p {
     margin-bottom: 0;
+}
+
+.container {
+    
+    @media (min-width: 1200px) {
+        max-width: 114rem;
+        margin: auto;  
+    }
 }

@@ -10,110 +10,86 @@ body {
 
 /* -------titulos------- */
 
-h1, h2, h3 {
-    font-family: $custom-font;
-    color: $dark-grey;
-    font-weight: $bold;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 h1 {
-    font-size: $big-title;
+    @include title($big-title, uppercase);
 }
 
 h2 {
-    font-size: $normal-title;
+    @include title($normal-title, uppercase);
 }
 
 h3 {
-    font-size: $medium-text;
+    @include title($medium-text, uppercase);
 }
 
 /* -------textos------- */
 
-p, .input-text {
-    color: $medium-grey;
-    font-weight: $thin;
-    font-size: $normal-text;
-    text-align: center;
-    line-height: 1.5;
+p, a {
+    @include text($medium-grey, $normal-text, $thin, center, none, normal);
 }
 
 span {
+    @extend p;
     display: block;
-    font-size: $normal-text;
-}
-
-/* -------enlaces------- */
-
-a {
-    color: $medium-grey;
-    font-family: $default-font;
-    font-weight: $thin;
-    font-size: $normal-text;
-    text-decoration: none;
-    line-height: 1.5;
+    padding-top: 2rem;
 }
 
 /* -------titular principal------- */
 
 .main-headline {
-    @include display(flex, column, center);
-    padding: 15rem 1rem 1.5rem 1rem;
+    @include flex(column, wrap, center);
+    padding: 15rem 1.5rem 1.5rem 1.5rem;
+
         .main-headline__paragraph {
-            color: $bluish-grey;
-            font: {
-                size: $medium-text;
-                weight: $thin;
-            }
-            place-self: center;
+            @include text($bluish-grey, $medium-text, $thin, center, none, normal);
+            
             @media (min-width: $tablet) {
                 font-size: $big-text;
-                width: 90%;
+                width: 95%;
             }
             @media (min-width: $desktop-l) {
-                width: 65%;
+                width: 70%;
             }
             @media (min-width: $desktop-xl) {
-                width: 55%;
+                width: 59%;
             }
-        }
-        .main-headline__paragraph {
-            font-weight: $thin;
         }
 }
 
 /* -------titular secundario------- */
 
 .secondary-headline {
-    @extend .main-headline;
-    padding: 0;
-        .secondary-headline__title {
-            font-size: $big-text;
-            text-transform: none;
-            @media (min-width: $desktop-l) {
-                font-size: $small-title;
-            }
-        }
-        .secondary-headline__paragraph {
-            color: $bluish-grey;
-            font: {
-                size: $normal-text;
-                weight: $regular;
-                stretch: semi-condensed;
-            }
-            text-transform: uppercase;
-            @media (min-width: $desktop-l) {
-                font-size: $medium-text;
-            }
-        }
-}
+    @include flex(column, wrap, center);
 
-.architects {
-    .secondary-headline {
-        .secondary-headline__title {
+    &--architects {
+        padding: 1.5rem;
+    }
+
+    .secondary-headline__title {
+        @include title($big-text, none);
+
+        &--architect {
             text-transform: uppercase;
+        }
+
+        @media (min-width: $tablet) {
+            font-size: 3.2rem;
+        }
+
+        @media (min-width: $desktop-l) {
+            font-size: $small-title;
+        }
+    }
+
+    .secondary-headline__paragraph {
+        @include text($bluish-grey, $normal-text, $regular, center, uppercase, semi-condensed);
+
+        @media (min-width: $tablet) {
+            font-size: 1.8rem;
+        }
+
+        @media (min-width: $desktop-l) {
+            font-size: $medium-text;
         }
     }
 }
