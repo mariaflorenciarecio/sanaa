@@ -1,0 +1,50 @@
+/* ----------apertura tabla---------- */
+
+.table-projects {
+    margin: auto;
+
+    .desktop-table {
+        display: none;
+
+        @media (min-width: $tablet) {
+            display: revert;
+        }
+    }
+
+    th, td {
+        vertical-align: unset;
+        padding: 1.5rem;
+        border-bottom: 0.1rem solid $medium-grey;
+    }
+
+    th {
+        @include text($dark-grey, $small-text, $bold, left, uppercase, normal);
+        padding: 1.5rem;
+    }
+
+    td, li {
+        @include text($medium-grey, $small-text, $thin, left, none, normal);
+    }
+
+    ol {
+        list-style-type: decimal-leading-zero;
+    }
+
+    ul {
+        list: {
+            style-type: circle;
+            style-position: initial;
+        }
+    }
+
+    span {
+        font-size: $small-text;
+        text-align: left;
+    }
+
+    @media (min-width: $tablet) {
+        font-size: $small-title;
+    }
+}
+
+/* ----------cierre tabla---------- */

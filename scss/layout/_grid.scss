@@ -1,0 +1,47 @@
+/* ----------apertura grid---------- */
+
+.grid-projects {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+    padding: 1.5rem;
+    margin: auto;
+
+    img {
+        height: 100%;
+    }
+
+    @media (min-width: $tablet) {
+        grid-template-areas: 
+        "item1 item2"
+        "item3 item3"
+        "item4 item5"
+        "item6 item5"
+        "item7 item7"
+        "item8 item9";
+        grid-template-rows: repeat(1fr, 2fr, 1fr, 1fr, 2fr, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+
+        &__item--1 { grid-area: item1; }
+
+        &__item--2 { grid-area: item2; }
+
+        &__item--3 { grid-area: item3; }
+
+        &__item--4 { grid-area: item4; }
+
+        &__item--5 { grid-area: item5; }
+
+        &__item--6 { grid-area: item6; }
+
+        &__item--7 { grid-area: item7; }
+
+        &__item--8 { grid-area: item8; }
+
+        &__item--9 { grid-area: item9; }
+    }
+}
+
+/* ----------cierre grid---------- */

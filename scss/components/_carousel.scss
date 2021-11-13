@@ -1,0 +1,58 @@
+/* -------carousel------- */
+
+.services-carousel {
+    padding: 0 1rem;
+
+    .carousel-indicators {
+        bottom: -1rem;
+    }
+
+    & [data-bs-target] {
+        border-radius: 50%;
+    }
+
+    &:nth-child(4) .secondary-headline {
+        padding-bottom: 0;
+    }
+
+    .carousel-caption h3 {
+        color: $white;
+    }
+
+    .secondary-headline {
+        padding: {
+            top: 3rem;
+            bottom: 15rem;
+        }
+    
+        .secondary-headline__paragraph {
+            font: {
+                size: $medium-text;
+                weight: $thin;
+            }
+            text: {
+                align: center;
+                transform: none;
+            }
+
+            @media (min-width: $tablet) {
+                font-size: 2rem;
+                width: 90%;
+            }
+
+            @media (min-width: $desktop-l) {
+                width: 65%;
+            }
+        }
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 4rem;
+        height: 4rem;
+
+        @media (min-width: $tablet) {
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+/* ----------apertura informacion de contacto---------- */
+
+.contact-info-item {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.map-mobile {
+    display: block;
+    padding: 1rem;
+}
+
+.map {
+    display: none;
+}
+
+@media (min-width: $tablet) {
+    .map-mobile {
+        display: none;
+    }
+
+    .map {
+        display: block;
+    }
+}
+
+/* ----------cierre informacion de contacto---------- */

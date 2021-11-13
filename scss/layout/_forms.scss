@@ -1,0 +1,82 @@
+/* ----------apertura formulario---------- */
+
+.contact-form {
+    max-width: 80rem;
+    margin: auto;
+    padding: 1.5rem 1.5rem 15rem 1.5rem;
+
+    input:focus, select:focus, textarea:focus {
+        outline: 0;
+    }
+
+    .contact-flex {
+        width: 100%;
+        
+        &--check {
+            @include flex(row, wrap, left);
+        }
+
+        .contact-country, .contact-social-networks {
+            @include flex(row, wrap, center);
+            padding: 1.5rem;
+    
+            input {
+                margin-left: 1rem;
+            }
+        }
+
+        @media (min-width: $tablet) {
+            &--id {
+                @include flex(row, wrap, space-between);
+
+                .contact-name, .contact-e-mail, .contact-surname, .contact-confirmation {
+                    width: 48%;
+                }
+            }
+        }
+    }
+
+    .input-name {
+        @include text($medium-grey, $normal-text, $medium, left, uppercase, normal);
+        padding-left: 2.4rem;
+    }
+
+    .input-text {
+        @extend p;
+    }
+
+    .contact-form-select {
+        @include text($medium-grey, $normal-text, $thin, left, none, normal);
+        background-color: $white;
+        opacity: 1;
+        margin: 1.5rem 0 3rem 0;
+        padding: 2.2rem;
+        border: 0.2rem solid $light-grey;
+        border-radius: 0.6rem;
+        width: 100%;
+    
+        &::placeholder {
+            color: $medium-grey;
+            opacity: 1;
+        }
+    
+        &:focus::placeholder {
+            color: transparent;
+        }
+    }
+
+    textarea {
+        @extend .contact-form-select;
+    }
+
+    .form-button {
+        @include flex(row, wrap, space-evenly);
+
+        input {
+            width: 30rem;
+            margin: 3rem 1rem 0 1rem;
+        }
+    }
+}
+
+/* ----------cierre formulario---------- */

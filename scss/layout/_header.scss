@@ -1,0 +1,164 @@
+/* ----------apertura header---------- */
+
+#header {
+    height: 100vh;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: {
+            color: #F4F4F3;
+            image: url("/img/index/museo-maritimo-shenzen.jpeg");
+            size: cover;
+            repeat: no-repeat;
+            attachment: fixed;
+            position: center;
+        }
+        z-index: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        .header-content {
+            @include flex(column, nowrap, center);
+            margin-top: auto;
+
+            .master-headline {
+                @include flex(column, nowrap, center);
+                .cutout {
+                    background-image: linear-gradient(120deg, $dark-grey 0%, $bluish-grey 100%);
+                    color: $white;
+                    mix-blend-mode: multiply;
+                    border-radius: 0.6rem;
+                    font-size: $medium-text;
+                    padding: 1rem;
+                    margin: 1rem auto;
+                    width: 90%;
+                    @media (min-width: 375px) {
+                        font-size: 2rem;
+                    }
+                    @media (min-width: $tablet) {
+                        font-size: 4.2rem;
+                        margin: 2rem auto;
+                    }
+                    @media (min-width: $desktop-l) {
+                        max-width: 70%;
+                    }
+                    @media (min-width: $desktop-xl) {
+                        max-width: 50%;
+                    }
+                }
+                .short-text, .long-text {
+                    p {
+                        color: #4A4F54;
+                        font-weight: 800;
+                        margin: auto;
+                        padding-bottom: 3rem;
+
+                        @media (min-width: $tablet) {
+                            font-size: 2.5rem;
+                            padding-bottom: 4rem;
+                        }
+                        @media (min-width: $desktop-l) {
+                                width: 65%;
+                        }
+                        @media (min-width: $desktop-xxl) {
+                                width: 42%;
+                        }
+                    }
+                }
+                
+                .short-text {
+                    font-size: $normal-text;
+                    width: 87%;
+
+                    @media (min-width: 375px) {
+                        display: none;
+                    }
+                }
+                .long-text {
+                    display: none;
+                    
+                    @media (min-width: 375px) {
+                        display: flex;
+                        width: 85%;
+                    }
+                }
+            }
+            .button-banner {
+                margin-bottom: 5rem;
+                padding: 0;
+
+                @media (min-width: $tablet) {
+                    margin-bottom: 10rem;
+                }
+
+                &--s {
+                    @media (min-width: $tablet) {
+                        display: none;
+                    }
+                }
+
+                &--m {
+                    @media (min-width: $tablet) {
+                        display: flex;
+                    }
+                }
+
+                .dark-button {
+                    display: none;
+
+                    @media (min-width: $tablet) {
+                        display: flex;
+                        color: #F4F4F3;
+                        background-color: #4A4F54;
+                        font-family: 'Bahnschrift', sans-serif;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        padding: 2rem 4rem;
+                        border: none;
+                        border-radius: 0.6rem;
+                        cursor: pointer;
+                        transition: all 0.5s ease-out; 
+
+                        &:hover {
+                            color: #4A4F54;
+                            font-weight: 700;
+                            background-color: #ffffff;
+                            transition: all 0.25s ease-out;
+                        }
+                    }
+                }
+            }
+            .arrow-from-top {
+                color: $dark-grey;
+                font-size: 3rem;
+                animation-name: bounce;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+
+                &:hover {
+                    color: $medium-grey;
+                    animation: none;
+                }
+
+                @keyframes bounce {
+                    0%, 20%, 50%, 80%, 100% {
+                        transform: translateY(0);
+                    }
+                    40% {
+                        transform: translateY(-3rem);
+                    }
+                    60% {
+                        transform: translateY(-1.5rem);
+                    }
+                }
+            }
+        }
+    }
+}

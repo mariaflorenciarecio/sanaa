@@ -1,0 +1,110 @@
+// -------------------- MIXINS
+
+// flex principal
+
+@mixin flex($direction, $wrap, $justify) {
+    display: flex;
+    flex: {
+        direction: $direction;
+        wrap: $wrap;
+    }
+    justify-content: $justify;
+    align-items: center;
+}
+
+// titulos
+
+@mixin title($size, $transform) {
+    color: $dark-grey;
+    font: { 
+        family: $custom-font;
+        size: $size;
+        weight: $bold;
+    }
+    text: { 
+        align: center;
+        transform: $transform;
+        decoration: none;
+    }
+}
+
+// textos
+
+@mixin text($color, $size, $weight, $align, $transform, $stretch) {
+    color: $color;
+    font: {
+        family: $default-font;
+        size: $size;
+        weight: $weight;
+        stretch: $stretch;
+    }
+    text: {
+        align: $align;
+        transform: $transform;
+        decoration: none;
+    }
+    line-height: 1.5;
+}
+
+// imagenes generales
+
+@mixin image($border) {
+    display: block;
+    width: 100%;
+    border-radius: $border;
+}
+
+// imagenes con transiciones
+
+@mixin image-overlay($color) {
+    position: relative;
+
+    .image-overlay {
+        @include flex(column, wrap, center);
+
+        color: $white;
+        background-color: $color;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.25s;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &  > * {
+            transform: translateY(2rem);
+            transition: transform 0.25s;
+            width: 90%;
+        }
+
+        &:hover > * {
+            transform: translateY(0);
+            width: 90%;
+        }
+    }
+}
+
+// nav form
+
+@mixin nav-form {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 0.1rem solid $dark-grey;
+}
+
+// button
+
+@mixin button {
+    @include text(none, $normal-text, $regular, center, uppercase, normal);
+        padding: 2rem 4rem;
+        border: none;
+        border-radius: 0.6rem;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+}
