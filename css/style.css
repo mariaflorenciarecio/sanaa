@@ -234,7 +234,7 @@ span {
   padding: 5rem 0 1rem 0;
 }
 
-.button .light-button {
+.light-button {
   color: none;
   font-family: "Bahnschrift", sans-serif;
   font-size: 1.6rem;
@@ -254,14 +254,14 @@ span {
   background-color: #F4F4F3;
 }
 
-.button .light-button:hover {
+.light-button:hover {
   color: #ffffff;
   background-color: #4A4F54;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
 
-.button .transparent-button {
+.transparent-button {
   color: none;
   font-family: "Bahnschrift", sans-serif;
   font-size: 1.6rem;
@@ -282,14 +282,14 @@ span {
   border: 0.2rem solid #F4F4F3;
 }
 
-.button .transparent-button:hover {
+.transparent-button:hover {
   color: #ffffff;
   background-color: #4A4F54;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
 
-.button .minimal-button {
+.minimal-button {
   color: none;
   font-family: "Bahnschrift", sans-serif;
   font-size: 1.6rem;
@@ -310,13 +310,13 @@ span {
   padding: 0;
 }
 
-.button .minimal-button:hover {
+.minimal-button:hover {
   color: #4A4F54;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
 
-.button .fas {
+.fas {
   font-size: 1.5rem;
   padding-left: 0.5rem;
 }

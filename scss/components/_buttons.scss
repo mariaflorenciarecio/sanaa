@@ -3,49 +3,50 @@
 .button {
     text-align: center;
     padding: 5rem 0 1rem 0;
-    
-    .light-button {
-        @include button;
-        color: $dark-grey;
-        background-color: $light-grey;
-    
-        &:hover {
-            color: $white;
-            background-color: $dark-grey;
-            transition: all 0.25s ease-out;
-        }
-    }
-    
-    .transparent-button {
-        @include button;
-        color: $medium-grey;
-        background-color: $white;
-        border: 0.2rem solid $light-grey;
-    
-        &:hover {
-            color: $white;
-            background-color: $dark-grey;
-            transition: all 0.25s ease-out;
-        }
-    }
-    
-    .minimal-button {
-        @include button;
-        color: $bluish-grey;
-        width: 800;
-        padding: 0;
-    
-        &:hover {
-            color: $dark-grey;
-            transition: all 0.25s ease-out;
-        }
-    }
+}   
 
-    .fas {
-        font-size: 1.5rem;
-        padding-left: 0.5rem;
+.light-button {
+    @include button;
+    color: $dark-grey;
+    background-color: $light-grey;
+
+    &:hover {
+        color: $white;
+        background-color: $dark-grey;
+        transition: all 0.25s ease-out;
     }
 }
+
+.transparent-button {
+    @include button;
+    color: $medium-grey;
+    background-color: $white;
+    border: 0.2rem solid $light-grey;
+
+    &:hover {
+        color: $white;
+        background-color: $dark-grey;
+        transition: all 0.25s ease-out;
+    }
+}
+
+.minimal-button {
+    @include button;
+    color: $bluish-grey;
+    width: 800;
+    padding: 0;
+
+    &:hover {
+        color: $dark-grey;
+        transition: all 0.25s ease-out;
+    }
+}
+
+.fas {
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+
 
 /* -------boton nav------- */
 
