@@ -1,2 +1,2 @@
-# Ignorar la carpeta node_modules
+.vscode
 node_modules
