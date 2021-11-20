@@ -71,3 +71,25 @@
         }
     }
 }
+
+/* -------boton form------- */
+
+.form-button {
+    @include flex(row, wrap, space-evenly);
+
+    input {
+        width: 30rem;
+        margin: 3rem 1rem 0 1rem;
+    }
+}
+
+/* -------boton error 404------- */
+
+.error-button {
+    @include flex(row, wrap, center);
+
+    a {
+        width: 18rem;
+        margin: 2rem;
+    }
+}

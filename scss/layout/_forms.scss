@@ -68,15 +68,6 @@
     textarea {
         @extend .contact-form-select;
     }
-
-    .form-button {
-        @include flex(row, wrap, space-evenly);
-
-        input {
-            width: 30rem;
-            margin: 3rem 1rem 0 1rem;
-        }
-    }
 }
 
 /* ----------cierre formulario---------- */
