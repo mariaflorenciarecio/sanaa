@@ -339,6 +339,54 @@ span {
   font-size: 1.6rem;
 }
 
+/* -------boton form------- */
+.form-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-button input {
+  width: 30rem;
+  margin: 3rem 1rem 0 1rem;
+}
+
+/* -------boton error 404------- */
+.error-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error-button a {
+  width: 18rem;
+  margin: 2rem;
+}
+
 /* -------tarjetas------- */
 .card-container {
   padding: 1rem;
@@ -1432,29 +1480,6 @@ img {
 
 .contact-form .contact-form-select:focus::placeholder, .contact-form textarea:focus::placeholder {
   color: transparent;
-}
-
-.contact-form .form-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact-form .form-button input {
-  width: 30rem;
-  margin: 3rem 1rem 0 1rem;
 }
 
 /* ----------cierre formulario---------- */
