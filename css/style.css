@@ -8,6 +8,33 @@
   font-size: 62.5%;
 }
 
+/* ----------reset clases bootstrap---------- */
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.row > * {
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: 1.5;
+}
+
+p, span, .contact-form .input-text {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 114rem;
+    margin: auto;
+  }
+}
+
 /* -------google fonts------- */
 /* -------cuerpo------- */
 body {
@@ -592,8 +619,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url("../img/index/museo-maritimo-shenzen.jpeg");
   background-color: #F4F4F3;
-  background-image: url("/img/index/museo-maritimo-shenzen.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1697,30 +1724,4 @@ img {
 /* ----------CIERRE PROYECTOS---------- */
 /* ----------APERTURA CONTACTO---------- */
 /* ----------CIERRE CONTACTO---------- */
-/* ----------reset clases bootstrap---------- */
-.row {
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
-}
-
-.row > * {
-  padding: 0 1rem;
-  margin: 1rem 0;
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  line-height: 1.5;
-}
-
-p, span, .contact-form .input-text {
-  margin-bottom: 0;
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 114rem;
-    margin: auto;
-  }
-}
 /*# sourceMappingURL=style.css.map */

@@ -14,7 +14,7 @@
         display: none;
     }
 
-    @media (min-width: $desktop-l) {
+    @media (min-width: $lg) {
         .footer-mobile-logo {
             display: none;
         }
@@ -32,7 +32,7 @@
         }
 
         a:hover {
-            color: $dark-grey;
+            color: $gray-800;
         }
     }
 
@@ -42,12 +42,12 @@
         }
 
         i {
-            color: $medium-grey;
+            color: $gray-400;
             font-size: $normal-text;
             padding: 0.7rem 0 1.5rem 0;
 
             &:hover {
-                color: $dark-grey;
+                color: $gray-800;
             }
         }
     }
@@ -60,19 +60,19 @@
     
         .subscribe-form {
             @include flex(row, wrap, center);
-            border: 0.1rem solid $medium-grey;
+            border: 0.1rem solid $gray-400;
             padding: 0.4rem 0.8rem;
             border-radius: 0.6rem;
     
             .subscribe {
-                @include text($medium-grey, $small-text, $regular, left, none, normal);
+                @include text($gray-400, $small-text, $font-weight-normal, left, none, normal);
                 border: none;
                 flex-grow: 2;
                 width: 50%;
                 opacity: 1;
     
                 &::placeholder {
-                    color: $medium-grey;
+                    color: $gray-400;
                     opacity: 1;
                 }
     
@@ -92,14 +92,14 @@
     }
     
     .copyright {
-        border-top: 0.1rem solid $medium-grey;
+        border-top: 0.1rem solid $gray-400;
         padding-top: 3rem;
         margin-top: 1.5rem;
     
         p {
             font-size: $small-text;
 
-            @media (min-width: $tablet) {
+            @media (min-width: $md) {
                 font-size: $normal-text;
             }
         }

@@ -7,7 +7,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-image: url(./img/index/museo-maritimo-shenzen.jpeg);
+        background-image: url("../img/index/museo-maritimo-shenzen.jpeg");
         background: {
             color: #F4F4F3;
             size: cover;
@@ -29,7 +29,7 @@
             .master-headline {
                 @include flex(column, nowrap, center);
                 .cutout {
-                    background-image: linear-gradient(120deg, $dark-grey 0%, $bluish-grey 100%);
+                    background-image: linear-gradient(120deg, $gray-800 0%, $gray-600 100%);
                     color: $white;
                     mix-blend-mode: multiply;
                     border-radius: 0.6rem;
@@ -40,14 +40,14 @@
                     @media (min-width: 375px) {
                         font-size: 2rem;
                     }
-                    @media (min-width: $tablet) {
+                    @media (min-width: $md) {
                         font-size: 4.2rem;
                         margin: 2rem auto;
                     }
-                    @media (min-width: $desktop-l) {
+                    @media (min-width: $lg) {
                         max-width: 70%;
                     }
-                    @media (min-width: $desktop-xl) {
+                    @media (min-width: $xl) {
                         max-width: 50%;
                     }
                 }
@@ -58,14 +58,14 @@
                         margin: auto;
                         padding-bottom: 3rem;
 
-                        @media (min-width: $tablet) {
+                        @media (min-width: $md) {
                             font-size: 2.5rem;
                             padding-bottom: 4rem;
                         }
-                        @media (min-width: $desktop-l) {
+                        @media (min-width: $lg) {
                                 width: 65%;
                         }
-                        @media (min-width: $desktop-xxl) {
+                        @media (min-width: $xxl) {
                                 width: 42%;
                         }
                     }
@@ -92,18 +92,18 @@
                 margin-bottom: 5rem;
                 padding: 0;
 
-                @media (min-width: $tablet) {
+                @media (min-width: $md) {
                     margin-bottom: 10rem;
                 }
 
                 &--s {
-                    @media (min-width: $tablet) {
+                    @media (min-width: $md) {
                         display: none;
                     }
                 }
 
                 &--m {
-                    @media (min-width: $tablet) {
+                    @media (min-width: $md) {
                         display: flex;
                     }
                 }
@@ -111,7 +111,7 @@
                 .dark-button {
                     display: none;
 
-                    @media (min-width: $tablet) {
+                    @media (min-width: $md) {
                         display: flex;
                         color: #F4F4F3;
                         background-color: #4A4F54;
@@ -136,14 +136,14 @@
                 }
             }
             .arrow-from-top {
-                color: $dark-grey;
+                color: $gray-800;
                 font-size: 3rem;
                 animation-name: bounce;
                 animation-duration: 2s;
                 animation-iteration-count: infinite;
 
                 &:hover {
-                    color: $medium-grey;
+                    color: $gray-400;
                     animation: none;
                 }
 

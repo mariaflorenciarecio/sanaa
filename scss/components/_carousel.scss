@@ -28,19 +28,19 @@
         .secondary-headline__paragraph {
             font: {
                 size: $medium-text;
-                weight: $thin;
+                weight: $font-weight-light;
             }
             text: {
                 align: center;
                 transform: none;
             }
 
-            @media (min-width: $tablet) {
+            @media (min-width: $md) {
                 font-size: 2rem;
                 width: 90%;
             }
 
-            @media (min-width: $desktop-l) {
+            @media (min-width: $lg) {
                 width: 65%;
             }
         }
@@ -50,7 +50,7 @@
         width: 4rem;
         height: 4rem;
 
-        @media (min-width: $tablet) {
+        @media (min-width: $md) {
             width: 7rem;
             height: 7rem;
         }
