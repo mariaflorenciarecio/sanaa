@@ -28,7 +28,7 @@
         "../scss/views/_404.scss",
         "../scss/vendors/_bootstrap.scss",
         "../node_modules/bootstrap/scss/_functions.scss",
-        "../scss/abstracts/_variables.scss",
+        "../node_modules/bootstrap/scss/_functions.scss",
         "../node_modules/bootstrap/scss/_mixins.scss",
         "../node_modules/bootstrap/scss/vendor/_rfs.scss",
         "../node_modules/bootstrap/scss/mixins/_deprecate.scss",
