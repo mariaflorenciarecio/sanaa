@@ -25,7 +25,7 @@
             }
         }
 
-        @media (min-width: $tablet) {
+        @media (min-width: $md) {
             &--id {
                 @include flex(row, wrap, space-between);
 
@@ -37,7 +37,7 @@
     }
 
     .input-name {
-        @include text($medium-grey, $normal-text, $medium, left, uppercase, normal);
+        @include text($gray-400, $normal-text, $font-weight-bold, left, uppercase, normal);
         padding-left: 2.4rem;
     }
 
@@ -46,17 +46,17 @@
     }
 
     .contact-form-select {
-        @include text($medium-grey, $normal-text, $thin, left, none, normal);
+        @include text($gray-400, $normal-text, $font-weight-light, left, none, normal);
         background-color: $white;
         opacity: 1;
         margin: 1.5rem 0 3rem 0;
         padding: 2.2rem;
-        border: 0.2rem solid $light-grey;
+        border: 0.2rem solid $gray-200;
         border-radius: 0.6rem;
         width: 100%;
     
         &::placeholder {
-            color: $medium-grey;
+            color: $gray-400;
             opacity: 1;
         }
     

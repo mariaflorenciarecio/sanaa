@@ -15,11 +15,11 @@
 // titulos
 
 @mixin title($size, $transform) {
-    color: $dark-grey;
+    color: $gray-800;
     font: { 
         family: $custom-font;
         size: $size;
-        weight: $bold;
+        weight: $font-weight-bolder;
     }
     text: { 
         align: center;
@@ -95,13 +95,13 @@
     background-color: transparent;
     border: none;
     border-radius: 0;
-    border-bottom: 0.1rem solid $dark-grey;
+    border-bottom: 0.1rem solid $gray-800;
 }
 
 // button
 
 @mixin button {
-    @include text(none, $normal-text, $regular, center, uppercase, normal);
+    @include text(none, $normal-text, $font-weight-normal, center, uppercase, normal);
         padding: 2rem 4rem;
         border: none;
         border-radius: 0.6rem;

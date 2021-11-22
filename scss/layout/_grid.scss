@@ -12,7 +12,7 @@
         height: 100%;
     }
 
-    @media (min-width: $tablet) {
+    @media (min-width: $md) {
         grid-template-areas: 
         "item1 item2"
         "item3 item3"

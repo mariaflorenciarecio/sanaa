@@ -6,7 +6,7 @@
     .desktop-table {
         display: none;
 
-        @media (min-width: $tablet) {
+        @media (min-width: $md) {
             display: revert;
         }
     }
@@ -14,16 +14,16 @@
     th, td {
         vertical-align: unset;
         padding: 1.5rem;
-        border-bottom: 0.1rem solid $medium-grey;
+        border-bottom: 0.1rem solid $gray-400;
     }
 
     th {
-        @include text($dark-grey, $small-text, $bold, left, uppercase, normal);
+        @include text($gray-800, $small-text, $font-weight-bolder, left, uppercase, normal);
         padding: 1.5rem;
     }
 
     td, li {
-        @include text($medium-grey, $small-text, $thin, left, none, normal);
+        @include text($gray-400, $small-text, $font-weight-light, left, none, normal);
     }
 
     ol {
@@ -42,7 +42,7 @@
         text-align: left;
     }
 
-    @media (min-width: $tablet) {
+    @media (min-width: $md) {
         font-size: $small-title;
     }
 }

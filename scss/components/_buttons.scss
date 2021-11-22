@@ -7,37 +7,37 @@
 
 .light-button {
     @include button;
-    color: $dark-grey;
-    background-color: $light-grey;
+    color: $gray-800;
+    background-color: $gray-200;
 
     &:hover {
         color: $white;
-        background-color: $dark-grey;
+        background-color: $gray-800;
         transition: all 0.25s ease-out;
     }
 }
 
 .transparent-button {
     @include button;
-    color: $medium-grey;
+    color: $gray-400;
     background-color: $white;
-    border: 0.2rem solid $light-grey;
+    border: 0.2rem solid $gray-200;
 
     &:hover {
         color: $white;
-        background-color: $dark-grey;
+        background-color: $gray-800;
         transition: all 0.25s ease-out;
     }
 }
 
 .minimal-button {
     @include button;
-    color: $bluish-grey;
+    color: $gray-600;
     width: 800;
     padding: 0;
 
     &:hover {
-        color: $dark-grey;
+        color: $gray-800;
         transition: all 0.25s ease-out;
     }
 }
@@ -51,7 +51,7 @@
 /* -------boton nav------- */
 
 .action-icon {
-    color: $dark-grey;
+    color: $gray-800;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -66,7 +66,7 @@
 .subscribe-form {
     .action-icon {
         i {
-            color: $medium-grey;
+            color: $gray-400;
             font-size: $normal-text;
         }
     }
