@@ -868,25 +868,25 @@ img {
   padding: 0;
 }
 
-.navbar .container-fluid {
+.navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl, .navbar .container-xxl {
   padding: 0.5rem 1.5rem;
 }
 
-.navbar .container-fluid img {
+.navbar .container-fluid img, .navbar .container-sm img, .navbar .container-md img, .navbar .container-lg img, .navbar .container-xl img, .navbar .container-xxl img {
   border-radius: none;
   max-height: 5.2rem;
 }
 
-.navbar .container-fluid .navbar-toggler {
+.navbar .container-fluid .navbar-toggler, .navbar .container-sm .navbar-toggler, .navbar .container-md .navbar-toggler, .navbar .container-lg .navbar-toggler, .navbar .container-xl .navbar-toggler, .navbar .container-xxl .navbar-toggler {
   border: none;
 }
 
-.navbar .container-fluid .navbar-toggler:focus {
+.navbar .container-fluid .navbar-toggler:focus, .navbar .container-sm .navbar-toggler:focus, .navbar .container-md .navbar-toggler:focus, .navbar .container-lg .navbar-toggler:focus, .navbar .container-xl .navbar-toggler:focus, .navbar .container-xxl .navbar-toggler:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.navbar .container-fluid a {
+.navbar .container-fluid a, .navbar .container-sm a, .navbar .container-md a, .navbar .container-lg a, .navbar .container-xl a, .navbar .container-xxl a {
   color: #4A4F54;
   font-family: "Bahnschrift", sans-serif;
   font-size: 1.8rem;
@@ -898,11 +898,11 @@ img {
   line-height: 1.5;
 }
 
-.navbar .container-fluid a:hover {
+.navbar .container-fluid a:hover, .navbar .container-sm a:hover, .navbar .container-md a:hover, .navbar .container-lg a:hover, .navbar .container-xl a:hover, .navbar .container-xxl a:hover {
   font-weight: 800;
 }
 
-.navbar .container-fluid .active {
+.navbar .container-fluid .active, .navbar .container-sm .active, .navbar .container-md .active, .navbar .container-lg .active, .navbar .container-xl .active, .navbar .container-xxl .active {
   color: #4A4F54;
   font-family: "Bahnschrift", sans-serif;
   font-size: 1.8rem;
@@ -914,7 +914,7 @@ img {
   line-height: 1.5;
 }
 
-.navbar .container-fluid .form-control {
+.navbar .container-fluid .form-control, .navbar .container-sm .form-control, .navbar .container-md .form-control, .navbar .container-lg .form-control, .navbar .container-xl .form-control, .navbar .container-xxl .form-control {
   color: #4A4F54;
   font-family: "Bahnschrift", sans-serif;
   font-size: 1.4rem;
@@ -932,27 +932,27 @@ img {
   opacity: 1;
 }
 
-.navbar .container-fluid .form-control::-webkit-input-placeholder {
+.navbar .container-fluid .form-control::-webkit-input-placeholder, .navbar .container-sm .form-control::-webkit-input-placeholder, .navbar .container-md .form-control::-webkit-input-placeholder, .navbar .container-lg .form-control::-webkit-input-placeholder, .navbar .container-xl .form-control::-webkit-input-placeholder, .navbar .container-xxl .form-control::-webkit-input-placeholder {
   color: #4A4F54;
   opacity: 1;
 }
 
-.navbar .container-fluid .form-control:-ms-input-placeholder {
+.navbar .container-fluid .form-control:-ms-input-placeholder, .navbar .container-sm .form-control:-ms-input-placeholder, .navbar .container-md .form-control:-ms-input-placeholder, .navbar .container-lg .form-control:-ms-input-placeholder, .navbar .container-xl .form-control:-ms-input-placeholder, .navbar .container-xxl .form-control:-ms-input-placeholder {
   color: #4A4F54;
   opacity: 1;
 }
 
-.navbar .container-fluid .form-control::-ms-input-placeholder {
+.navbar .container-fluid .form-control::-ms-input-placeholder, .navbar .container-sm .form-control::-ms-input-placeholder, .navbar .container-md .form-control::-ms-input-placeholder, .navbar .container-lg .form-control::-ms-input-placeholder, .navbar .container-xl .form-control::-ms-input-placeholder, .navbar .container-xxl .form-control::-ms-input-placeholder {
   color: #4A4F54;
   opacity: 1;
 }
 
-.navbar .container-fluid .form-control::placeholder {
+.navbar .container-fluid .form-control::placeholder, .navbar .container-sm .form-control::placeholder, .navbar .container-md .form-control::placeholder, .navbar .container-lg .form-control::placeholder, .navbar .container-xl .form-control::placeholder, .navbar .container-xxl .form-control::placeholder {
   color: #4A4F54;
   opacity: 1;
 }
 
-.navbar .container-fluid .form-control:focus {
+.navbar .container-fluid .form-control:focus, .navbar .container-sm .form-control:focus, .navbar .container-md .form-control:focus, .navbar .container-lg .form-control:focus, .navbar .container-xl .form-control:focus, .navbar .container-xxl .form-control:focus {
   background-color: transparent;
   border: none;
   border-radius: 0;
@@ -962,19 +962,19 @@ img {
           box-shadow: none;
 }
 
-.navbar .container-fluid .form-control:focus::-webkit-input-placeholder {
+.navbar .container-fluid .form-control:focus::-webkit-input-placeholder, .navbar .container-sm .form-control:focus::-webkit-input-placeholder, .navbar .container-md .form-control:focus::-webkit-input-placeholder, .navbar .container-lg .form-control:focus::-webkit-input-placeholder, .navbar .container-xl .form-control:focus::-webkit-input-placeholder, .navbar .container-xxl .form-control:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-.navbar .container-fluid .form-control:focus:-ms-input-placeholder {
+.navbar .container-fluid .form-control:focus:-ms-input-placeholder, .navbar .container-sm .form-control:focus:-ms-input-placeholder, .navbar .container-md .form-control:focus:-ms-input-placeholder, .navbar .container-lg .form-control:focus:-ms-input-placeholder, .navbar .container-xl .form-control:focus:-ms-input-placeholder, .navbar .container-xxl .form-control:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-.navbar .container-fluid .form-control:focus::-ms-input-placeholder {
+.navbar .container-fluid .form-control:focus::-ms-input-placeholder, .navbar .container-sm .form-control:focus::-ms-input-placeholder, .navbar .container-md .form-control:focus::-ms-input-placeholder, .navbar .container-lg .form-control:focus::-ms-input-placeholder, .navbar .container-xl .form-control:focus::-ms-input-placeholder, .navbar .container-xxl .form-control:focus::-ms-input-placeholder {
   color: transparent;
 }
 
-.navbar .container-fluid .form-control:focus::placeholder {
+.navbar .container-fluid .form-control:focus::placeholder, .navbar .container-sm .form-control:focus::placeholder, .navbar .container-md .form-control:focus::placeholder, .navbar .container-lg .form-control:focus::placeholder, .navbar .container-xl .form-control:focus::placeholder, .navbar .container-xxl .form-control:focus::placeholder {
   color: transparent;
 }
 
@@ -1237,7 +1237,12 @@ img {
 
 @media (min-width: 768px) {
   .grid-projects {
-        grid-template-areas: "item1 item2" "item3 item3" "item4 item5" "item6 item5" "item7 item7" "item8 item9";
+        grid-template-areas: "item1 item2"
+ "item3 item3"
+ "item4 item5"
+ "item6 item5"
+ "item7 item7"
+ "item8 item9";
     -ms-grid-rows: (2fr, 1fr, 1fr, 2fr, 1fr)[1fr];
         grid-template-rows: repeat(1fr, 2fr, 1fr, 1fr, 2fr, 1fr);
     -ms-grid-columns: (1fr)[2];
