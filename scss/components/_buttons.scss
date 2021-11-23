@@ -1,52 +1,22 @@
-/* -------botones------- */
+/* -------botones generales------- */
 
 .button {
     text-align: center;
     padding: 5rem 0 1rem 0;
-}   
-
-.light-button {
-    @include button;
-    color: $gray-800;
-    background-color: $gray-200;
-
-    &:hover {
-        color: $white;
-        background-color: $gray-800;
-        transition: all 0.25s ease-out;
+    &--light {
+        a, input:last-child {
+            @include button;
+            @include custom($gray-800, $gray-200, $white, $gray-800);
+        }
+    }
+    &--transparent {
+        a, input:first-child {
+            @include button;
+            @include custom($gray-400, $white, $white, $gray-800);
+            border: 0.2rem solid $gray-200;
+        }
     }
 }
-
-.transparent-button {
-    @include button;
-    color: $gray-400;
-    background-color: $white;
-    border: 0.2rem solid $gray-200;
-
-    &:hover {
-        color: $white;
-        background-color: $gray-800;
-        transition: all 0.25s ease-out;
-    }
-}
-
-.minimal-button {
-    @include button;
-    color: $gray-600;
-    width: 800;
-    padding: 0;
-
-    &:hover {
-        color: $gray-800;
-        transition: all 0.25s ease-out;
-    }
-}
-
-.fas {
-    font-size: 1.5rem;
-    padding-left: 0.5rem;
-}
-
 
 /* -------boton nav------- */
 
@@ -55,7 +25,6 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-
     i {
         font-size: 2rem;
     }
@@ -72,14 +41,46 @@
     }
 }
 
+/* -------botones header------- */
+
+.button-banner {
+    margin-bottom: 5rem;
+    @media (min-width: $md) {
+        margin-bottom: 10rem;
+    }
+    &--minimal {
+        a:first-child {
+            @include button;
+            @include custom($gray-600, none, $gray-800, none);
+            @media (min-width: $md) {
+                display: none;
+            }
+
+            .fa-arrow-circle-right {
+                font-size: $normal-text;
+                padding-left: 0.7rem;
+            }
+        }
+    }
+    &--dark {
+        a:last-child {
+            display: none;
+            @media (min-width: $md) {
+                @include button;
+                @include custom($gray-200, $gray-800, $gray-800, $white);
+                display: flex;
+            }
+        }
+    }
+}
+
 /* -------boton form------- */
 
 .form-button {
     @include flex(row, wrap, space-evenly);
-
     input {
-        width: 30rem;
-        margin: 3rem 1rem 0 1rem;
+        width: 20rem;
+        margin: 1.5;
     }
 }
 
@@ -87,7 +88,6 @@
 
 .error-button {
     @include flex(row, wrap, center);
-
     a {
         width: 18rem;
         margin: 2rem;

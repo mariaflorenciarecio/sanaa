@@ -9,14 +9,18 @@
 }
 
 /* ----------reset clases bootstrap---------- */
+.container {
+  padding: 0;
+}
+
 .row {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
 }
 
 .row > * {
-  padding: 0 1rem;
-  margin: 1rem 0;
+  padding: 0 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -255,13 +259,13 @@ span {
   font-size: 1.8rem;
 }
 
-/* -------botones------- */
+/* -------botones generales------- */
 .button {
   text-align: center;
   padding: 5rem 0 1rem 0;
 }
 
-.light-button {
+.button--light a, .button--light input:last-child {
   color: none;
   font-family: "Bahnschrift", sans-serif;
   font-size: 1.6rem;
@@ -277,18 +281,32 @@ span {
   cursor: pointer;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  color: none;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-stretch: normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.5;
+  padding: 2rem 4rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
   color: #4A4F54;
   background-color: #F4F4F3;
 }
 
-.light-button:hover {
+.button--light a:hover, .button--light input:last-child:hover {
   color: #ffffff;
   background-color: #4A4F54;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
 
-.transparent-button {
+.button--transparent a, .button--transparent input:first-child {
   color: none;
   font-family: "Bahnschrift", sans-serif;
   font-size: 1.6rem;
@@ -303,49 +321,31 @@ span {
   border-radius: 0.6rem;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  color: none;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-stretch: normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.5;
+  padding: 2rem 4rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
   transition: all 0.5s ease-out;
   color: #88959E;
   background-color: #ffffff;
   border: 0.2rem solid #F4F4F3;
 }
 
-.transparent-button:hover {
+.button--transparent a:hover, .button--transparent input:first-child:hover {
   color: #ffffff;
   background-color: #4A4F54;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
-}
-
-.minimal-button {
-  color: none;
-  font-family: "Bahnschrift", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-stretch: normal;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 1.5;
-  padding: 2rem 4rem;
-  border: none;
-  border-radius: 0.6rem;
-  cursor: pointer;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  color: #5B6977;
-  width: 800;
-  padding: 0;
-}
-
-.minimal-button:hover {
-  color: #4A4F54;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
-}
-
-.fas {
-  font-size: 1.5rem;
-  padding-left: 0.5rem;
 }
 
 /* -------boton nav------- */
@@ -364,6 +364,118 @@ span {
 .subscribe-form .action-icon i {
   color: #88959E;
   font-size: 1.6rem;
+}
+
+/* -------botones header------- */
+.button-banner {
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .button-banner {
+    margin-bottom: 10rem;
+  }
+}
+
+.button-banner--minimal a:first-child {
+  color: none;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-stretch: normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.5;
+  padding: 2rem 4rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  color: none;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-stretch: normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.5;
+  padding: 2rem 4rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  color: #5B6977;
+  background-color: none;
+}
+
+.button-banner--minimal a:first-child:hover {
+  color: #4A4F54;
+  background-color: none;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+@media (min-width: 768px) {
+  .button-banner--minimal a:first-child {
+    display: none;
+  }
+}
+
+.button-banner--minimal a:first-child .fa-arrow-circle-right {
+  font-size: 1.6rem;
+  padding-left: 0.7rem;
+}
+
+.button-banner--dark a:last-child {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .button-banner--dark a:last-child {
+    color: none;
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-stretch: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.5;
+    padding: 2rem 4rem;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    color: none;
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-stretch: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.5;
+    padding: 2rem 4rem;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    color: #F4F4F3;
+    background-color: #4A4F54;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .button-banner--dark a:last-child:hover {
+    color: #4A4F54;
+    background-color: #ffffff;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
 }
 
 /* -------boton form------- */
@@ -386,8 +498,8 @@ span {
 }
 
 .form-button input {
-  width: 30rem;
-  margin: 3rem 1rem 0 1rem;
+  width: 20rem;
+  margin: 1.5;
 }
 
 /* -------boton error 404------- */
@@ -415,10 +527,6 @@ span {
 }
 
 /* -------tarjetas------- */
-.card-container {
-  padding: 1rem;
-}
-
 .card-container .card {
   border: none;
   border-radius: 0.6rem;
@@ -441,14 +549,17 @@ span {
 
 /* -------carousel------- */
 .services-carousel {
-  padding: 0 1rem;
+  padding: 1.5rem;
 }
 
 .services-carousel .carousel-indicators {
   bottom: -1rem;
 }
 
-.services-carousel [data-bs-target] {
+.services-carousel .carousel-indicators [data-bs-target] {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem 0.2rem 0.5rem;
   border-radius: 50%;
 }
 
@@ -470,6 +581,7 @@ span {
   font-weight: 200;
   text-align: center;
   text-transform: none;
+  width: 90%;
 }
 
 @media (min-width: 768px) {
@@ -481,19 +593,19 @@ span {
 
 @media (min-width: 992px) {
   .services-carousel .secondary-headline .secondary-headline__paragraph, .services-carousel .tertiary-headline .secondary-headline__paragraph {
-    width: 65%;
+    width: 70%;
   }
 }
 
 .services-carousel .carousel-control-next-icon, .services-carousel .carousel-control-prev-icon {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 @media (min-width: 768px) {
   .services-carousel .carousel-control-next-icon, .services-carousel .carousel-control-prev-icon {
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
   }
 }
 
@@ -515,6 +627,10 @@ span {
 
 .arrow-from-bottom:hover {
   color: #4A4F54;
+}
+
+.footer-social a {
+  padding: .4rem;
 }
 
 /* -------imagenes generales------- */
@@ -603,7 +719,12 @@ img {
   height: 100%;
 }
 
-/* ----------apertura header---------- */
+/* ----------header---------- */
+.parallax-background {
+  background-color: #ffffff;
+  position: relative;
+}
+
 #header {
   height: 100vh;
 }
@@ -673,12 +794,12 @@ img {
 #header .header .header-content .master-headline .cutout {
   background-image: linear-gradient(120deg, #4A4F54 0%, #5B6977 100%);
   color: #ffffff;
-  mix-blend-mode: multiply;
-  border-radius: 0.6rem;
+  mix-blend-mode: normal;
   font-size: 1.8rem;
+  width: 90%;
+  border-radius: 0.6rem;
   padding: 1rem;
   margin: 1rem auto;
-  width: 90%;
 }
 
 @media (min-width: 375px) {
@@ -696,120 +817,66 @@ img {
 
 @media (min-width: 992px) {
   #header .header .header-content .master-headline .cutout {
-    max-width: 70%;
+    max-width: 70.5%;
   }
 }
 
 @media (min-width: 1200px) {
   #header .header .header-content .master-headline .cutout {
+    max-width: 58.4%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #header .header .header-content .master-headline .cutout {
     max-width: 50%;
   }
 }
 
-#header .header .header-content .master-headline .short-text p, #header .header .header-content .master-headline .short-text span, #header .header .header-content .master-headline .short-text .contact-form .input-text, .contact-form #header .header .header-content .master-headline .short-text .input-text, #header .header .header-content .master-headline .long-text p, #header .header .header-content .master-headline .long-text span, #header .header .header-content .master-headline .long-text .contact-form .input-text, .contact-form #header .header .header-content .master-headline .long-text .input-text {
+#header .header .header-content .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 85%;
+}
+
+#header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .input-text, .contact-form #header .header .header-content .description .input-text {
   color: #4A4F54;
   font-weight: 800;
+  padding-bottom: 2.5rem;
   margin: auto;
-  padding-bottom: 3rem;
 }
 
 @media (min-width: 768px) {
-  #header .header .header-content .master-headline .short-text p, #header .header .header-content .master-headline .short-text span, #header .header .header-content .master-headline .short-text .contact-form .input-text, .contact-form #header .header .header-content .master-headline .short-text .input-text, #header .header .header-content .master-headline .long-text p, #header .header .header-content .master-headline .long-text span, #header .header .header-content .master-headline .long-text .contact-form .input-text, .contact-form #header .header .header-content .master-headline .long-text .input-text {
+  #header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .input-text, .contact-form #header .header .header-content .description .input-text {
+    content: "";
+    font-size: 0;
+  }
+  #header .header .header-content .description p::after, #header .header .header-content .description span::after, #header .header .header-content .description .contact-form .input-text::after, .contact-form #header .header .header-content .description .input-text::after {
+    font-size: 1.6rem;
+    content: "SANAA es una firma de arquitectos fundada en 1995, por Kazuyo Sejima y Ryue Nishizawa, en Tokio. Ha sido galardonada con el Premio Pritzker de Arquitectura 2010.";
     font-size: 2.5rem;
-    padding-bottom: 4rem;
   }
 }
 
 @media (min-width: 992px) {
-  #header .header .header-content .master-headline .short-text p, #header .header .header-content .master-headline .short-text span, #header .header .header-content .master-headline .short-text .contact-form .input-text, .contact-form #header .header .header-content .master-headline .short-text .input-text, #header .header .header-content .master-headline .long-text p, #header .header .header-content .master-headline .long-text span, #header .header .header-content .master-headline .long-text .contact-form .input-text, .contact-form #header .header .header-content .master-headline .long-text .input-text {
+  #header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .input-text, .contact-form #header .header .header-content .description .input-text {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .input-text, .contact-form #header .header .header-content .description .input-text {
     width: 65%;
   }
 }
 
 @media (min-width: 1400px) {
-  #header .header .header-content .master-headline .short-text p, #header .header .header-content .master-headline .short-text span, #header .header .header-content .master-headline .short-text .contact-form .input-text, .contact-form #header .header .header-content .master-headline .short-text .input-text, #header .header .header-content .master-headline .long-text p, #header .header .header-content .master-headline .long-text span, #header .header .header-content .master-headline .long-text .contact-form .input-text, .contact-form #header .header .header-content .master-headline .long-text .input-text {
-    width: 42%;
-  }
-}
-
-#header .header .header-content .master-headline .short-text {
-  font-size: 1.6rem;
-  width: 87%;
-}
-
-@media (min-width: 375px) {
-  #header .header .header-content .master-headline .short-text {
-    display: none;
-  }
-}
-
-#header .header .header-content .master-headline .long-text {
-  display: none;
-}
-
-@media (min-width: 375px) {
-  #header .header .header-content .master-headline .long-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 85%;
-  }
-}
-
-#header .header .header-content .button-banner {
-  margin-bottom: 5rem;
-  padding: 0;
-}
-
-@media (min-width: 768px) {
-  #header .header .header-content .button-banner {
-    margin-bottom: 10rem;
-  }
-}
-
-@media (min-width: 768px) {
-  #header .header .header-content .button-banner--s {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  #header .header .header-content .button-banner--m {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-#header .header .header-content .button-banner .dark-button {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  #header .header .header-content .button-banner .dark-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    color: #F4F4F3;
-    background-color: #4A4F54;
-    font-family: 'Bahnschrift', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 2rem 4rem;
-    border: none;
-    border-radius: 0.6rem;
-    cursor: pointer;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-  }
-  #header .header .header-content .button-banner .dark-button:hover {
-    color: #4A4F54;
-    font-weight: 700;
-    background-color: #ffffff;
-    -webkit-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
+  #header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .input-text, .contact-form #header .header .header-content .description .input-text {
+    width: 55%;
   }
 }
 
@@ -868,25 +935,25 @@ img {
   padding: 0;
 }
 
-.navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl, .navbar .container-xxl {
+.navbar .container-fluid {
   padding: 0.5rem 1.5rem;
 }
 
-.navbar .container-fluid img, .navbar .container-sm img, .navbar .container-md img, .navbar .container-lg img, .navbar .container-xl img, .navbar .container-xxl img {
+.navbar .container-fluid img {
   border-radius: none;
   max-height: 5.2rem;
 }
 
-.navbar .container-fluid .navbar-toggler, .navbar .container-sm .navbar-toggler, .navbar .container-md .navbar-toggler, .navbar .container-lg .navbar-toggler, .navbar .container-xl .navbar-toggler, .navbar .container-xxl .navbar-toggler {
+.navbar .container-fluid .navbar-toggler {
   border: none;
 }
 
-.navbar .container-fluid .navbar-toggler:focus, .navbar .container-sm .navbar-toggler:focus, .navbar .container-md .navbar-toggler:focus, .navbar .container-lg .navbar-toggler:focus, .navbar .container-xl .navbar-toggler:focus, .navbar .container-xxl .navbar-toggler:focus {
+.navbar .container-fluid .navbar-toggler:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.navbar .container-fluid a, .navbar .container-sm a, .navbar .container-md a, .navbar .container-lg a, .navbar .container-xl a, .navbar .container-xxl a {
+.navbar .container-fluid a {
   color: #4A4F54;
   font-family: "Bahnschrift", sans-serif;
   font-size: 1.8rem;
@@ -898,11 +965,11 @@ img {
   line-height: 1.5;
 }
 
-.navbar .container-fluid a:hover, .navbar .container-sm a:hover, .navbar .container-md a:hover, .navbar .container-lg a:hover, .navbar .container-xl a:hover, .navbar .container-xxl a:hover {
+.navbar .container-fluid a:hover {
   font-weight: 800;
 }
 
-.navbar .container-fluid .active, .navbar .container-sm .active, .navbar .container-md .active, .navbar .container-lg .active, .navbar .container-xl .active, .navbar .container-xxl .active {
+.navbar .container-fluid .active {
   color: #4A4F54;
   font-family: "Bahnschrift", sans-serif;
   font-size: 1.8rem;
@@ -914,7 +981,7 @@ img {
   line-height: 1.5;
 }
 
-.navbar .container-fluid .form-control, .navbar .container-sm .form-control, .navbar .container-md .form-control, .navbar .container-lg .form-control, .navbar .container-xl .form-control, .navbar .container-xxl .form-control {
+.navbar .container-fluid .form-control {
   color: #4A4F54;
   font-family: "Bahnschrift", sans-serif;
   font-size: 1.4rem;
@@ -932,27 +999,27 @@ img {
   opacity: 1;
 }
 
-.navbar .container-fluid .form-control::-webkit-input-placeholder, .navbar .container-sm .form-control::-webkit-input-placeholder, .navbar .container-md .form-control::-webkit-input-placeholder, .navbar .container-lg .form-control::-webkit-input-placeholder, .navbar .container-xl .form-control::-webkit-input-placeholder, .navbar .container-xxl .form-control::-webkit-input-placeholder {
+.navbar .container-fluid .form-control::-webkit-input-placeholder {
   color: #4A4F54;
   opacity: 1;
 }
 
-.navbar .container-fluid .form-control:-ms-input-placeholder, .navbar .container-sm .form-control:-ms-input-placeholder, .navbar .container-md .form-control:-ms-input-placeholder, .navbar .container-lg .form-control:-ms-input-placeholder, .navbar .container-xl .form-control:-ms-input-placeholder, .navbar .container-xxl .form-control:-ms-input-placeholder {
+.navbar .container-fluid .form-control:-ms-input-placeholder {
   color: #4A4F54;
   opacity: 1;
 }
 
-.navbar .container-fluid .form-control::-ms-input-placeholder, .navbar .container-sm .form-control::-ms-input-placeholder, .navbar .container-md .form-control::-ms-input-placeholder, .navbar .container-lg .form-control::-ms-input-placeholder, .navbar .container-xl .form-control::-ms-input-placeholder, .navbar .container-xxl .form-control::-ms-input-placeholder {
+.navbar .container-fluid .form-control::-ms-input-placeholder {
   color: #4A4F54;
   opacity: 1;
 }
 
-.navbar .container-fluid .form-control::placeholder, .navbar .container-sm .form-control::placeholder, .navbar .container-md .form-control::placeholder, .navbar .container-lg .form-control::placeholder, .navbar .container-xl .form-control::placeholder, .navbar .container-xxl .form-control::placeholder {
+.navbar .container-fluid .form-control::placeholder {
   color: #4A4F54;
   opacity: 1;
 }
 
-.navbar .container-fluid .form-control:focus, .navbar .container-sm .form-control:focus, .navbar .container-md .form-control:focus, .navbar .container-lg .form-control:focus, .navbar .container-xl .form-control:focus, .navbar .container-xxl .form-control:focus {
+.navbar .container-fluid .form-control:focus {
   background-color: transparent;
   border: none;
   border-radius: 0;
@@ -962,19 +1029,19 @@ img {
           box-shadow: none;
 }
 
-.navbar .container-fluid .form-control:focus::-webkit-input-placeholder, .navbar .container-sm .form-control:focus::-webkit-input-placeholder, .navbar .container-md .form-control:focus::-webkit-input-placeholder, .navbar .container-lg .form-control:focus::-webkit-input-placeholder, .navbar .container-xl .form-control:focus::-webkit-input-placeholder, .navbar .container-xxl .form-control:focus::-webkit-input-placeholder {
+.navbar .container-fluid .form-control:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-.navbar .container-fluid .form-control:focus:-ms-input-placeholder, .navbar .container-sm .form-control:focus:-ms-input-placeholder, .navbar .container-md .form-control:focus:-ms-input-placeholder, .navbar .container-lg .form-control:focus:-ms-input-placeholder, .navbar .container-xl .form-control:focus:-ms-input-placeholder, .navbar .container-xxl .form-control:focus:-ms-input-placeholder {
+.navbar .container-fluid .form-control:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-.navbar .container-fluid .form-control:focus::-ms-input-placeholder, .navbar .container-sm .form-control:focus::-ms-input-placeholder, .navbar .container-md .form-control:focus::-ms-input-placeholder, .navbar .container-lg .form-control:focus::-ms-input-placeholder, .navbar .container-xl .form-control:focus::-ms-input-placeholder, .navbar .container-xxl .form-control:focus::-ms-input-placeholder {
+.navbar .container-fluid .form-control:focus::-ms-input-placeholder {
   color: transparent;
 }
 
-.navbar .container-fluid .form-control:focus::placeholder, .navbar .container-sm .form-control:focus::placeholder, .navbar .container-md .form-control:focus::placeholder, .navbar .container-lg .form-control:focus::placeholder, .navbar .container-xl .form-control:focus::placeholder, .navbar .container-xxl .form-control:focus::placeholder {
+.navbar .container-fluid .form-control:focus::placeholder {
   color: transparent;
 }
 
@@ -1237,12 +1304,7 @@ img {
 
 @media (min-width: 768px) {
   .grid-projects {
-        grid-template-areas: "item1 item2"
- "item3 item3"
- "item4 item5"
- "item6 item5"
- "item7 item7"
- "item8 item9";
+        grid-template-areas: "item1 item2" "item3 item3" "item4 item5" "item6 item5" "item7 item7" "item8 item9";
     -ms-grid-rows: (2fr, 1fr, 1fr, 2fr, 1fr)[1fr];
         grid-template-rows: repeat(1fr, 2fr, 1fr, 1fr, 2fr, 1fr);
     -ms-grid-columns: (1fr)[2];
@@ -1305,12 +1367,12 @@ img {
   margin: auto;
 }
 
-.table-projects .desktop-table {
+.table-projects tr .desktop-table {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .table-projects .desktop-table {
+  .table-projects tr .desktop-table {
     display: revert;
   }
 }
@@ -1398,6 +1460,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 1rem;
 }
 
 .contact-form .contact-flex .contact-country, .contact-form .contact-flex .contact-social-networks {
@@ -1416,7 +1479,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
 }
 
 .contact-form .contact-flex .contact-country input, .contact-form .contact-flex .contact-social-networks input {
@@ -1518,16 +1581,16 @@ img {
 /* ----------apertura informacion de contacto---------- */
 .contact-info-item {
   text-align: center;
-  padding: 1.5rem;
 }
 
 .map-mobile {
   display: block;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .map {
   display: none;
+  padding: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -1541,11 +1604,6 @@ img {
 
 /* ----------cierre informacion de contacto---------- */
 /* ----------APERTURA INDEX---------- */
-.parallax-background {
-  background-color: #ffffff;
-  position: relative;
-}
-
 /* ----------CIERRE INDEX---------- */
 /* ----------APERTURA NOSOTROS---------- */
 /* nosotros */
@@ -1566,7 +1624,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 95%;
-  padding: 1.5rem;
+  padding-top: 1.5rem;
   margin: auto;
 }
 
@@ -1641,10 +1699,6 @@ img {
   }
 }
 
-.architects .about-image .image-overlay__text, .architects .about-image .image-overlay__text span {
-  text-align: justify;
-}
-
 /* mision */
 .mision-info {
   display: -webkit-box;
@@ -1670,7 +1724,13 @@ img {
 
 .mision-info .item-content {
   padding: 1rem;
-  width: 18rem;
+  width: 20rem;
+}
+
+@media (min-width: 992px) {
+  .mision-info .item-content {
+    width: 18rem;
+  }
 }
 
 /* logros */
@@ -1691,8 +1751,13 @@ img {
 
 .achievements .achievements-item {
   text-align: center;
-  width: 18rem;
-  padding: 1rem;
+  width: 20rem;
+}
+
+@media (min-width: 992px) {
+  .achievements .achievements-item {
+    width: 18rem;
+  }
 }
 
 .achievements .achievements-item .achievements-info__logo {

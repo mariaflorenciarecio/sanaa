@@ -46,6 +46,17 @@
     line-height: 1.5;
 }
 
+// nav form
+
+@mixin nav-form {
+    background-color: transparent;
+    border: none;
+    border: {
+        radius: 0;
+        bottom: 0.1rem solid $gray-800;
+    }
+}
+
 // imagenes generales
 
 @mixin image($border) {
@@ -89,16 +100,7 @@
     }
 }
 
-// nav form
-
-@mixin nav-form {
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    border-bottom: 0.1rem solid $gray-800;
-}
-
-// button
+// botones
 
 @mixin button {
     @include text(none, $normal-text, $font-weight-normal, center, uppercase, normal);
@@ -107,4 +109,16 @@
         border-radius: 0.6rem;
         cursor: pointer;
         transition: all 0.5s ease-out;
+}
+
+@mixin custom($color1, $background-color1, $color2, $background-color2) {
+    @include button;
+        color: $color1;
+        background-color: $background-color1;
+
+        &:hover {
+            color: $color2;
+            background-color: $background-color2;
+            transition: all 0.25s ease-out;
+        }
 }

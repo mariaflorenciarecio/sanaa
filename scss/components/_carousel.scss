@@ -1,14 +1,17 @@
 /* -------carousel------- */
 
 .services-carousel {
-    padding: 0 1rem;
+    padding: 1.5rem;
 
     .carousel-indicators {
         bottom: -1rem;
-    }
 
-    & [data-bs-target] {
-        border-radius: 50%;
+        & [data-bs-target] {
+            width: 1rem;
+            height: 1rem;
+            margin: 0 0.5rem 0.2rem 0.5rem;
+            border-radius: 50%;
+        }
     }
 
     &:nth-child(4) .secondary-headline {
@@ -34,6 +37,7 @@
                 align: center;
                 transform: none;
             }
+            width: 90%;
 
             @media (min-width: $md) {
                 font-size: 2rem;
@@ -41,18 +45,18 @@
             }
 
             @media (min-width: $lg) {
-                width: 65%;
+                width: 70%;
             }
         }
     }
 
     .carousel-control-next-icon, .carousel-control-prev-icon {
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
 
         @media (min-width: $md) {
-            width: 7rem;
-            height: 7rem;
+            width: 6rem;
+            height: 6rem;
         }
     }
 }
