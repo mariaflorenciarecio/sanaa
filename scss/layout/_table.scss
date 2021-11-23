@@ -3,11 +3,13 @@
 .table-projects {
     margin: auto;
 
-    .desktop-table {
-        display: none;
-
-        @media (min-width: $md) {
-            display: revert;
+    tr {
+        .desktop-table {
+            display: none;
+    
+            @media (min-width: $md) {
+                display: revert;
+            }
         }
     }
 

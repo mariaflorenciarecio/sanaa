@@ -5,7 +5,7 @@
 .architects {
     @include flex(column, nowrap, center);
     width: 95%;
-    padding: 1.5rem;
+    padding-top: 1.5rem;
     margin: auto;
 
     @media (min-width: $md) {
@@ -26,14 +26,6 @@
         @media (min-width: $md) {
             @include image-overlay($white);
         }
-
-        .image-overlay__text {
-            text-align: justify;
-
-            span {
-                @extend .image-overlay__text;
-            }
-        }
     }
 }
 
@@ -48,7 +40,10 @@
     
     .item-content {
         padding: 1rem;
-        width: 18rem;
+        width: 20rem;
+        @media (min-width: $lg) {
+            width: 18rem;
+        }
     }
 }
 
@@ -64,8 +59,10 @@
 
     .achievements-item {
         text-align: center;
-        width: 18rem;
-        padding: 1rem;
+        width: 20rem;
+        @media (min-width: $lg) {
+            width: 18rem;
+        }
     
         .achievements-info__logo{
             @include flex(column, nowrap, center);

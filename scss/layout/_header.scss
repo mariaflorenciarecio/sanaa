@@ -1,4 +1,9 @@
-/* ----------apertura header---------- */
+/* ----------header---------- */
+
+.parallax-background {
+    background-color: $white;
+    position: relative;
+}
 
 #header {
     height: 100vh;
@@ -10,7 +15,6 @@
         background-image: url("../img/index/museo-maritimo-shenzen.jpeg");
         background: {
             color: #F4F4F3;
-            image: url("../img/index/museo-maritimo-shenzen.jpeg");
             size: cover;
             repeat: no-repeat;
             attachment: fixed;
@@ -32,12 +36,12 @@
                 .cutout {
                     background-image: linear-gradient(120deg, $gray-800 0%, $gray-600 100%);
                     color: $white;
-                    mix-blend-mode: multiply;
-                    border-radius: 0.6rem;
+                    mix-blend-mode: normal;
                     font-size: $medium-text;
+                    width: 90%;
+                    border-radius: 0.6rem;
                     padding: 1rem;
                     margin: 1rem auto;
-                    width: 90%;
                     @media (min-width: 375px) {
                         font-size: 2rem;
                     }
@@ -46,102 +50,57 @@
                         margin: 2rem auto;
                     }
                     @media (min-width: $lg) {
-                        max-width: 70%;
+                        max-width: 70.5%;
                     }
                     @media (min-width: $xl) {
+                        max-width: 58.4%;
+                    }
+                    @media (min-width: $xxl) {
                         max-width: 50%;
                     }
                 }
-                .short-text, .long-text {
+            }
+
+                .description {
+                        display: flex;
+                        justify-content: center;
+                        width: 85%;
                     p {
                         color: #4A4F54;
                         font-weight: 800;
+                        padding-bottom: 2.5rem;
                         margin: auto;
-                        padding-bottom: 3rem;
 
                         @media (min-width: $md) {
-                            font-size: 2.5rem;
-                            padding-bottom: 4rem;
+                            content: "";
+                            font-size: 0;
+                            &::after{
+                                font-size: $normal-text;
+                                content: "SANAA es una firma de arquitectos fundada en 1995, por Kazuyo Sejima y Ryue Nishizawa, en Tokio. Ha sido galardonada con el Premio Pritzker de Arquitectura 2010.";
+                                font-size: 2.5rem;
+                            }
                         }
+                        
                         @media (min-width: $lg) {
-                                width: 65%;
+                            width: 80%;
+                        }
+                        @media (min-width: $xl) {
+                            width: 65%;
                         }
                         @media (min-width: $xxl) {
-                                width: 42%;
+                            width: 55%;
                         }
                     }
                 }
-                
-                .short-text {
-                    font-size: $normal-text;
-                    width: 87%;
 
-                    @media (min-width: 375px) {
-                        display: none;
-                    }
-                }
-                .long-text {
-                    display: none;
-                    
-                    @media (min-width: 375px) {
-                        display: flex;
-                        width: 85%;
-                    }
-                }
-            }
-            .button-banner {
-                margin-bottom: 5rem;
-                padding: 0;
-
-                @media (min-width: $md) {
-                    margin-bottom: 10rem;
-                }
-
-                &--s {
-                    @media (min-width: $md) {
-                        display: none;
-                    }
-                }
-
-                &--m {
-                    @media (min-width: $md) {
-                        display: flex;
-                    }
-                }
-
-                .dark-button {
-                    display: none;
-
-                    @media (min-width: $md) {
-                        display: flex;
-                        color: #F4F4F3;
-                        background-color: #4A4F54;
-                        font-family: 'Bahnschrift', sans-serif;
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        padding: 2rem 4rem;
-                        border: none;
-                        border-radius: 0.6rem;
-                        cursor: pointer;
-                        transition: all 0.5s ease-out; 
-
-                        &:hover {
-                            color: #4A4F54;
-                            font-weight: 700;
-                            background-color: #ffffff;
-                            transition: all 0.25s ease-out;
-                        }
-                    }
-                }
-            }
             .arrow-from-top {
                 color: $gray-800;
                 font-size: 3rem;
-                animation-name: bounce;
-                animation-duration: 2s;
-                animation-iteration-count: infinite;
+                animation: {
+                    name: bounce;
+                    duration: 2s;
+                    iteration-count: infinite;
+                }
 
                 &:hover {
                     color: $gray-400;
