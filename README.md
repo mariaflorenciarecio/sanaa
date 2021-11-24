@@ -1,21 +1,45 @@
-CURSO DE DESARROLLO WEB DE CODERHOUSE
+# SANAA / Kazuyo Sejima + Ryue Nishizawa 
 
-Comisión: 23440
+## Datos
 
-Profesora: Yanel Ricarte
+* **Curso:** Desarrollo Web / Coderhouse
 
-Tutor: Eduardo Malbert
+* **Comisión:** 23440
 
-Proyecto final: SANAA
+* **Profesora:** Yanel Ricarte
 
-Desarrollado por la estudiante: María Florencia Recio
+* **Tutor:** Eduardo Malbert
 
-El proyecto surge como propuesta de renovación del sitio web actual del estudio de arquitectura SANAA (http://www.sanaa.co.jp/).
-El mismo busca reflejar el estilo minimalista que sigue el mismo al diseñar sus obras arquitectónicas, teniendo en cuenta sus premisas de diseño:
-- Paleta monocromática, siendo el protagonista el color blanco
-- Orden armónico de los elementos transmitiendo sensación de ligereza
-- Simplicidad a la vista (lo cual no implica que la construcción también sea sencilla)
+* **Desarrollado por la estudiante:** María Florencia Recio
 
-LinkedIn: https://www.linkedin.com/in/mariaflorenciarecio
+* **Proyecto final:** https://mariaflorenciarecio.github.io/sanaa/
 
-GitHub: https://github.com/mariaflorenciarecio
+## Fundamentación
+
+El proyecto surge como propuesta de renovación del sitio web actual del estudio de arquitectura [SANAA](https://www.sanaa.co.jp/).
+El mismo busca reflejar el **estilo minimalista** que sigue el mismo al diseñar sus obras arquitectónicas, teniendo en cuenta sus premisas de diseño:
+* Paleta monocromática, siendo el protagonista el color blanco
+* Orden armónico de los elementos transmitiendo sensación de ligereza
+* Simplicidad a la vista (lo cual no implica que la construcción también sea simple)
+
+## Herramientas
+
+### Lenguajes
+* **HTML5**
+* **CSS3**
+* **SASS**
+
+### Framework
+* **Bootstrap**
+
+### Librerias
+* **Font Awesome**
+* **AOS (Animate On Scroll)**
+
+### Otros
+* **Node.js**
+
+## Contacto
+
+* **LinkedIn:** https://www.linkedin.com/in/mariaflorenciarecio
+* **GitHub:** https://github.com/mariaflorenciarecio

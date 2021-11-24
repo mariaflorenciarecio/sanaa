@@ -1,7 +1,11 @@
+// -------------------- FOOTER
+
 /* ----------apertura footer---------- */
 
 #footer {
     padding: 15rem 1.5rem 3rem 1.5rem;
+
+    // logo
 
     .footer-brand {
         img {
@@ -15,6 +19,8 @@
         }
     }
 
+    // informacion
+
     .footer-menu {
         ul {
             list-style-type: none;
@@ -23,6 +29,8 @@
 
         a:hover { color: $gray-800; }
     }
+
+    // redes sociales
 
     .footer-social {
         p { text-align: left; 
@@ -36,6 +44,8 @@
             &:hover { color: $gray-800; }
         }
     }
+
+    // newsletter
 
     .newsletter {
         p {
@@ -71,6 +81,8 @@
             .subscribe-button { display: none; }
         }
     }
+
+    // copyright
 
     .copyright {
         border-top: 0.1rem solid $gray-400;
