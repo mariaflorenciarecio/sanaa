@@ -7,9 +7,7 @@
         .desktop-table {
             display: none;
     
-            @media (min-width: $md) {
-                display: revert;
-            }
+            @media (min-width: $md) { display: revert; }
         }
     }
 
@@ -24,13 +22,9 @@
         padding: 1.5rem;
     }
 
-    td, li {
-        @include text($gray-400, $small-text, $font-weight-light, left, none, normal);
-    }
+    td, li { @include text($gray-400, $small-text, $font-weight-light, left, none, normal); }
 
-    ol {
-        list-style-type: decimal-leading-zero;
-    }
+    ol { list-style-type: decimal-leading-zero; }
 
     ul {
         list: {
@@ -44,9 +38,7 @@
         text-align: left;
     }
 
-    @media (min-width: $md) {
-        font-size: $small-title;
-    }
+    @media (min-width: $md) { font-size: $small-title; }
 }
 
 /* ----------cierre tabla---------- */

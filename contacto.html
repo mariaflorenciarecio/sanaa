@@ -8,6 +8,8 @@
     <!-- SEO -->
     <meta name="description" content="Contactanos rellenando el formulario para comenzar a diseñar tu nuevo proyecto juntos.">
     <meta name="keywords" content="sanaa, sejima and nishizawa and associates, , kazuyo sejima, ryue nishizawa, contacto, formulario, teléfono, dirección, horarios, e-mail">
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon-sanaa.ico">
     <!-- bootstrap -->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <!-- font awesome -->
@@ -63,8 +65,8 @@
     <main class="container">
         <!-- titular -->
         <div class="main-headline">
-            <h1 class="main-headline__title">Contacto</h1>
-            <p class="main-headline__paragraph">Completá el siguiente formulario y a la brevedad nos comunicaremos con vos para asesorarte.</p>
+            <h1 class="main-headline-title">Contacto</h1>
+            <p class="main-headline-paragraph">Completá el siguiente formulario y a la brevedad nos comunicaremos con vos para asesorarte.</p>
         </div>
         <!-- COMIENZO SECTION FORMULARIO DE CONTACTO -->
         <section class="container">
@@ -120,13 +122,15 @@
                 </div>
                 <!-- asunto -->
                 <label class="input-name" for="asunto">Asunto</label>
-                <select class="contact-form-select" name="asunto" id="">
-                    <option value="">Seleccioná el asunto</option>
-                    <option value="diseño-arquitectonico">Diseño Arquitectónico</option>
-                    <option value="diseño-interior">Diseño Interior</option>
-                    <option value="diseño-equipamiento">Diseño de Equipamiento</option>
-                    <option value="otro">Otro</option>
-                </select>
+                <div class="select-container">
+                    <select class="contact-form-select" name="asunto" id="">
+                        <option value="">Seleccioná el asunto</option>
+                        <option value="diseño-arquitectonico">Diseño Arquitectónico</option>
+                        <option value="diseño-interior">Diseño Interior</option>
+                        <option value="diseño-equipamiento">Diseño de Equipamiento</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
                 <!-- consulta -->
                 <label class="input-name" for="consulta">Consulta</label>
                 <textarea class="contact-form-select" name="consulta" id="" cols="30" rows="7" maxlength="1000" placeholder="Ingresá tu consulta"></textarea>
@@ -213,14 +217,10 @@
     <!-- COMIENZO FOOTER -->
     <footer class="container" id="footer">
         <div>
-            <!-- logo mobile -->
-            <div class="row col-5 footer-mobile-logo">
-                <a href="index.html"><img src="./img/index/logo-sanaa.png" alt="Logo del Estudio de Arquitectura SANAA"></a>
-            </div>
             <!-- comienzo informacion -->
             <div class="row row-cols-12 row-cols-md-4 row-cols-lg-5 justify-content-between">
-                <!-- logo tablet, desktop -->
-                <div class="col-md-3 col-lg-2 footer-logo">
+                <!-- logo -->
+                <div class="col-md-3 col-lg-2 footer-brand">
                     <a href="index.html"><img src="./img/index/logo-sanaa.png" alt="Logo del Estudio de Arquitectura SANAA"></a>
                 </div>
                 <!-- informacion principal -->
@@ -285,5 +285,4 @@
     <script src="https://kit.fontawesome.com/aab291df05.js" crossorigin="anonymous"></script>
 </body>
 <!-- FIN BODY -->
-
 </html>

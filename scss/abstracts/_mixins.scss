@@ -83,9 +83,7 @@
         height: 100%;
         transition: opacity 0.25s;
 
-        &:hover {
-            opacity: 1;
-        }
+        &:hover { opacity: 1; }
 
         &  > * {
             transform: translateY(2rem);
@@ -104,6 +102,7 @@
 
 @mixin button {
     @include text(none, $normal-text, $font-weight-normal, center, uppercase, normal);
+
         padding: 2rem 4rem;
         border: none;
         border-radius: 0.6rem;
@@ -113,6 +112,7 @@
 
 @mixin custom($color1, $background-color1, $color2, $background-color2) {
     @include button;
+
         color: $color1;
         background-color: $background-color1;
 

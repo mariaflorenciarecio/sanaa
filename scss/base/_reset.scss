@@ -7,11 +7,9 @@
     font-size: 62.5%;
 }
 
-/* ----------reset clases bootstrap---------- */
+/* ----------reseteo clases bootstrap---------- */
 
-.container {
-    padding: 0;
-}
+.container { padding: 0; }
 
 .row {
     --bs-gutter-x: 0;
@@ -28,12 +26,9 @@
     line-height: 1.5;
 }
 
-p {
-    margin-bottom: 0;
-}
+p { margin-bottom: 0; }
 
 .container {
-    
     @media (min-width: 1200px) {
         max-width: 114rem;
         margin: auto;  

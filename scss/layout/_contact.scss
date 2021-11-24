@@ -7,21 +7,15 @@
 .map-mobile {
     display: block;
     padding: 1.5rem;
+
+    @media (min-width: $md) { display: none; }
 }
 
 .map {
     display: none;
     padding: 1.5rem;
-}
 
-@media (min-width: $md) {
-    .map-mobile {
-        display: none;
-    }
-
-    .map {
-        display: block;
-    }
+    @media (min-width: $md) { display: block; }
 }
 
 /* ----------cierre informacion de contacto---------- */

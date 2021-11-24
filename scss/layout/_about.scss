@@ -1,0 +1,61 @@
+/* ----------apertura nosotros---------- */
+
+.architects {
+    @include flex(column, nowrap, center);
+
+    width: 95%;
+    padding-top: 1.5rem;
+    margin: auto;
+
+    .about-image {
+        img {
+            width: 95%;
+            margin: auto;
+        }
+
+        .image-overlay { display: none; }
+
+        @media (min-width: $md) { @include image-overlay($white); }
+    }
+
+    @media (min-width: $md) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.mision-info {
+    @include flex(row, wrap, space-evenly);
+
+    .mision-info-item { text-align: center; }
+    
+    .item-content {
+        padding: 1rem;
+        width: 20rem;
+
+        @media (min-width: $lg) { width: 18rem; }
+    }
+}
+
+.achievements {
+    @include flex(row, wrap, space-evenly);
+
+    .achievements-item {
+        text-align: center;
+        width: 20rem;
+    
+        .achievements-info-logo {
+            @include flex(column, nowrap, center);
+
+            height: 12rem;
+            width: 73%;
+            margin: auto;
+
+            .prize { @include image(0); }
+        }
+
+        @media (min-width: $lg) { width: 18rem; }
+    }
+}
+
+/* ----------cierre nosotros---------- */

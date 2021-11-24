@@ -1,35 +1,24 @@
-/* -------google fonts------- */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 /* -------cuerpo------- */
 
-body {
-    font-family: $default-font;
-}
+body { font-family: $default-font; }
 
 /* -------titulos------- */
 
-h1 {
-    @include title($big-title, uppercase);
-}
+$headlines: (h1: $big-title, h2: $normal-title, h3: $medium-text);
 
-h2 {
-    @include title($normal-title, uppercase);
-}
-
-h3 {
-    @include title($medium-text, uppercase);
+@each $h, $size in $headlines {
+    #{$h} { @include title($size, uppercase) }
 }
 
 /* -------textos------- */
 
-p, a {
-    @include text($gray-400, $normal-text, $font-weight-light, center, none, normal);
-}
+p, a { @include text($gray-400, $normal-text, $font-weight-light, center, none, normal); }
 
 span {
     @extend p;
+
     display: block;
     padding-top: 2rem;
 }
@@ -38,21 +27,17 @@ span {
 
 .main-headline {
     @include flex(column, wrap, center);
+
     padding: 15rem 1.5rem 1.5rem 1.5rem;
 
-        .main-headline__paragraph {
+        .main-headline-paragraph {
             @include text($gray-600, $medium-text, $font-weight-light, center, none, normal);
-            
             @media (min-width: $md) {
                 font-size: $big-text;
                 width: 95%;
             }
-            @media (min-width: $lg) {
-                width: 70%;
-            }
-            @media (min-width: $xl) {
-                width: 59%;
-            }
+            @media (min-width: $lg) { width: 70%; }
+            @media (min-width: $xl) { width: 59%; }
         }
 }
 
@@ -61,57 +46,38 @@ span {
 .secondary-headline {
     @include flex(column, wrap, center);
 
-    &--architects {
-        padding: 1.5rem;
-    }
+    &--architects { padding: 1.5rem; }
 
-    .secondary-headline__title {
+    .secondary-headline-title {
         @include title($big-text, none);
 
-        &--architect {
-            text-transform: uppercase;
-        }
+        &--architect { text-transform: uppercase; }
 
-        @media (min-width: $md) {
-            font-size: 3.2rem;
-        }
-
-        @media (min-width: $lg) {
-            font-size: $small-title;
-        }
+        @media (min-width: $md) { font-size: 3.2rem; }
+        @media (min-width: $lg) { font-size: $small-title; }
     }
 
-    .secondary-headline__paragraph {
+    .secondary-headline-paragraph {
         @include text($gray-600, $normal-text, $font-weight-normal, center, uppercase, semi-condensed);
-
-        @media (min-width: $md) {
-            font-size: 1.8rem;
-        }
-
-        @media (min-width: $lg) {
-            font-size: $medium-text;
-        }
+        @media (min-width: $md) { font-size: 1.8rem; }
+        @media (min-width: $lg) { font-size: $medium-text; }
     }
 }
 
 .services-carousel {
     .secondary-headline {
-        .secondary-headline__paragraph {
+        .secondary-headline-paragraph {
+            text-transform: none;
             font: {
                 size: $medium-text;
                 weight: $font-weight-light;
             }
-            text: {
-                align: center;
-                transform: none;
-            }
+
             @media (min-width: $md) {
                 font-size: 2rem;
                 width: 90%;
             }
-            @media (min-width: $lg) {
-                width: 65%;
-            }
+            @media (min-width: $lg) { width: 65%; }
         }
     }
 }
@@ -120,8 +86,10 @@ span {
 
 .tertiary-headline {
     @extend .secondary-headline;
+
     padding-top: 1.5rem;
-        .tertiary-headline__title {
+
+        .tertiary-headline-title {
             color: $gray-400;
             font: {
                 family: $default-font;
@@ -134,7 +102,8 @@ span {
             }
             line-height: 1.5;
         }
-        .tertiary-headline__paragraph {
+
+        .tertiary-headline-paragraph {
             color: $gray-800;
             font: {
                 weight: $font-weight-bold;

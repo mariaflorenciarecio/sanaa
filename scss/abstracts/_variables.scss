@@ -1,13 +1,18 @@
 // -------------------- VARIABLES PROPIAS
 
-// typography
+// fuentes
 
 $default-font: 'Bahnschrift', sans-serif;
 $custom-font: 'Roboto Condensed', sans-serif;
 
+// tamaño de tipografia para titulos
+
 $big-title: 5.2rem;
 $normal-title: 4.2rem;
 $small-title: 3.2rem;
+
+// tamaño de tipografia para textos
+
 $big-text: 2.2rem;
 $medium-text: 1.8rem;
 $normal-text: 1.6rem;
@@ -17,6 +22,7 @@ $small-text: 1.4rem;
 
 // breakpoints (mobile first)
 
+$sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
@@ -24,7 +30,7 @@ $xxl: 1400px;
 
 // -------------------- VARIABLES PERSONALIZADAS BOOTSTRAP
 
-// color system
+// colores
 
 $white: #ffffff;
 $gray-200: #F4F4F3;
@@ -32,14 +38,14 @@ $gray-400: #88959E;
 $gray-600: #5B6977;
 $gray-800: #4A4F54;
 
-// typography
+// grosores de tipografias
 
 $font-weight-light: 200;
 $font-weight-normal: 400;
 $font-weight-bold: 600;
 $font-weight-bolder: 800;
 
-// other
+// otros
 
 $utilities-bg: ();
 $utilities-text: ();

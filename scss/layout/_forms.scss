@@ -5,34 +5,30 @@
     margin: auto;
     padding: 1.5rem 1.5rem 15rem 1.5rem;
 
-    input:focus, select:focus, textarea:focus {
-        outline: 0;
-    }
+    input:focus, select:focus, textarea:focus { outline: 0; }
 
     .contact-flex {
         width: 100%;
         
         &--check {
             @include flex(row, wrap, left);
+
             margin-left: 1rem;
         }
 
         .contact-country, .contact-social-networks {
             @include flex(row, wrap, center);
+
             padding: 1.5rem 1.5rem 3rem 1.5rem;
-    
-            input {
-                margin-left: 1rem;
-            }
+            
+            input { margin-left: 1rem; }
         }
 
         @media (min-width: $md) {
             &--id {
                 @include flex(row, wrap, space-between);
 
-                .contact-name, .contact-e-mail, .contact-surname, .contact-confirmation {
-                    width: 48%;
-                }
+                .contact-name, .contact-e-mail, .contact-surname, .contact-confirmation { width: 48%; }
             }
         }
     }
@@ -42,12 +38,9 @@
         padding-left: 2.4rem;
     }
 
-    .input-text {
-        @extend p;
-    }
-
     .contact-form-select {
         @include text($gray-400, $normal-text, $font-weight-light, left, none, normal);
+        
         background-color: $white;
         opacity: 1;
         margin: 1.5rem 0 3rem 0;
@@ -61,13 +54,39 @@
             opacity: 1;
         }
     
-        &:focus::placeholder {
-            color: transparent;
-        }
+        &:focus::placeholder { color: transparent; }
     }
 
-    textarea {
-        @extend .contact-form-select;
+    .input-text { @extend p; }
+
+    textarea { @extend .contact-form-select; }
+
+    .select-container {
+        position: relative;
+
+        &:after {
+            content: '>';
+            font: {
+                family: 'Consolas', monospace;
+                size: 1.7rem;
+            }
+            color: $gray-400;
+            transform: rotate(90deg);
+            right: 1rem;
+            top: 3rem;
+            padding: 1rem;
+            border-bottom: 2px solid $gray-200;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        select {
+            appearance: none;
+
+            &::-ms-expand { display: none; }
+        }
+
+        option { @include text($gray-400, $normal-text, $font-weight-light, left, none, normal); }
     }
 }
 

@@ -3,16 +3,19 @@
 .button {
     text-align: center;
     padding: 5rem 0 1rem 0;
+
     &--light {
         a, input:last-child {
             @include button;
             @include custom($gray-800, $gray-200, $white, $gray-800);
         }
     }
+
     &--transparent {
         a, input:first-child {
             @include button;
             @include custom($gray-400, $white, $white, $gray-800);
+            
             border: 0.2rem solid $gray-200;
         }
     }
@@ -25,9 +28,8 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    i {
-        font-size: 2rem;
-    }
+
+    i { font-size: 2rem; }
 }
 
 /* -------boton footer------- */
@@ -45,29 +47,31 @@
 
 .button-banner {
     margin-bottom: 5rem;
-    @media (min-width: $md) {
-        margin-bottom: 10rem;
-    }
+
+    @media (min-width: $md) { margin-bottom: 10rem; }
+
     &--minimal {
         a:first-child {
             @include button;
             @include custom($gray-600, none, $gray-800, none);
-            @media (min-width: $md) {
-                display: none;
-            }
 
             .fa-arrow-circle-right {
                 font-size: $normal-text;
                 padding-left: 0.7rem;
             }
+
+            @media (min-width: $md) { display: none; }
         }
     }
+
     &--dark {
         a:last-child {
             display: none;
+
             @media (min-width: $md) {
                 @include button;
                 @include custom($gray-200, $gray-800, $gray-800, $white);
+                
                 display: flex;
             }
         }
@@ -78,6 +82,7 @@
 
 .form-button {
     @include flex(row, wrap, space-evenly);
+
     input {
         width: 20rem;
         margin: 1.5;
@@ -88,6 +93,7 @@
 
 .error-button {
     @include flex(row, wrap, center);
+    
     a {
         width: 18rem;
         margin: 2rem;

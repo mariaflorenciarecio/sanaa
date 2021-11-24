@@ -29,35 +29,24 @@
 
         .header-content {
             @include flex(column, nowrap, center);
+
             margin-top: auto;
 
             .master-headline {
                 @include flex(column, nowrap, center);
+
                 .cutout {
                     background-image: linear-gradient(120deg, $gray-800 0%, $gray-600 100%);
                     color: $white;
                     mix-blend-mode: normal;
-                    font-size: $medium-text;
-                    width: 90%;
+                    font-size: $normal-text;
                     border-radius: 0.6rem;
-                    padding: 1rem;
-                    margin: 1rem auto;
-                    @media (min-width: 375px) {
-                        font-size: 2rem;
-                    }
-                    @media (min-width: $md) {
-                        font-size: 4.2rem;
-                        margin: 2rem auto;
-                    }
-                    @media (min-width: $lg) {
-                        max-width: 70.5%;
-                    }
-                    @media (min-width: $xl) {
-                        max-width: 58.4%;
-                    }
-                    @media (min-width: $xxl) {
-                        max-width: 50%;
-                    }
+                    padding: 1rem 2rem;
+                    margin: 1.5rem;
+
+                    @media (min-width: $sm) { font-size: $small-title; }
+                    @media (min-width: $md) { font-size: $normal-title; }
+                    @media (min-width: $xl) { font-size: $big-title; }
                 }
             }
 
@@ -65,7 +54,8 @@
                         display: flex;
                         justify-content: center;
                         width: 85%;
-                    p {
+                    
+                        p {
                         color: #4A4F54;
                         font-weight: 800;
                         padding-bottom: 2.5rem;
@@ -74,6 +64,7 @@
                         @media (min-width: $md) {
                             content: "";
                             font-size: 0;
+
                             &::after{
                                 font-size: $normal-text;
                                 content: "SANAA es una firma de arquitectos fundada en 1995, por Kazuyo Sejima y Ryue Nishizawa, en Tokio. Ha sido galardonada con el Premio Pritzker de Arquitectura 2010.";
@@ -81,15 +72,9 @@
                             }
                         }
                         
-                        @media (min-width: $lg) {
-                            width: 80%;
-                        }
-                        @media (min-width: $xl) {
-                            width: 65%;
-                        }
-                        @media (min-width: $xxl) {
-                            width: 55%;
-                        }
+                        @media (min-width: $lg) { width: 80%; }
+                        @media (min-width: $xl) { width: 65%; }
+                        @media (min-width: $xxl) { width: 45%; }
                     }
                 }
 
@@ -108,15 +93,9 @@
                 }
 
                 @keyframes bounce {
-                    0%, 20%, 50%, 80%, 100% {
-                        transform: translateY(0);
-                    }
-                    40% {
-                        transform: translateY(-3rem);
-                    }
-                    60% {
-                        transform: translateY(-1.5rem);
-                    }
+                    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+                    40% { transform: translateY(-3rem); }
+                    60% { transform: translateY(-1.5rem); }
                 }
             }
         }
