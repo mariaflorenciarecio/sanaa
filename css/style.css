@@ -477,7 +477,7 @@ span {
 }
 
 /* -------boton form------- */
-.form-button {
+.contact-form .form-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,9 +495,9 @@ span {
           align-items: center;
 }
 
-.form-button input {
+.contact-form .button--transparent input, .contact-form .button--light input {
   width: 20rem;
-  margin: 1.5;
+  margin: 1.5rem;
 }
 
 /* -------boton error 404------- */
@@ -912,7 +912,7 @@ img {
 }
 
 /* ---mapa--- */
-.map {
+picture img {
   padding: 1.5rem;
 }
 
