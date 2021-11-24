@@ -76,8 +76,8 @@
                 <!-- flecha ver main -->
                 <a href="#main"><i class="fas fa-chevron-down arrow-from-top"></i></a>
             </div>
-    <!-- fin contenido header -->
-    </div>
+            <!-- fin contenido header -->
+        </div>
     </header>
     <!-- FIN HEADER -->
 
@@ -222,14 +222,11 @@
                         </div>
                     </div>
                     <!-- fin informacion de contacto -->
-                    <!-- mapa mobile -->
-                    <div class="map-mobile">
+                    <!-- mapa de ubicacion -->
+                    <picture class="map">
+                        <source media="(min-width:768px)" srcset="./img/index/mapa.png">
                         <img src="./img/index/mapa-mobile.png" alt="Mapa con la Localización del Estudio de Arquitectura SANAA">
-                    </div>
-                    <!-- mapa tablet, desktop -->
-                    <div class="map">
-                        <img src="./img/index/mapa.png" alt="Mapa con la Localización del Estudio de Arquitectura SANAA">
-                    </div>
+                    </picture>
                     <!-- boton contactar -->
                     <div class="button button--light">
                         <a href="contacto.html">Contactar</a>
@@ -244,65 +241,63 @@
         <footer class="container" id="footer">
             <!-- flecha ver header -->
             <a href="#header"><i class="fas fa-chevron-up arrow-from-bottom"></i></a>
-            <div>
-                <!-- comienzo informacion -->
-                <div class="row row-cols-12 row-cols-md-4 row-cols-lg-5 justify-content-between">
-                    <!-- logo -->
-                    <div class="col-md-3 col-lg-2 footer-brand">
-                        <a href="index.html"><img src="./img/index/logo-sanaa.png" alt="Logo del Estudio de Arquitectura SANAA"></a>
-                    </div>
-                    <!-- informacion principal -->
-                    <div class="col-4 col-md-2 col-lg-auto">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="nosotros.html">Nosotros</a></li>
-                                <li><a href="servicios.html">Servicios</a></li>
-                                <li><a href="proyectos.html">Proyectos</a></li>
-                                <li><a href="contacto.html">Contacto</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- informacion secundaria -->
-                    <div class="col-8 col-md-auto col-lg-auto">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="#">Aviso legal</a></li>
-                                <li><a href="#">Términos y condiciones</a></li>
-                                <li><a href="#">Política de cookies</a></li>
-                                <li><a href="#">Política de redes sociales</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- redes sociales -->
-                    <div class="col-4 col-md-3 col-lg-auto">
-                        <div class="footer-social">
-                            <p>Sigamos conectados</p>
-                            <a href="https://www.sanaa.co.jp/"><i class="fas fa-globe"></i></a>
-                            <a href="https://www.facebook.com/SANAA-353365408145653/"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/sanaa_jp"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.linkedin.com/company/s-a-n-a-a/"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <!-- newsletter -->
-                    <div class="col-8 col-md-12 col-lg-3">
-                        <div class="newsletter">
-                            <p>Suscribite al newsletter para recibir nuestras novedades</p>
-                            <form action="" class="subscribe-form">
-                                <input class="subscribe" type="email" name="email" placeholder="Ingresá tu e-mail" required>
-                                <button class="action-icon"><i class="fas fa-arrow-right"></i></button>
-                                <input class="subscribe-button" type="submit" value="Suscribirse">
-                            </form>
-                        </div>
+            <!-- comienzo informacion -->
+            <div class="row row-cols-12 row-cols-md-4 row-cols-lg-5 justify-content-between">
+                <!-- logo -->
+                <div class="col-md-3 col-lg-2 footer-brand">
+                    <a href="index.html"><img src="./img/index/logo-sanaa.png" alt="Logo del Estudio de Arquitectura SANAA"></a>
+                </div>
+                <!-- informacion principal -->
+                <div class="col-4 col-md-2 col-lg-auto">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="servicios.html">Servicios</a></li>
+                            <li><a href="proyectos.html">Proyectos</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
                     </div>
                 </div>
-                <!-- fin informacion -->
-                <!-- copyright -->
-                <div class="copyright">
-                    <p>© 2021 SANAA. Todos los derechos reservados.<span>Desarrollado con <span class="heart">💜</span> por María Florencia Recio.</span></p>
-                    <div class="footer-social">
-                        <a href="https://github.com/mariaflorenciarecio"><i class="fab fa-github"></i></i></a>
-                        <a href="https://www.linkedin.com/in/mariaflorenciarecio/"><i class="fab fa-linkedin-in"></i></a>
+                <!-- informacion secundaria -->
+                <div class="col-8 col-md-auto col-lg-auto">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Aviso legal</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Política de cookies</a></li>
+                            <li><a href="#">Política de redes sociales</a></li>
+                        </ul>
                     </div>
+                </div>
+                <!-- redes sociales -->
+                <div class="col-4 col-md-3 col-lg-auto">
+                    <div class="footer-social">
+                        <p>Sigamos conectados</p>
+                        <a href="https://www.sanaa.co.jp/"><i class="fas fa-globe"></i></a>
+                        <a href="https://www.facebook.com/SANAA-353365408145653/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/sanaa_jp"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/s-a-n-a-a/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- newsletter -->
+                <div class="col-8 col-md-12 col-lg-3">
+                    <div class="newsletter">
+                        <p>Suscribite al newsletter para recibir nuestras novedades</p>
+                        <form action="" class="subscribe-form">
+                            <input class="subscribe" type="email" name="email" placeholder="Ingresá tu e-mail" required>
+                            <button class="action-icon"><i class="fas fa-arrow-right"></i></button>
+                            <input class="subscribe-button" type="submit" value="Suscribirse">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- fin informacion -->
+            <!-- copyright -->
+            <div class="copyright">
+                <p>© 2021 SANAA. Todos los derechos reservados.<span>Desarrollado con <span class="heart">💜</span> por María Florencia Recio.</span></p>
+                <div class="footer-social">
+                    <a href="https://github.com/mariaflorenciarecio"><i class="fab fa-github"></i></i></a>
+                    <a href="https://www.linkedin.com/in/mariaflorenciarecio/"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </footer>

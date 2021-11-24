@@ -4,18 +4,6 @@
     text-align: center;
 }
 
-.map-mobile {
-    display: block;
-    padding: 1.5rem;
-
-    @media (min-width: $md) { display: none; }
-}
-
-.map {
-    display: none;
-    padding: 1.5rem;
-
-    @media (min-width: $md) { display: block; }
-}
+.map { padding: 1.5rem; }
 
 /* ----------cierre informacion de contacto---------- */
