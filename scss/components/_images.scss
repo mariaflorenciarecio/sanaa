@@ -1,11 +1,7 @@
 /* -------imagenes generales------- */
 
-img {
-    @include image(0.6rem);
-}
+img { @include image(0.6rem); }
 
 /* -------imagenes con transiciones------- */
 
-.services-image, .projects-image {
-    @include image-overlay(rgba(255, 255, 255, 0.6));
-}
+.services-image, .projects-image { @include image-overlay(rgba(255, 255, 255, 0.6)); }

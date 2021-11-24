@@ -14,21 +14,17 @@
         }
     }
 
-    &:nth-child(4) .secondary-headline {
-        padding-bottom: 0;
-    }
+    &:nth-child(4) .secondary-headline { padding-bottom: 0; }
 
-    .carousel-caption h3 {
-        color: $white;
-    }
+    .carousel-caption h3 { color: $white; }
 
     .secondary-headline {
         padding: {
             top: 3rem;
             bottom: 15rem;
         }
-    
-        .secondary-headline__paragraph {
+
+        .secondary-headline-paragraph {
             font: {
                 size: $medium-text;
                 weight: $font-weight-light;
@@ -43,13 +39,10 @@
                 font-size: 2rem;
                 width: 90%;
             }
-
-            @media (min-width: $lg) {
-                width: 70%;
-            }
+            @media (min-width: $lg) { width: 70%; }
         }
     }
-
+    
     .carousel-control-next-icon, .carousel-control-prev-icon {
         width: 3rem;
         height: 3rem;
