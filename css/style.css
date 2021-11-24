@@ -1782,26 +1782,8 @@ img {
   text-align: center;
 }
 
-.map-mobile {
-  display: block;
-  padding: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .map-mobile {
-    display: none;
-  }
-}
-
 .map {
-  display: none;
   padding: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .map {
-    display: block;
-  }
 }
 
 /* ----------cierre informacion de contacto---------- */
