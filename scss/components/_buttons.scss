@@ -82,12 +82,14 @@
 
 /* -------boton form------- */
 
-.form-button {
-    @include flex(row, wrap, space-evenly);
-
-    input {
-        width: 20rem;
-        margin: 1.5;
+.contact-form {
+    .form-button { @include flex(row, wrap, space-evenly); }
+    
+    .button--transparent, .button--light { 
+        input { 
+            width: 20rem;
+            margin: 1.5rem 
+        }
     }
 }
 
