@@ -1,3 +1,5 @@
+// -------------------- FORMS
+
 /* ----------apertura formulario---------- */
 
 .contact-form {
@@ -6,6 +8,8 @@
     padding: 1.5rem 1.5rem 15rem 1.5rem;
 
     input:focus, select:focus, textarea:focus { outline: 0; }
+
+    // campo simple
 
     .contact-flex {
         width: 100%;
@@ -24,6 +28,8 @@
             input { margin-left: 1rem; }
         }
 
+        .input-text { @extend p; }
+
         @media (min-width: $md) {
             &--id {
                 @include flex(row, wrap, space-between);
@@ -32,11 +38,15 @@
             }
         }
     }
+    
+    // nombre del campo
 
     .input-name {
         @include text($gray-400, $normal-text, $font-weight-bold, left, uppercase, normal);
         padding-left: 2.4rem;
     }
+
+    // campo con seleccion
 
     .contact-form-select {
         @include text($gray-400, $normal-text, $font-weight-light, left, none, normal);
@@ -57,9 +67,11 @@
         &:focus::placeholder { color: transparent; }
     }
 
-    .input-text { @extend p; }
+    // campo de consulta
 
     textarea { @extend .contact-form-select; }
+
+    // flecha de asunto
 
     .select-container {
         position: relative;

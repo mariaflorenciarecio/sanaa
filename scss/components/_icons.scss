@@ -1,4 +1,6 @@
-/* -------iconos------- */
+// -------------------- ICONS
+
+/* -------iconos generales------- */
 
 .icon {
     color: $gray-800;
@@ -6,6 +8,8 @@
     padding-bottom: 1.5rem;
     text-align: center;
 }
+
+/* -------flecha ir hacia arriba------- */
 
 .arrow-from-bottom {
     color: $gray-400;
@@ -17,6 +21,8 @@
     &:hover { color: $gray-800; }
 }
 
+/* -------iconos del footer------- */
+
 .footer-social {
-    a { padding: .4rem; }
+    a { padding: 0.4rem; }
 }

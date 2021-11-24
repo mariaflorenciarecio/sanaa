@@ -1,3 +1,5 @@
+// -------------------- NAV
+
 /* ----------apertura navbar---------- */
 
 .navbar {
@@ -8,17 +10,23 @@
     .container-fluid {
         padding: 0.5rem 1.5rem;
 
+        // logo
+
         img {
             border-radius: none;
             max-height: 5.2rem;
         }
     
+        // boton colapsar
+
         .navbar-toggler {
             border: none;
         
             &:focus { box-shadow: none; }
         }
     
+        // menu simple
+
         a {
             @include text($gray-800, $medium-text, $font-weight-light, center, uppercase, normal);
     
@@ -27,6 +35,8 @@
     
         .active { @include text($gray-800, $medium-text, $font-weight-bolder, center, uppercase, normal); }
     
+        // buscador
+
         .form-control {
             @include text($gray-800, $small-text, $font-weight-bold, left, none, normal);
             @include nav-form;
@@ -51,11 +61,15 @@
     }
 }
 
+/* ---boton menu--- */
+
 .navbar-light {
     .navbar-nav {
         .nav-link.active { color: $gray-800; }
     }
 }
+
+/* ---menu desplegado--- */
 
 .navbar-expand-lg {
     .navbar-nav {

@@ -1,7 +1,11 @@
+// -------------------- TABLE
+
 /* ----------apertura tabla---------- */
 
 .table-projects {
     margin: auto;
+
+    // fila
 
     tr {
         .desktop-table {
@@ -10,6 +14,8 @@
             @media (min-width: $md) { display: revert; }
         }
     }
+
+    // contenido
 
     th, td {
         vertical-align: unset;
@@ -23,6 +29,8 @@
     }
 
     td, li { @include text($gray-400, $small-text, $font-weight-light, left, none, normal); }
+
+    // listas
 
     ol { list-style-type: decimal-leading-zero; }
 

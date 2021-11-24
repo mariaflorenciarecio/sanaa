@@ -28,7 +28,7 @@
   line-height: 1.5;
 }
 
-p, span, .contact-form .input-text {
+p, span, .contact-form .contact-flex .input-text {
   margin-bottom: 0;
 }
 
@@ -76,7 +76,7 @@ h3 {
 }
 
 /* -------textos------- */
-p, span, .contact-form .input-text, a {
+p, span, .contact-form .contact-flex .input-text, a {
   color: #88959E;
   font-family: "Bahnschrift", sans-serif;
   font-size: 1.6rem;
@@ -545,7 +545,7 @@ span {
   padding: 3rem;
 }
 
-/* -------carousel------- */
+/* -------carrusel------- */
 .services-carousel {
   padding: 1.5rem;
 }
@@ -607,7 +607,7 @@ span {
   }
 }
 
-/* -------iconos------- */
+/* -------iconos generales------- */
 .icon {
   color: #4A4F54;
   font-size: 6.5rem;
@@ -615,6 +615,7 @@ span {
   text-align: center;
 }
 
+/* -------flecha ir hacia arriba------- */
 .arrow-from-bottom {
   color: #88959E;
   font-size: 3rem;
@@ -627,8 +628,9 @@ span {
   color: #4A4F54;
 }
 
+/* -------iconos del footer------- */
 .footer-social a {
-  padding: .4rem;
+  padding: 0.4rem;
 }
 
 /* -------imagenes generales------- */
@@ -691,7 +693,7 @@ img {
   width: 90%;
 }
 
-/* -------video------- */
+/* -------video de youtube------- */
 .video {
   padding: 1.5rem;
 }
@@ -718,6 +720,7 @@ img {
 }
 
 /* ----------apertura nosotros---------- */
+/* ---seccion arquitectos--- */
 .architects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -810,6 +813,7 @@ img {
   }
 }
 
+/* ---seccion mision--- */
 .mision-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -843,6 +847,7 @@ img {
   }
 }
 
+/* ---seccion proyectos--- */
 .achievements {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -900,329 +905,18 @@ img {
 }
 
 /* ----------cierre nosotros---------- */
-/* ----------header---------- */
-.parallax-background {
-  background-color: #ffffff;
-  position: relative;
-}
-
-#header {
-  height: 100vh;
-}
-
-#header .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: url("../img/index/museo-maritimo-shenzen.jpeg");
-  background-color: #F4F4F3;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  z-index: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-#header .header .header-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: auto;
-}
-
-#header .header .header-content .master-headline {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#header .header .header-content .master-headline .cutout {
-  background-image: linear-gradient(120deg, #4A4F54 0%, #5B6977 100%);
-  color: #ffffff;
-  mix-blend-mode: normal;
-  font-size: 1.6rem;
-  border-radius: 0.6rem;
-  padding: 1rem 2rem;
-  margin: 1.5rem;
-}
-
-@media (min-width: 576px) {
-  #header .header .header-content .master-headline .cutout {
-    font-size: 3.2rem;
-  }
-}
-
-@media (min-width: 768px) {
-  #header .header .header-content .master-headline .cutout {
-    font-size: 4.2rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  #header .header .header-content .master-headline .cutout {
-    font-size: 5.2rem;
-  }
-}
-
-#header .header .header-content .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 85%;
-}
-
-#header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .input-text, .contact-form #header .header .header-content .description .input-text {
-  color: #4A4F54;
-  font-weight: 800;
-  padding-bottom: 2.5rem;
-  margin: auto;
-}
-
-@media (min-width: 768px) {
-  #header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .input-text, .contact-form #header .header .header-content .description .input-text {
-    content: "";
-    font-size: 0;
-  }
-  #header .header .header-content .description p::after, #header .header .header-content .description span::after, #header .header .header-content .description .contact-form .input-text::after, .contact-form #header .header .header-content .description .input-text::after {
-    font-size: 1.6rem;
-    content: "SANAA es una firma de arquitectos fundada en 1995, por Kazuyo Sejima y Ryue Nishizawa, en Tokio. Ha sido galardonada con el Premio Pritzker de Arquitectura 2010.";
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 992px) {
-  #header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .input-text, .contact-form #header .header .header-content .description .input-text {
-    width: 80%;
-  }
-}
-
-@media (min-width: 1200px) {
-  #header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .input-text, .contact-form #header .header .header-content .description .input-text {
-    width: 65%;
-  }
-}
-
-@media (min-width: 1400px) {
-  #header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .input-text, .contact-form #header .header .header-content .description .input-text {
-    width: 45%;
-  }
-}
-
-#header .header .header-content .arrow-from-top {
-  color: #4A4F54;
-  font-size: 3rem;
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-#header .header .header-content .arrow-from-top:hover {
-  color: #88959E;
-  -webkit-animation: none;
-          animation: none;
-}
-
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-3rem);
-            transform: translateY(-3rem);
-  }
-  60% {
-    -webkit-transform: translateY(-1.5rem);
-            transform: translateY(-1.5rem);
-  }
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-3rem);
-            transform: translateY(-3rem);
-  }
-  60% {
-    -webkit-transform: translateY(-1.5rem);
-            transform: translateY(-1.5rem);
-  }
-}
-
-/* ----------apertura navbar---------- */
-.navbar {
-  color: #4A4F54;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-  padding: 0;
-}
-
-.navbar .container-fluid {
-  padding: 0.5rem 1.5rem;
-}
-
-.navbar .container-fluid img {
-  border-radius: none;
-  max-height: 5.2rem;
-}
-
-.navbar .container-fluid .navbar-toggler {
-  border: none;
-}
-
-.navbar .container-fluid .navbar-toggler:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.navbar .container-fluid a {
-  color: #4A4F54;
-  font-family: "Bahnschrift", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 200;
-  font-stretch: normal;
+/* ----------apertura informacion de contacto---------- */
+/* ---items--- */
+.contact-info-item {
   text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 1.5;
 }
 
-.navbar .container-fluid a:hover {
-  font-weight: 800;
+/* ---mapa--- */
+.map {
+  padding: 1.5rem;
 }
 
-.navbar .container-fluid .active {
-  color: #4A4F54;
-  font-family: "Bahnschrift", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 800;
-  font-stretch: normal;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 1.5;
-}
-
-.navbar .container-fluid .form-control {
-  color: #4A4F54;
-  font-family: "Bahnschrift", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
-  font-stretch: normal;
-  text-align: left;
-  text-transform: none;
-  text-decoration: none;
-  line-height: 1.5;
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
-  border-bottom: 0.1rem solid #4A4F54;
-  color: #4A4F54;
-  opacity: 1;
-}
-
-.navbar .container-fluid .form-control::-webkit-input-placeholder {
-  color: #4A4F54;
-  opacity: 1;
-}
-
-.navbar .container-fluid .form-control:-ms-input-placeholder {
-  color: #4A4F54;
-  opacity: 1;
-}
-
-.navbar .container-fluid .form-control::-ms-input-placeholder {
-  color: #4A4F54;
-  opacity: 1;
-}
-
-.navbar .container-fluid .form-control::placeholder {
-  color: #4A4F54;
-  opacity: 1;
-}
-
-.navbar .container-fluid .form-control:focus {
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
-  border-bottom: 0.1rem solid #4A4F54;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.navbar .container-fluid .form-control:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-
-.navbar .container-fluid .form-control:focus:-ms-input-placeholder {
-  color: transparent;
-}
-
-.navbar .container-fluid .form-control:focus::-ms-input-placeholder {
-  color: transparent;
-}
-
-.navbar .container-fluid .form-control:focus::placeholder {
-  color: transparent;
-}
-
-.navbar-light .navbar-nav .nav-link.active {
-  color: #4A4F54;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  text-align-last: left;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-}
-
-/* ----------cierre navbar---------- */
+/* ----------cierre informacion de contacto---------- */
 /* ----------apertura footer---------- */
 #footer {
   padding: 15rem 1.5rem 3rem 1.5rem;
@@ -1249,7 +943,7 @@ img {
   color: #4A4F54;
 }
 
-#footer .footer-social p, #footer .footer-social span, #footer .footer-social .contact-form .input-text, .contact-form #footer .footer-social .input-text {
+#footer .footer-social p, #footer .footer-social span, #footer .footer-social .contact-form .contact-flex .input-text, .contact-form .contact-flex #footer .footer-social .input-text {
   text-align: left;
 }
 
@@ -1263,7 +957,7 @@ img {
   color: #4A4F54;
 }
 
-#footer .newsletter p, #footer .newsletter span, #footer .newsletter .contact-form .input-text, .contact-form #footer .newsletter .input-text {
+#footer .newsletter p, #footer .newsletter span, #footer .newsletter .contact-form .contact-flex .input-text, .contact-form .contact-flex #footer .newsletter .input-text {
   text-align: left;
   padding-bottom: 1rem;
 }
@@ -1357,12 +1051,12 @@ img {
   margin-top: 1.5rem;
 }
 
-#footer .copyright p, #footer .copyright span, #footer .copyright .contact-form .input-text, .contact-form #footer .copyright .input-text {
+#footer .copyright p, #footer .copyright span, #footer .copyright .contact-form .contact-flex .input-text, .contact-form .contact-flex #footer .copyright .input-text {
   font-size: 1.4rem;
 }
 
 @media (min-width: 768px) {
-  #footer .copyright p, #footer .copyright span, #footer .copyright .contact-form .input-text, .contact-form #footer .copyright .input-text {
+  #footer .copyright p, #footer .copyright span, #footer .copyright .contact-form .contact-flex .input-text, .contact-form .contact-flex #footer .copyright .input-text {
     font-size: 1.6rem;
   }
 }
@@ -1443,150 +1137,6 @@ img {
 }
 
 /* ---------cierre footer---------- */
-/* ----------apertura grid---------- */
-.grid-projects {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  grid-row-gap: 2rem;
-  padding: 1.5rem;
-  margin: auto;
-}
-
-.grid-projects img {
-  height: 100%;
-}
-
-@media (min-width: 768px) {
-  .grid-projects {
-        grid-template-areas: "item1 item2" "item3 item3" "item4 item5" "item6 item5" "item7 item7" "item8 item9";
-    -ms-grid-rows: (2fr, 1fr, 1fr, 2fr, 1fr)[1fr];
-        grid-template-rows: repeat(1fr, 2fr, 1fr, 1fr, 2fr, 1fr);
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
-  }
-  .grid-projects--item-1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: item1;
-  }
-  .grid-projects--item-2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: item2;
-  }
-  .grid-projects--item-3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: item3;
-  }
-  .grid-projects--item-4 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: item4;
-  }
-  .grid-projects--item-5 {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    grid-area: item5;
-  }
-  .grid-projects--item-6 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: item6;
-  }
-  .grid-projects--item-7 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: item7;
-  }
-  .grid-projects--item-8 {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
-    grid-area: item8;
-  }
-  .grid-projects--item-9 {
-    -ms-grid-row: 6;
-    -ms-grid-column: 2;
-    grid-area: item9;
-  }
-}
-
-/* ----------cierre grid---------- */
-/* ----------apertura tabla---------- */
-.table-projects {
-  margin: auto;
-}
-
-.table-projects tr .desktop-table {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .table-projects tr .desktop-table {
-    display: revert;
-  }
-}
-
-.table-projects th, .table-projects td {
-  vertical-align: unset;
-  padding: 1.5rem;
-  border-bottom: 0.1rem solid #88959E;
-}
-
-.table-projects th {
-  color: #4A4F54;
-  font-family: "Bahnschrift", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 800;
-  font-stretch: normal;
-  text-align: left;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 1.5;
-  padding: 1.5rem;
-}
-
-.table-projects td, .table-projects li {
-  color: #88959E;
-  font-family: "Bahnschrift", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 200;
-  font-stretch: normal;
-  text-align: left;
-  text-transform: none;
-  text-decoration: none;
-  line-height: 1.5;
-}
-
-.table-projects ol {
-  list-style-type: decimal-leading-zero;
-}
-
-.table-projects ul {
-  list-style-type: circle;
-  list-style-position: initial;
-}
-
-.table-projects span {
-  font-size: 1.4rem;
-  text-align: left;
-}
-
-@media (min-width: 768px) {
-  .table-projects {
-    font-size: 3.2rem;
-  }
-}
-
-/* ----------cierre tabla---------- */
 /* ----------apertura formulario---------- */
 .contact-form {
   max-width: 80rem;
@@ -1777,14 +1327,476 @@ img {
 }
 
 /* ----------cierre formulario---------- */
-/* ----------apertura informacion de contacto---------- */
-.contact-info-item {
-  text-align: center;
+/* ----------apertura grid---------- */
+.grid-projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-row-gap: 2rem;
+  padding: 1.5rem;
+  margin: auto;
 }
 
-.map {
+.grid-projects img {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .grid-projects {
+        grid-template-areas: "item1 item2" "item3 item3" "item4 item5" "item6 item5" "item7 item7" "item8 item9";
+    -ms-grid-rows: (2fr, 1fr, 1fr, 2fr, 1fr)[1fr];
+        grid-template-rows: repeat(1fr, 2fr, 1fr, 1fr, 2fr, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+  .grid-projects--item-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: item1;
+  }
+  .grid-projects--item-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: item2;
+  }
+  .grid-projects--item-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: item3;
+  }
+  .grid-projects--item-4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: item4;
+  }
+  .grid-projects--item-5 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: item5;
+  }
+  .grid-projects--item-6 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: item6;
+  }
+  .grid-projects--item-7 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: item7;
+  }
+  .grid-projects--item-8 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: item8;
+  }
+  .grid-projects--item-9 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    grid-area: item9;
+  }
+}
+
+/* ----------cierre grid---------- */
+/* ----------apertura header---------- */
+/* ---efecto parallax--- */
+.parallax-background {
+  background-color: #ffffff;
+  position: relative;
+}
+
+/* ---header--- */
+#header {
+  height: 100vh;
+}
+
+#header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../img/index/museo-maritimo-shenzen.jpeg");
+  background-color: #F4F4F3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#header .header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+}
+
+#header .header .header-content .master-headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .header .header-content .master-headline .cutout {
+  background-image: linear-gradient(120deg, #4A4F54 0%, #5B6977 100%);
+  color: #ffffff;
+  mix-blend-mode: normal;
+  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  padding: 1rem 2rem;
+  margin: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  #header .header .header-content .master-headline .cutout {
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #header .header .header-content .master-headline .cutout {
+    font-size: 4.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #header .header .header-content .master-headline .cutout {
+    font-size: 5.2rem;
+  }
+}
+
+#header .header .header-content .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 85%;
+}
+
+#header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .contact-flex .input-text, .contact-form .contact-flex #header .header .header-content .description .input-text {
+  color: #4A4F54;
+  font-weight: 800;
+  padding-bottom: 2.5rem;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  #header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .contact-flex .input-text, .contact-form .contact-flex #header .header .header-content .description .input-text {
+    content: "";
+    font-size: 0;
+  }
+  #header .header .header-content .description p::after, #header .header .header-content .description span::after, #header .header .header-content .description .contact-form .contact-flex .input-text::after, .contact-form .contact-flex #header .header .header-content .description .input-text::after {
+    font-size: 1.6rem;
+    content: "SANAA es una firma de arquitectos fundada en 1995, por Kazuyo Sejima y Ryue Nishizawa, en Tokio. Ha sido galardonada con el Premio Pritzker de Arquitectura 2010.";
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .contact-flex .input-text, .contact-form .contact-flex #header .header .header-content .description .input-text {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .contact-flex .input-text, .contact-form .contact-flex #header .header .header-content .description .input-text {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #header .header .header-content .description p, #header .header .header-content .description span, #header .header .header-content .description .contact-form .contact-flex .input-text, .contact-form .contact-flex #header .header .header-content .description .input-text {
+    width: 45%;
+  }
+}
+
+#header .header .header-content .arrow-from-top {
+  color: #4A4F54;
+  font-size: 3rem;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#header .header .header-content .arrow-from-top:hover {
+  color: #88959E;
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+  }
+  60% {
+    -webkit-transform: translateY(-1.5rem);
+            transform: translateY(-1.5rem);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+  }
+  60% {
+    -webkit-transform: translateY(-1.5rem);
+            transform: translateY(-1.5rem);
+  }
+}
+
+/* ----------cierre grid---------- */
+/* ----------apertura navbar---------- */
+.navbar {
+  color: #4A4F54;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  padding: 0;
+}
+
+.navbar .container-fluid {
+  padding: 0.5rem 1.5rem;
+}
+
+.navbar .container-fluid img {
+  border-radius: none;
+  max-height: 5.2rem;
+}
+
+.navbar .container-fluid .navbar-toggler {
+  border: none;
+}
+
+.navbar .container-fluid .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar .container-fluid a {
+  color: #4A4F54;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 200;
+  font-stretch: normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.navbar .container-fluid a:hover {
+  font-weight: 800;
+}
+
+.navbar .container-fluid .active {
+  color: #4A4F54;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-stretch: normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.navbar .container-fluid .form-control {
+  color: #4A4F54;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-stretch: normal;
+  text-align: left;
+  text-transform: none;
+  text-decoration: none;
+  line-height: 1.5;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 0.1rem solid #4A4F54;
+  color: #4A4F54;
+  opacity: 1;
+}
+
+.navbar .container-fluid .form-control::-webkit-input-placeholder {
+  color: #4A4F54;
+  opacity: 1;
+}
+
+.navbar .container-fluid .form-control:-ms-input-placeholder {
+  color: #4A4F54;
+  opacity: 1;
+}
+
+.navbar .container-fluid .form-control::-ms-input-placeholder {
+  color: #4A4F54;
+  opacity: 1;
+}
+
+.navbar .container-fluid .form-control::placeholder {
+  color: #4A4F54;
+  opacity: 1;
+}
+
+.navbar .container-fluid .form-control:focus {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 0.1rem solid #4A4F54;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar .container-fluid .form-control:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.navbar .container-fluid .form-control:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.navbar .container-fluid .form-control:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.navbar .container-fluid .form-control:focus::placeholder {
+  color: transparent;
+}
+
+/* ---boton menu--- */
+.navbar-light .navbar-nav .nav-link.active {
+  color: #4A4F54;
+}
+
+/* ---menu desplegado--- */
+.navbar-expand-lg .navbar-nav .nav-link {
+  text-align-last: left;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+/* ----------cierre navbar---------- */
+/* ----------apertura tabla---------- */
+.table-projects {
+  margin: auto;
+}
+
+.table-projects tr .desktop-table {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .table-projects tr .desktop-table {
+    display: revert;
+  }
+}
+
+.table-projects th, .table-projects td {
+  vertical-align: unset;
+  padding: 1.5rem;
+  border-bottom: 0.1rem solid #88959E;
+}
+
+.table-projects th {
+  color: #4A4F54;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  font-stretch: normal;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.5;
   padding: 1.5rem;
 }
 
-/* ----------cierre informacion de contacto---------- */
+.table-projects td, .table-projects li {
+  color: #88959E;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 200;
+  font-stretch: normal;
+  text-align: left;
+  text-transform: none;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.table-projects ol {
+  list-style-type: decimal-leading-zero;
+}
+
+.table-projects ul {
+  list-style-type: circle;
+  list-style-position: initial;
+}
+
+.table-projects span {
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .table-projects {
+    font-size: 3.2rem;
+  }
+}
+
+/* ----------cierre tabla---------- */
 /*# sourceMappingURL=style.css.map */

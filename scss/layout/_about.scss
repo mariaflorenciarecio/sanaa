@@ -1,4 +1,8 @@
+// -------------------- ABOUT
+
 /* ----------apertura nosotros---------- */
+
+/* ---seccion arquitectos--- */
 
 .architects {
     @include flex(column, nowrap, center);
@@ -24,6 +28,8 @@
     }
 }
 
+/* ---seccion mision--- */
+
 .mision-info {
     @include flex(row, wrap, space-evenly);
 
@@ -36,6 +42,8 @@
         @media (min-width: $lg) { width: 18rem; }
     }
 }
+
+/* ---seccion proyectos--- */
 
 .achievements {
     @include flex(row, wrap, space-evenly);
